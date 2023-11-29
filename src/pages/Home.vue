@@ -1,3 +1,13 @@
-t<template>
-    <h1 style="background-color: aliceblue; color: black;">Hello Home !</h1>
+<script setup>
+    import HeroSection from '../components/Home/HeroSection.vue'
+</script>
+
+<template>
+    <main>
+        <HeroSection />    
+    </main>    
 </template>
+
+<style lang="scss">
+
+</style>

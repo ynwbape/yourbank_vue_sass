@@ -28,14 +28,12 @@
     @use '../../assets/stylesheets/variables';
 
     .header {
-        border: 1px solid yellow;
         box-sizing: content-box;
         padding: 50px 162px 53px 162px;
 
         .nav {
             display: flex;
             justify-content: space-between;
-            border: 1px solid red;
             width: 1528px;
             padding: 20px 34px;
 
@@ -85,7 +83,7 @@
                     display: block;
                     padding: 1.4rem 3rem;
                     color: variables.$grey_11;
-                    background-color: variables.$grey_60;
+                    background-color: variables.$green_60;
                     border-radius: variables.$borderRadius82;
                 }
             }
