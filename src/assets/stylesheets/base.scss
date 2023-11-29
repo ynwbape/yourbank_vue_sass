@@ -1,9 +1,13 @@
+@use 'variables';
+
 *, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-weight: normal;
+    color: variables.$Absolute_white;
 }
+
 
 :root {
     font-family: sans-serif;

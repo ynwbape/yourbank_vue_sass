@@ -1,7 +1,7 @@
-@import './base.scss';
-
-$bgBody: blue;
+@use 'variables';
+@import 'base.scss';
 
 body {
-    background-color: $bgBody;
+    background-color: variables.$grey_10;
+    position: relative;
 }

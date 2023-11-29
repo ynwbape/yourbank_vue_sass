@@ -1,9 +1,16 @@
 <script setup>
+  import AbstractDesign from './components/AbstractDesign.vue';
+  import Navbar from "./components/Navbar/Navbar.vue"
+</script>
 
+<script>
+  
 </script>
 
 <template>
-  <h1>Hello world !</h1>
+  <AbstractDesign />
+  <Navbar />
+  <router-view></router-view>
 </template>
 
 <style scoped>
