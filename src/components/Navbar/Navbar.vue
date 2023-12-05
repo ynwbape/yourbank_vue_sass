@@ -1,15 +1,11 @@
 <script setup>
-    import shape from '../../assets/img/icons/logo/yb_shape.svg'
-    import yourbank from '../../assets/img/icons/logo/YourBanK.svg'
+    import Logo from '../Navbar/Logo/Logo.vue'
 </script>
 
 <template>
-    <div class="header">
-        <div class="nav">
-            <div class="logo">
-                <img class="shape" :src="shape" alt="Logo's shape">
-                <img class="navTitle" :src="yourbank" alt="Website's name">
-            </div>
+    <header>
+        <nav>
+            <Logo />
             <menu>
                 <router-link to="/">Home</router-link>
                 <router-link to="/careers">Careers</router-link>
@@ -20,28 +16,25 @@
                 <router-link to="/signin">Sign in</router-link>
                 <router-link to="/login">Login</router-link>
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
 </template>
 
 <style lang="scss">
     @use '../../assets/stylesheets/variables';
 
-    .header {
+    header {
         box-sizing: content-box;
-        padding: 50px 162px 53px 162px;
+        padding: 5rem 16.2rem 5.3rem 16.2rem;
 
-        .nav {
+        nav {
             display: flex;
             justify-content: space-between;
-            width: 1528px;
-            padding: 20px 34px;
-
-            .logo {
-                display: flex;
-                gap: 4px;
-                flex-shrink: 0;
-            }
+            width: 152.8rem;
+            padding: 2rem 3.4rem;
+            border-radius: 10rem;
+            border: .1rem solid variables.$grey_15;
+            background-color: variables.$grey_11;
 
             menu {
                 display: flex;

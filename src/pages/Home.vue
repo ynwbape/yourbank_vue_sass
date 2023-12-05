@@ -1,5 +1,5 @@
 <script setup>
-    import HeroSection from '../components/Home/HeroSection.vue'
+    import HeroSection from '../components/Home/Herosection.vue'
 </script>
 
 <template>
@@ -9,5 +9,11 @@
 </template>
 
 <style lang="scss">
+    @use '../assets/stylesheets/variables';
 
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 15rem;
+    }
 </style>

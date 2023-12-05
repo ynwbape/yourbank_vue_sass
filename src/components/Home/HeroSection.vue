@@ -1,11 +1,26 @@
 <script setup>
+    // Images
     import check from '../../assets/img/icons/Home/check.png'
     import plusIcon from '../../assets/img/icons/Home/plusicon.svg'
+    
+    // Currencies
+    import dollar from '../../assets/img/icons/Home/dollar.svg'
+    import euro from '../../assets/img/icons/Home/euro.svg'
+    import bitcoin from '../../assets/img/icons/Home/bitcoin.svg'
+    import eth from '../../assets/img/icons/Home/eth.svg'
+
+    // Flags
+    import indiaFlag from "../../assets/img/flags/in-flag.gif"
+    import usFlag from "../../assets/img/flags/us-flag.gif"
+
+    // Components
+    import Transaction from './HeroSection/Transaction/Transaction.vue'
+    import Exchange from './HeroSection/Exchange/Exchange.vue'
 </script>
 
 <template>
     <section>
-        <div class="container1">
+        <article class="container1">
             <div class="no-check-bank">
                 <img :src="check" alt="Green Check">
                 <p>
@@ -22,20 +37,57 @@
                 individuals and businesses to achieve their financial goals. We are committed to delivering <br> personalized and innovative services that prioritize our customers' needs.
             </p>
 
-            <a href="#openaccount">Open Account</a>
-        </div>
-        <div class="container2">
+            <a href="#openaccount" target="_blank">Open Account</a>
+        </article>
+        <article class="container2">
             <div class="income">
-                <img :src="plusIcon" alt="">
+                <img :src="plusIcon" alt="Plus icon">
                 <p>
                     <strong>+ $5000,00</strong> <br>
                     Monthly Income
                 </p>
             </div>
 
-            <div class="transaction"></div>
-            <div class="exchange"></div>
-        </div>
+            <div class="transactionPart">
+                <p>Your Transactions</p>
+                <div class="transactions">
+                    <Transaction transac-name="Joel Kenley" currency="$" :money=68 />
+                    <Transaction transac-name="Mark Smith" currency="$" :money=68 />
+                </div>
+            </div>
+
+            <div class="exchangePart">
+                <p>Money Exchange</p>
+
+                <div class="exchanges">
+                    <Exchange 
+                        :flag="indiaFlag" 
+                        country-currensy-abbv="INR" 
+                        country-currensy="Indian Rupees"
+                        :amount="5"
+                    />
+                    
+                    <Exchange 
+                        :flag="usFlag" 
+                        country-currensy-abbv="USD" 
+                        country-currensy="United States Dollar"
+                        :amount="12"
+                    />
+                </div>
+
+                <button class="exchangeBtn">Exchange</button>
+            </div>
+
+            <div class="supported">
+                <p>Supported Currensy</p>
+                <div class="currencies">
+                    <img :src="dollar" alt="">
+                    <img :src="euro" alt="">
+                    <img :src="bitcoin" alt="">
+                    <img :src="eth" alt="">
+                </div>
+            </div>
+        </article>
     </section>
 </template>
 
@@ -47,7 +99,6 @@
         gap: 12rem;
         align-items: flex-start;
         padding: 10rem 29.7rem 10rem 16.2rem;
-        border: 1px solid bisque;
         .container1 {
             width: 82.6rem;
 
@@ -170,14 +221,80 @@
                 }
             }
 
-            .transaction {
+            .transactionPart {
                 height: 22.5rem;
-                border: 1px solid red;
+
+                p {
+                    font-size: 1.7rem;
+                    font-weight: 500;
+                    align-self: stretch;
+                    line-height: 150%;
+                    margin-bottom: 1.7rem;
+                }
+
+                .transactions { 
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
             }
 
-            .exchange {
+            .exchangePart {
                 height: 30.4rem;
-                border: 1px solid burlywood;
+                display: flex;
+                flex-direction: column;
+                gap: 2.5rem;
+                
+                p {
+                    font-size: 1.7rem;
+                    font-weight: 500;
+                    align-self: stretch;
+                    line-height: 150%;
+                }
+
+                .exchanges {
+                    display: flex;
+                }
+
+                .exchangeBtn {
+                    background-color: variables.$grey_14;
+                    color: variables.$green_65;
+                    border: none;
+                    border-radius: 7.1rem;
+                    align-self: stretch;
+                    padding: 1.4rem 2.6rem;
+                }
+            }
+
+            .supported {
+                position: absolute;
+                right: -5.2rem;
+                bottom: -8.2rem;
+                border-radius: 6.9rem;
+                padding: .9rem .9rem .9rem 2rem;
+                display: flex;
+                gap: .9rem;
+                align-items: center;
+                background-color: variables.$grey_14;
+
+                p {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+
+                .currencies {
+                    display: flex;
+                    padding: .9rem;
+                    gap: .7rem;
+                    border-radius: 4.8rem;
+                    border: .087rem solid variables.$grey_15;
+                    background-color: variables.$grey_10;
+
+                    img {
+                        height: 3.5rem;
+                    }
+                }
             }
         }
     }
