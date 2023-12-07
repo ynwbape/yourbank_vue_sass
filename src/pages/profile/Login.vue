@@ -5,6 +5,9 @@
     import greenFacebook from '../../assets/img/Login/icons/green_facebook.svg'
     import greenApple from '../../assets/img/Login/icons/green_apple.svg'
 
+
+    import Testimonials from '../../components/Standalone/Testimonials.vue'
+
     // window.addEventListener('DOMContentLoaded', () => {    
     //     const showPasswordBtn = document.getElementById("showPasswordBtn");
     //     if (showPasswordBtn) {
@@ -26,7 +29,7 @@
     
 </script>
 <template>
-    <div class="formContainer">
+    <div class="loginContainer">
         <div class="login">
             <img :src="loginDesign" alt="abstract design">
 
@@ -81,15 +84,21 @@
                 </div>
             </form>
         </div>
+
+        <Testimonials />
     </div>
+
+
 </template>
 
 <style lang="scss" scoped>
     @use '../../assets/stylesheets/variables';
 
-    .formContainer {
+    .loginContainer {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 15rem;
         .login {
             display: flex;
             width: 132.6rem;
@@ -186,7 +195,7 @@
                 }
 
                 a[href="#password"] {
-                    color: variables.$Absolute_white;
+                    color: variables.$absolute_white;
                     text-align: center;
                     font-size: 1.8rem;
                     font-style: normal;
@@ -225,6 +234,10 @@
                         flex: 1 0 0;
 
                         cursor: pointer;
+
+                        &:hover {
+                            background-color: variables.$green_65;
+                        }
                     }
 
                     a {
@@ -245,7 +258,12 @@
                         font-size: 1.8rem;
                         font-weight: 400;
                         line-height: 150%;
+
+                        &:hover {
+                            background-color: variables.$grey_20;
+                        }
                     }
+                    
 
                     .moreOptions {
                         display: flex;
