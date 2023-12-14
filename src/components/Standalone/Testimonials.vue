@@ -1,6 +1,6 @@
 <script setup>
     import { ref } from "vue"
-    import Testimonial from '../Standalone//Testimonials/Testimonial.vue'
+    import Testimonial from './Testimonials/Testimonial.vue'
     
     import leftArrow from '../../assets/img/Login/icons/arrows/leftArrow.svg'
     import rightArrow from '../../assets/img/Login/icons/arrows/rightArrow.svg'
@@ -29,10 +29,7 @@
         },
     ])
 
-</script>
-
-<script>
-    // When content is loaded
+        // When content is loaded
     window.addEventListener('DOMContentLoaded', () => {
         
         const individual = document.getElementById('individual');
@@ -69,9 +66,9 @@
         };
 
         changeClassName();
+
+        // console.log(individual, business);
     })
-    
-    // console.log(individual, business);
 </script>
 
 <template>
@@ -96,6 +93,7 @@
                 <img :src="leftArrow" alt="Green left arrow">
             </button>
             <div class="items">
+                <div class="fadeLeft"></div>
                 <!-- array.map version Vue -->
                 <Testimonial
                     v-for="testimonial in testimonials"
@@ -103,6 +101,7 @@
                     :testimonial="testimonial.testimonial" 
                     :author="testimonial.author"
                 /> 
+                <div class="fadeRight"></div>
             </div>
             <button id="slideRight" class="rightArrow">
                 <img :src="rightArrow" alt="Green right arrow">
@@ -225,6 +224,39 @@
                 align-items: flex-start;
                 gap: 8rem;
                 flex: 1 0 0;
+                position: relative;
+
+                .fadeLeft, .fadeRight {
+                    height: 34.9rem;
+                    position: absolute;
+                    top: -1.4rem;
+                }
+
+                .fadeLeft {
+                    width: 55.6rem;
+                    left: 0;
+                    
+                    background: 
+                        linear-gradient(
+                            270deg, 
+                            rgba(25,25,25, 0.00) 0%,
+                            variables.$grey_19 105.84%
+                        )
+                    ;
+                }
+
+                .fadeRight {
+                    width: 48rem;
+                    right: .1px;
+
+                    background: 
+                        linear-gradient(
+                            270deg, 
+                            variables.$grey_19 10.8%,
+                            rgba(25,25,25, 0.00) 105.84%
+                        )
+                    ;
+                }
             }
         }
     }
