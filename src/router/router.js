@@ -3,7 +3,7 @@ import Home from '../pages/Home.vue'
 import Careers from '../pages/Careers.vue'
 import About from '../pages/About.vue'
 import Security from '../pages/Security.vue'
-import Signin from '../pages/profile/Signin.vue'
+import Signup from '../pages/profile/Signup.vue'
 import Login from '../pages/profile/Login.vue'
 
 const routes = [
@@ -11,7 +11,7 @@ const routes = [
     {path: '/careers', component: Careers},
     {path: '/about', component: About},
     {path: '/security', component: Security},
-    {path: '/signin', component: Signin},
+    {path: '/signup', component: Signup},
     {path: '/login', component: Login},
 ];
 
