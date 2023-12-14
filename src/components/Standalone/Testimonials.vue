@@ -215,6 +215,8 @@
                 border-radius: 10rem;
                 border: .1rem solid variables.$grey_15;
                 background-color: variables.$grey_11;
+
+                cursor: pointer;
             }
 
             .items {
