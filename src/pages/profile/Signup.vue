@@ -33,28 +33,25 @@
         <div class="login">
             <img :src="loginDesign" alt="abstract design">
 
-            <h1>login</h1>
-            <p>Welcome back! Please log in to access your account.</p>
+            <h1>Sign Up</h1>
+            <p>Join our community today! Create an account to unlock exclusive features and personalized experiences.</p>
 
             <form action="">
+                <div class="inputs">
+                    <input type="text" name="firstName" id="firstName" placeholder="Enter First Name" autocomplete="off">
+                    
+                    <input type="text" name="lastName" id="lastname" placeholder="Enter Last Name" autocomplete="off">
+                </div>
                 <div class="inputs">
                     <input type="email" name="email" id="email" placeholder="Enter your Email" autocomplete="off">
                     
                     <input class="passwordInput" type="password" name="password" id="password" placeholder="Enter your Password" autocomplete="off">
-
-                    <!-- <button id="showPasswordBtn" class="showPWBtn">
-                        <font-awesome-icon class="icon" icon="fa-solid fa-eye" style="color: #59595a;" />
-                    </button> -->
-                    
-                    <!-- <font-awesome-icon class="icon" icon="fa-solid fa-eye-slash" style="color: #59595a;" /> -->
                 </div>
 
-                <a href="#password">Forgot password ?</a>
-
                 <div class="buttons">
-                    <button type="submit">Login</button>
+                    <button type="submit">Sign Up</button>
 
-                    <router-link to="/signup" >Sign Up</router-link>
+                    <router-link to="/login" >Login</router-link>
                     
                     <div class="moreOptions">
                         <div class="line"></div>
@@ -149,6 +146,7 @@
 
                 .inputs {
                     display: flex;
+                    flex-wrap: wrap;
                     align-items: center;
                     gap: 3rem;
                     align-self: stretch;
