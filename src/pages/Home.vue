@@ -1,5 +1,5 @@
 <script setup>
-    import HeroSection from '../components/Home/Herosection.vue';
+    import HeroSection from '../components/Home/HeroSection.vue';
     import CTA from '../components/Standalone/CTA.vue';
 </script>
 

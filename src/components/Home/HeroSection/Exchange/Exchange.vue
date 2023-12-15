@@ -2,7 +2,7 @@
     
     
     const props = defineProps({
-        flag: URL,
+        flag: String,
         countryCurrensyAbbv: String,
         countryCurrensy: String,
         amount: Number,
