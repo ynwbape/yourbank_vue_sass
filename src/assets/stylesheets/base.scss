@@ -10,6 +10,11 @@
 
 
 :root {
-    font-family: sans-serif;
+    font-family: variables.$lexend;
+    font-weight: normal;
     font-size: 10px;
+}
+
+a {
+    text-decoration: none;
 }
