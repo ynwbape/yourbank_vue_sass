@@ -1,5 +1,4 @@
 <script setup>
-  import AbstractDesign from './components/AbstractDesign.vue'
   import Navbar from "./components/Navbar/Navbar.vue"
   import Footer from './components/Footer/Footer.vue'
 </script>
@@ -9,7 +8,6 @@
 </script>
 
 <template>
-  <AbstractDesign />
   <Navbar />
   <router-view></router-view>
   <Footer 

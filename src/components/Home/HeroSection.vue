@@ -206,7 +206,7 @@
                 p {
                     strong {
                         font-size: 1.7rem;
-                        color: variables.$Absolute_white;
+                        color: variables.$absolute_white;
                         align-self: stretch;
                         font-weight: 400;
                         line-height: 150%;
