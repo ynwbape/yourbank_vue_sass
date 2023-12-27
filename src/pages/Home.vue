@@ -1,11 +1,13 @@
 <script setup>
     import HeroSection from '../components/Home/HeroSection.vue';
     import CTA from '../components/Standalone/CTA.vue';
+    import Testimonials from '../components/Standalone/Testimonials.vue'
 </script>
 
 <template>
     <main>
-        <HeroSection />    
+        <HeroSection />  
+        <Testimonials />  
         <CTA />
     </main>    
 </template>
