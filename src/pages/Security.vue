@@ -1,7 +1,7 @@
 <script setup>
     import Toppriority from '../components/Security/Toppriority.vue';
     import ProtectYou from '../components/Security/ProtectYou.vue';
-    import FAQ from '../components/Security/FAQ.vue'
+    import FAQ from '../components/Security/FAQ.vue';
 </script>
 
 t<template>

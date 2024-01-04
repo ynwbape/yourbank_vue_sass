@@ -28,7 +28,7 @@
 </script>
 
 <template>
-    <div class="faqContainer">
+    <section class="faqContainer">
         <div class="faqTitles">
             <h2>
                 <strong>Frequently</strong>
@@ -77,7 +77,7 @@
                 </svg>
             </button>
         </div>
-    </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>

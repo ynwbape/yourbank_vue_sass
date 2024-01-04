@@ -1,14 +1,14 @@
 <script setup>
     import Logo from '../Navbar/Logo/Logo.vue';
 
-    import mailIcon from '../../assets/img/icons/Footer/mailicon.svg' 
-    import phoneIcon from '../../assets/img/icons/Footer/phoneicon.Svg'
-    import placeIcon from '../../assets/img/icons/Footer/placeicon.svg'
+    import mailIcon from '../../assets/img/icons/Footer/mailicon.svg'; 
+    import phoneIcon from '../../assets/img/icons/Footer/phoneicon.Svg';
+    import placeIcon from '../../assets/img/icons/Footer/placeicon.svg';
     
     // socials
-    import facebook from '../../assets/img/icons/Footer/facebookicon.svg'
-    import twitter from '../../assets/img/icons/Footer/twittericon.svg'
-    import linkedin from '../../assets/img/icons/Footer/linkedinicon.svg'
+    import facebook from '../../assets/img/icons/Footer/facebookicon.svg';
+    import twitter from '../../assets/img/icons/Footer/twittericon.svg';
+    import linkedin from '../../assets/img/icons/Footer/linkedinicon.svg';
 
     const props = defineProps({
         mail: String,

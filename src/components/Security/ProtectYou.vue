@@ -2,12 +2,12 @@
     import { ref } from 'vue';
     import Card from '../Standalone/ProtectYou/Card.vue';
     
-    import pYouImg from '../../assets/img/Security/protectyouimage.png'
+    import pYouImg from '../../assets/img/Security/protectyouimage.png';
 
-    import addThingIcon from '../../assets/img/Security/icons/addThingIcon.svg'
-    import pilesIcon from '../../assets/img/Security/icons/pilesicon.svg'
-    import starsIcon from '../../assets/img/Security/icons/starsicon.svg'
-    import mobileBankIcon from '../../assets/img/Security/icons/mobilebankicon.svg'
+    import addThingIcon from '../../assets/img/Security/icons/addThingIcon.svg';
+    import pilesIcon from '../../assets/img/Security/icons/pilesicon.svg';
+    import starsIcon from '../../assets/img/Security/icons/starsicon.svg';
+    import mobileBankIcon from '../../assets/img/Security/icons/mobilebankicon.svg';
     
     let cardArray = ref([
         {
@@ -37,11 +37,11 @@
         // {},
         // {},
         // {},
-    ])
+    ]);
 </script>
 
 <template>
-    <div class="protectYouContainer">
+    <section class="protectYouContainer">
         <div class="protectYouTitles">
             <h2>
                 How We <strong>Protect You</strong>
@@ -81,7 +81,7 @@
                 />
             </div>
         </div>
-    </div>
+    </section>
 </template>
 <style lang="scss" scoped>
     @use '../../assets/stylesheets/variables';

@@ -1,28 +1,12 @@
 <script setup>
-    import loginDesign from '../../assets/img/Login/Login_Abstract_Design.png'
+    import loginDesign from '../../assets/img/Login/Login_Abstract_Design.png';
 
-    import greenGoogle from '../../assets/img/Login/icons/green_google.svg'
-    import greenFacebook from '../../assets/img/Login/icons/green_facebook.svg'
-    import greenApple from '../../assets/img/Login/icons/green_apple.svg'
+    import greenGoogle from '../../assets/img/Login/icons/green_google.svg';
+    import greenFacebook from '../../assets/img/Login/icons/green_facebook.svg';
+    import greenApple from '../../assets/img/Login/icons/green_apple.svg';
 
 
-    import Testimonials from '../../components/Standalone/Testimonials.vue'
-
-    // window.addEventListener('DOMContentLoaded', () => {    
-    //     const showPasswordBtn = document.getElementById("showPasswordBtn");
-    //     if (showPasswordBtn) {
-    //         showPasswordBtn.addEventListener("click", e => {
-                
-    //             console.log("clicked !", e);
-    //         })   
-    //     }
-    // })
-
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-        
-    
-    // } 
+    import Testimonials from '../../components/Standalone/Testimonials.vue';
 </script>
 
 <script>

@@ -1,6 +1,6 @@
 <script setup>
-    import shape from '../../../assets/img/icons/logo/yb_shape.svg'
-    import yourbank from '../../../assets/img/icons/logo/YourBanK.svg'
+    import shape from '../../../assets/img/icons/logo/yb_shape.svg';
+    import yourbank from '../../../assets/img/icons/logo/YourBanK.svg';
 </script>
 
 <template>

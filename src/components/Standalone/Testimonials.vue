@@ -1,9 +1,9 @@
 <script setup>
-    import { ref } from "vue"
-    import Testimonial from './Testimonials/Testimonial.vue'
+    import { ref } from "vue";
+    import Testimonial from './Testimonials/Testimonial.vue';
     
-    import leftArrow from '../../assets/img/Login/icons/arrows/leftArrow.svg'
-    import rightArrow from '../../assets/img/Login/icons/arrows/rightArrow.svg'
+    import leftArrow from '../../assets/img/Login/icons/arrows/leftArrow.svg';
+    import rightArrow from '../../assets/img/Login/icons/arrows/rightArrow.svg';
 
     
     
@@ -27,7 +27,7 @@
             testimonial: `I love the convenience of YourBank's mobile banking app. It allows me to stay on top of my finances and make transactions on the go. The app is user-friendly and secure, giving me peace of mind.`,
             author: "Emily G",
         },
-    ])
+    ]);
 
         // When content is loaded
     window.addEventListener('DOMContentLoaded', () => {
@@ -68,7 +68,7 @@
         changeClassName();
 
         // console.log(individual, business);
-    })
+    });
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup>
-    import Logo from '../Navbar/Logo/Logo.vue'
+    import Logo from '../Navbar/Logo/Logo.vue';
 </script>
 
 <template>

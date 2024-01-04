@@ -1,21 +1,21 @@
 <script setup>
     // Images
-    import check from '../../assets/img/icons/Home/check.png'
-    import plusIcon from '../../assets/img/icons/Home/plusicon.svg'
+    import check from '../../assets/img/icons/Home/check.png';
+    import plusIcon from '../../assets/img/icons/Home/plusicon.svg';
     
     // Currencies
-    import dollar from '../../assets/img/icons/Home/dollar.svg'
-    import euro from '../../assets/img/icons/Home/euro.svg'
-    import bitcoin from '../../assets/img/icons/Home/bitcoin.svg'
-    import eth from '../../assets/img/icons/Home/eth.svg'
+    import dollar from '../../assets/img/icons/Home/dollar.svg';
+    import euro from '../../assets/img/icons/Home/euro.svg';
+    import bitcoin from '../../assets/img/icons/Home/bitcoin.svg';
+    import eth from '../../assets/img/icons/Home/eth.svg';
 
     // Flags
-    import indiaFlag from "../../assets/img/flags/in-flag.gif"
-    import usFlag from "../../assets/img/flags/us-flag.gif"
+    import indiaFlag from "../../assets/img/flags/in-flag.gif";
+    import usFlag from "../../assets/img/flags/us-flag.gif";
 
     // Components
-    import Transaction from './HeroSection/Transaction/Transaction.vue'
-    import Exchange from './HeroSection/Exchange/Exchange.vue'
+    import Transaction from './HeroSection/Transaction/Transaction.vue';
+    import Exchange from './HeroSection/Exchange/Exchange.vue';
 </script>
 
 <template>

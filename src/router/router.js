@@ -1,10 +1,10 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
-import Home from '../pages/Home.vue'
-import Careers from '../pages/Careers.vue'
-import About from '../pages/About.vue'
-import Security from '../pages/Security.vue'
-import Signup from '../pages/profile/Signup.vue'
-import Login from '../pages/profile/Login.vue'
+import Home from '../pages/Home.vue';
+import Careers from '../pages/Careers.vue';
+import About from '../pages/About.vue';
+import Security from '../pages/Security.vue';
+import Signup from '../pages/profile/Signup.vue';
+import Login from '../pages/profile/Login.vue';
 
 const routes = [
     {path: '/', component: Home},

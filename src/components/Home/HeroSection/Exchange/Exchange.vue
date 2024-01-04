@@ -1,12 +1,11 @@
 <script setup>
-    
-    
+
     const props = defineProps({
         flag: String,
         countryCurrensyAbbv: String,
         countryCurrensy: String,
         amount: Number,
-    })
+    });
 
 </script>
 <template>

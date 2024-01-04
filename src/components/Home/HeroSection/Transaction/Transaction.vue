@@ -1,11 +1,11 @@
 <script setup>
-    import transacIcon from '../../../../assets/img/icons/Home/transactionicon.svg'
+    import transacIcon from '../../../../assets/img/icons/Home/transactionicon.svg';
 
     const props = defineProps({
         transacName: String,
         currency: String,
         money: Number,
-    })
+    });
 
     // console.log(props.opacity);
 </script>
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="numbers">
-            <p>-{{currency}}{{ money }}.00</p>
+            <p>-{{ currency }}{{ money }}.00</p>
         </div>
     </div>
 </template>

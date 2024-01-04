@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="CTA">
+    <section class="CTA">
         <div class="ctaTitles">
             <h2>
                 Start your financial journey with
@@ -16,7 +16,7 @@
         </div>
 
         <a href="#openaccount" target="_blank">Open Account</a>
-    </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>

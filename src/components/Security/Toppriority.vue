@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <div class="topPriorityContainer">
+    <section class="topPriorityContainer">
         <img :src="svgBG" alt="">
         
         <div class="topPriorityTitles">
@@ -23,7 +23,7 @@
             <img :src="toppriorityimage" alt="Someone holding a phone with a shield on the background of the phone">
         </div>
 
-    </div>
+    </section>
 </template>
 
 <style lang="scss" scope>
