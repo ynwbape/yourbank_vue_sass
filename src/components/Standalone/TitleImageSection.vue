@@ -1,26 +1,40 @@
 <script setup>
     import svgBG from '../../assets/img/Security/svgBG.png'
 
-    import toppriorityimage from '../../assets/img/Security/toppriorityimage.png'
+    const props = defineProps({
+        // Optionnal sentence for this component 
+        //(Use in About Component)
+        optSentence: String,
+        title: String,
+        greenBoldTitle: String,
+        //When greenBoldTitle is in between case
+        endTitle: String,
+        description: String,
+        image: String,
+        imageDescription: String
+    })
 </script>
 
 <template>
-    <section class="topPriorityContainer">
+    <section class="tisContainer">
         <img :src="svgBG" alt="">
         
-        <div class="topPriorityTitles">
+        <div class="tisTitles">
+            <p>{{ optSentence }}</p>
+            
             <h2>
-                Your Security is Our
-                <strong>Top Priority</strong>
+                {{ title }}
+                <strong>{{ greenBoldTitle }}</strong>
+                {{ endTitle }}
             </h2>
 
             <p>
-                At YourBank, we understand the importance of keeping your financial <br> information secure. We employ robust security measures and advanced <br> technologies to protect your personal and financial data. Rest assured <br> that when you bank with us, your security is our utmost priority.
+                {{ description }}
             </p>
         </div>
 
-        <div class="topPriorityImage">
-            <img :src="toppriorityimage" alt="Someone holding a phone with a shield on the background of the phone">
+        <div class="tisImage">
+            <img :src="props.image" :alt="props.imageDescription">
         </div>
 
     </section>
@@ -29,7 +43,7 @@
 <style lang="scss" scope>
     @use '../../assets/stylesheets/variables';
 
-    .topPriorityContainer {
+    .tisContainer {
         display: flex;
         width: 159.9rem;
         padding: 5rem;
@@ -45,7 +59,7 @@
             right: 0;
         }
 
-        .topPriorityImage {
+        .tisImage {
             width: 96.8rem;
             height: 71.6rem;
             flex: 1 0 0;
@@ -54,10 +68,11 @@
             z-index: 3;
             img {
                 position: unset;
+                width: 100%;
             }
         }
 
-        .topPriorityTitles {
+        .tisTitles {
             display: flex;
             width: 79.1rem;
             padding: 8rem;
@@ -70,15 +85,14 @@
             z-index: 5;
 
             h2 {
-                font-size: 4.8rem;
+                font-size: 5.8rem;
                 font-weight: 500;
-                line-height: 150%;
+                line-height: 130%;
                 align-self: stretch;
                 margin-top: 2rem;
                 margin-bottom: 1.4rem;
     
                 strong {
-                    font-weight: 400;
                     color: variables.$green_60;
                 }
             }
@@ -89,6 +103,12 @@
                 line-height: 150%;
                 color: variables.$grey_70;
                 align-self: stretch;
+
+                &:first-child {
+                    margin-bottom: -50px;
+                    color: variables.$absolute_white;
+                    font-weight: 400;
+                }
             }
 
         }
