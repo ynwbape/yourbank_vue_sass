@@ -146,7 +146,7 @@ t<template>
     </main>
 </template>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
     @use '../assets/stylesheets/variables';
 
     main {

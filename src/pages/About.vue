@@ -1,5 +1,8 @@
 <script setup>
     import TitleImageSection from '../components/Standalone/TitleImageSection.vue';
+    import MissionVision from '../components/About/MissionVision.vue';
+    import PressReleases from '../components/About/PressReleases.vue';
+
     // Image background for TitleImageSection component
     import abeImg from '../assets/img/About/aboutbankexcellence.png';
     
@@ -16,7 +19,7 @@
     const abeImgDesc = "Employees in front of a building"; 
 </script>
 
-t<template>
+<template>
     <main>
         <!-- <Toppriority /> -->
         <TitleImageSection 
@@ -27,10 +30,13 @@ t<template>
             :image="abeImg"
             :image-description="abeImgDesc"
         />
+
+        <MissionVision />
+        <PressReleases />
     </main>
 </template>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
     @use '../assets/stylesheets/variables';
 
     main {

@@ -101,7 +101,6 @@
                 margin-bottom: 1.4rem;
     
                 strong {
-                    font-weight: 400;
                     color: variables.$green_60;
                 }
             }
