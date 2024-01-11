@@ -38,7 +38,7 @@
             imgURL: prCardImg4,
             imgAlt: "Man with a board with the recycle signs represented by the earth",
         },
-    ])
+    ]);
 </script>
 
 <template>

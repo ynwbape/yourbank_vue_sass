@@ -5,8 +5,14 @@
     //Start Your Career Component 
     import CTA from '../components/Standalone/CTA.vue';
     
+    // Our Values section component 
+    import Values from '../components/Careers/Values.vue';
+    
     // Our Benefits section (TitleCardsSection component)
-    import TitleCardsSection from '../components/Standalone/TitleCardsSection.vue';
+    import OurBenefits from '../components/Careers/OurBenefits.vue';
+    
+    // Job openings section
+    import JobOpenings from '../components/Careers/JobOpenings.vue';
     
     // Frequently Asked Quesiton component
     import FAQ from '../components/Standalone/FAQ.vue';
@@ -95,6 +101,7 @@
 
 <template>
     <main> 
+        <!-- Welcome to YourBank Section -->
         <TitleImageSection 
             :title="ybcTitle"
             :green-bold-title="ybcGreenBoldTtitle"
@@ -104,12 +111,11 @@
             :image-description="ybcImgDesc"
         />
 
-        <TitleCardsSection 
-            img-class="display: none;"
-            title="Our"
-            green-bold-title="Benefits"
-            :description="obDescription"
+        <!-- Our Values Section -->
+        <Values />
 
+        <!-- Our Benefits section -->
+        <OurBenefits 
             :card-id="cardArray[0].id"
             :card-icon="cardArray[0].img"
             :card-title="cardArray[0].benefice"
@@ -131,6 +137,10 @@
             :card-description4="cardArray[3].synopsis"
         />
 
+        <!-- Job Openings Section -->
+        <JobOpenings />
+        
+        <!-- Frequently Asked Question -->
         <FAQ 
             :faq_id="faqArray[0].id"
             :faq_question="faqArray[0].question"
@@ -149,18 +159,11 @@
             :faq_answer4="faqArray[3].answer"
         />
 
+        <!-- Start your career section -->
         <CTA />
     </main>    
 </template>
 
 <style lang="scss">
     @use '../assets/stylesheets/variables';
-
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15rem;
-        overflow: hidden;
-    }
 </style>

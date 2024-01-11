@@ -13,74 +13,71 @@
     
 </script>
 <template>
-    <div class="loginContainer">
-        <div class="login">
-            <img :src="loginDesign" alt="abstract design">
+    <main>
+        <div class="signupContainer">
+            <div class="signup">
+                <img :src="loginDesign" alt="abstract design">
 
-            <h1>Sign Up</h1>
-            <p>Join our community today! Create an account to unlock exclusive features and personalized experiences.</p>
+                <h1>Sign Up</h1>
+                <p>Join our community today! Create an account to unlock exclusive features and personalized experiences.</p>
 
-            <form action="">
-                <div class="inputs">
-                    <input type="text" name="firstName" id="firstName" placeholder="Enter First Name" autocomplete="off">
-                    
-                    <input type="text" name="lastName" id="lastname" placeholder="Enter Last Name" autocomplete="off">
-                </div>
-                <div class="inputs">
-                    <input type="email" name="email" id="email" placeholder="Enter your Email" autocomplete="off">
-                    
-                    <input class="passwordInput" type="password" name="password" id="password" placeholder="Enter your Password" autocomplete="off">
-                </div>
-
-                <div class="buttons">
-                    <button type="submit">Sign Up</button>
-
-                    <router-link to="/login" >Login</router-link>
-                    
-                    <div class="moreOptions">
-                        <div class="line"></div>
-                        <p>Or Continue with</p>
-                        <div class="line"></div>
+                <form action="">
+                    <div class="inputs">
+                        <input type="text" name="firstName" id="firstName" placeholder="Enter First Name" autocomplete="off">
+                        
+                        <input type="text" name="lastName" id="lastname" placeholder="Enter Last Name" autocomplete="off">
                     </div>
-                    
-                    <div class="socialLogins">
-                        <button>
-                            <a href="">
-                                <img :src="greenGoogle" alt="Green Google icon">
-                            </a>
-                        </button>
-
-                        <button>
-                            <a href="">
-                                <img :src="greenFacebook" alt="Green Google icon">
-                            </a>
-                        </button>
-
-                        <button>
-                            <a href="">
-                                <img :src="greenApple" alt="Green Google icon">
-                            </a>
-                        </button>
+                    <div class="inputs">
+                        <input type="email" name="email" id="email" placeholder="Enter your Email" autocomplete="off">
+                        
+                        <input class="passwordInput" type="password" name="password" id="password" placeholder="Enter your Password" autocomplete="off">
                     </div>
-                </div>
-            </form>
+
+                    <div class="buttons">
+                        <button type="submit">Sign Up</button>
+
+                        <router-link to="/login" >Login</router-link>
+                        
+                        <div class="moreOptions">
+                            <div class="line"></div>
+                            <p>Or Continue with</p>
+                            <div class="line"></div>
+                        </div>
+                        
+                        <div class="socialSignup">
+                            <button>
+                                <a href="">
+                                    <img :src="greenGoogle" alt="Green Google icon">
+                                </a>
+                            </button>
+
+                            <button>
+                                <a href="">
+                                    <img :src="greenFacebook" alt="Green Google icon">
+                                </a>
+                            </button>
+
+                            <button>
+                                <a href="">
+                                    <img :src="greenApple" alt="Green Google icon">
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
         </div>
-
         <Testimonials />
-    </div>
-    
+    </main>
 
 </template>
 
 <style lang="scss" scoped>
     @use '../../assets/stylesheets/variables';
 
-    .loginContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15rem;
-        .login {
+    .signupContainer {
+        .signup {
             display: flex;
             width: 132.6rem;
             padding: 10rem 15rem;
@@ -158,22 +155,6 @@
                             position: relative;
                         }   
                     }
-
-                    // .showPWBtn {
-                    //     position: absolute;
-                    //     right: 2.4rem;
-                    //     width: 2.4rem;
-                    //     height: 2.4rem;
-                    //     background-color: transparent;
-                    //     border: none;
-                    //     cursor: pointer;
-
-                    //     .icon {
-                    //         height: 100%;
-                    //     }
-                    // }
-
-                    
                 }
 
                 a[href="#password"] {
@@ -268,7 +249,7 @@
                         }
                     }
 
-                    .socialLogins {
+                    .socialSignup {
                         display: flex;
                         justify-content: center;
                         align-items: center;

@@ -81,7 +81,6 @@
 
                 h4 {
                     align-self: stretch;
-                    color: variables.$absolute_white;
                     font-size: 2.4rem;
                     font-style: normal;
                     font-weight: 400;

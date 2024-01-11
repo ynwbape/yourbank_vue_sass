@@ -38,12 +38,4 @@
 
 <style lang="scss" scoped>
     @use '../assets/stylesheets/variables';
-
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15rem;
-        overflow: hidden;
-    }
 </style>

@@ -16,10 +16,14 @@
     // Components
     import Transaction from './HeroSection/Transaction/Transaction.vue';
     import Exchange from './HeroSection/Exchange/Exchange.vue';
+
+    import arrows from '../../assets/img/Home/Abstract Design (1).png';
 </script>
 
 <template>
     <section>
+        <img :src="arrows" alt="" class="arrowsdesign">
+
         <article class="container1">
             <div class="no-check-bank">
                 <img :src="check" alt="Green Check">
@@ -99,6 +103,11 @@
         gap: 12rem;
         align-items: flex-start;
         padding: 10rem 29.7rem 10rem 16.2rem;
+        position: relative;
+        .arrowsdesign {
+            position: absolute;
+            right: 11rem;
+        }
         .container1 {
             width: 82.6rem;
 
@@ -173,17 +182,7 @@
             border-radius: 1rem;
             border: 0.087rem solid variables.$grey_15;
             position: relative;
-            background: 
-                linear-gradient(
-                    215deg, 
-                    rgba(26, 26, 26, 0.00) 
-                    0%, 
-                    variables.$grey_10 
-                    39.72%
-                ),
-                lightgray 0% 0% / 6.2rem 6.2rem 
-                repeat, variables.$grey_10
-            ;
+            background-color: variables.$grey_10;
             background-blend-mode: normal, screen, normal;
 
             .income {

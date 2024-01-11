@@ -5,3 +5,11 @@ body {
     background-image: url('../img/icons/AbstractDesign.png');
     background-repeat: no-repeat;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15rem;
+    overflow: hidden;
+}

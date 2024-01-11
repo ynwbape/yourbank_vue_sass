@@ -1,4 +1,5 @@
 <script setup>
+    import SectionTitles from '../Standalone/SectionTitles.vue';
     import Card from '../Standalone/TitleCardsSection/Card.vue';
     
     const props = defineProps({
@@ -28,25 +29,20 @@
         cardTitle4: String,
         cardDescription4: String,
     });
+
+    const obResume = "At YourBank, we value our employees and are dedicated to their well-being and success. We offer a comprehensive range of benefits designed to support their personal and professional growth.";
 </script>
 
 <template>
-    <section id="TCSID" class="tcsContainer">
-        <div class="tcsTitles">
-            <h2>
-                {{ title }} 
-                <strong>{{ greenBoldTitle }}</strong>
-            </h2>
+    <section id="OBID" class="obContainer">
+        <SectionTitles 
+            title="Our"
+            green-title="Benefits"
+            :title-description="obResume"
+        />
 
-            <p>
-                {{ description }}
-            </p>
-        </div>
-
-        <div class="cards">
-            <img :src="props.img" alt="" :style="props.imgClass">
-
-            <div class="subContainer">
+        <div class="obCards">
+            <div class="obSubContainer">
                 <Card
                     :key="props.cardId"
                     :img="props.cardIcon" 
@@ -61,7 +57,7 @@
                 />    
             </div>
             
-            <div class="subContainer">
+            <div class="obSubContainer">
                 <Card
                     :key="props.cardId3"
                     :img="props.cardIcon3" 
@@ -81,67 +77,24 @@
 <style lang="scss" scoped>
     @use '../../assets/stylesheets/variables';
 
-    .tcsContainer {
+    .obContainer {
         display: flex;
         width: 160rem;
         flex-direction: column;
         align-items: center;
-        gap: 20rem;
+        gap: 8rem;
 
-        .tcsTitles {
+        .obCards {
             display: flex;
-            padding-right: 30rem;
+            padding: unset;
+            gap: 10rem;
             flex-direction: column;
-            align-items: flex-start;
-            gap: 1.4rem;
-            align-self: stretch;
-
-            h2 {
-                font-size: 4.8rem;
-                font-weight: 500;
-                line-height: 150%;
-                align-self: stretch;
-                margin-top: 2rem;
-                margin-bottom: 1.4rem;
-    
-                strong {
-                    font-weight: 400;
-                    color: variables.$green_60;
-                }
-            }
-    
-            p {
-                font-size: 1.8rem;
-                font-weight: 300;
-                line-height: 150%;
-                color: variables.$grey_70;
-                align-self: stretch;
-            }
-
-        }
-
-        .cards {
-            display: flex;
-            padding: 0rem 10rem;
-            flex-direction: column;
-            gap: 3rem;
             align-self: stretch;
             position: relative;
 
-            img {
-                width: 159.3rem;
-                height: 63.1rem;
-                position: absolute;
-                top: -8.2rem;
-                right: .6rem;
-                border-radius: 50px 50px 20px 20px;
-                background-blend-mode: normal, normal, screen;
-            }
-
-            .subContainer {
+            .obSubContainer {
                 display: flex;
-                flex-wrap: wrap;
-                gap: 3rem;
+                gap: 10rem;
                 align-self: stretch;
             }
         }

@@ -4,13 +4,13 @@
 
     // Title + image component
     import TitleImageSection from '../components/Standalone/TitleImageSection.vue';
-
-    // Title + cards component
-    import TitleCardsSection from '../components/Standalone/TitleCardsSection.vue';
-
+    
+    // How we protect you component
+    import HowWeProtectYou from '../components/Security/HowWeProtectYou.vue';
+    
     // Frequently Asked Quesiton component
     import FAQ from '../components/Standalone/FAQ.vue';
-
+    
     // Image background for TitleImageSection component
     import tisTopPriorityImage from '../assets/img/Security/toppriorityimage.png';
     
@@ -55,8 +55,6 @@
     import starsIcon from '../assets/img/Security/icons/starsicon.svg';
     import mobileBankIcon from '../assets/img/Security/icons/mobilebankicon.svg';
     
-    //values of TitleCardsSection attributes
-    const pyDescription = "At YourBank, we prioritize the security and confidentiality of your financial information. Our state-of-the-art encryption technology and stringent data protection measures ensure your assets and transactions are safeguarded at all times" 
 
     // arrays of cards for TitleCardsSection component
     let cardArray = ref([
@@ -98,33 +96,30 @@ t<template>
             :image-description="tisImgDescription"
         />
 
-        <TitleCardsSection 
-            title="How We"
-            green-bold-title="Protect You"
-            :description="pyDescription"
+        <!-- How we protect you section -->
+        <HowWeProtectYou 
             :img="pyImg"
 
             :card-id="cardArray[0].id"
             :card-icon="cardArray[0].img"
             :card-title="cardArray[0].service"
             :card-description="cardArray[0].synopsis"
-            
+
             :card-id2="cardArray[1].id"
             :card-icon2="cardArray[1].img"
             :card-title2="cardArray[1].service"
             :card-description2="cardArray[1].synopsis"
-            
+
             :card-id3="cardArray[2].id"
             :card-icon3="cardArray[2].img"
             :card-title3="cardArray[2].service"
             :card-description3="cardArray[2].synopsis"
-            
+
             :card-id4="cardArray[3].id"
             :card-icon4="cardArray[3].img"
             :card-title4="cardArray[3].service"
             :card-description4="cardArray[3].synopsis"
         />
-
 
         <FAQ 
             :faq_id="faqArray[0].id"
@@ -148,12 +143,4 @@ t<template>
 
 <style lang="scss" scoped>
     @use '../assets/stylesheets/variables';
-
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15rem;
-        overflow: hidden;
-    }
 </style>
