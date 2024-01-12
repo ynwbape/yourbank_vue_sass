@@ -6,7 +6,7 @@
     import leftArrow from '../../assets/img/Login/icons/arrows/leftArrow.svg';
     import rightArrow from '../../assets/img/Login/icons/arrows/rightArrow.svg';
     
-    const testimonials = ref([
+    let testimonials = ref([
         {
             id: 0,
             testimonial: `YourBank has been my trusted financial partner for years. Their personalized service and innovative digital banking solutions have made managing my finances a breeze.`,
