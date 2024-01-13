@@ -1,5 +1,5 @@
 <script setup>
-    import svgBG from '../../assets/img/Security/svgBG.png'
+    import { IMAGES } from '../../assets/scripts/images';
 
     const props = defineProps({
         // Optionnal sentence for this component 
@@ -17,7 +17,7 @@
 
 <template>
     <section class="tisContainer">
-        <img :src="svgBG" alt="">
+        <img :src="IMAGES.Standalone.TitleImageSection.svgBG" alt="Abstract Design Background of green dots">
         
         <div class="tisTitles">
             <p>{{ optSentence }}</p>

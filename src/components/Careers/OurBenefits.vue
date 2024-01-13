@@ -2,6 +2,8 @@
     import SectionTitles from '../Standalone/SectionTitles.vue';
     import Card from '../Standalone/TitleCardsSection/Card.vue';
     
+    import { obResume } from '../../assets/scripts/texts';
+    
     const props = defineProps({
         title: String,
         greenBoldTitle: String,
@@ -30,7 +32,7 @@
         cardDescription4: String,
     });
 
-    const obResume = "At YourBank, we value our employees and are dedicated to their well-being and success. We offer a comprehensive range of benefits designed to support their personal and professional growth.";
+    
 </script>
 
 <template>

@@ -1,7 +1,3 @@
-<script setup>
-    import abstratcDesign2 from '../../assets/img/icons/Home/abstractdesign2.svg'
-</script>
-
 <template>
     <section class="CTA">
         <div class="ctaTitles">

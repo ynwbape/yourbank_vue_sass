@@ -1,9 +1,5 @@
 <script setup>
-    import loginDesign from '../../assets/img/Login/Login_Abstract_Design.png';
-
-    import greenGoogle from '../../assets/img/Login/icons/green_google.svg';
-    import greenFacebook from '../../assets/img/Login/icons/green_facebook.svg';
-    import greenApple from '../../assets/img/Login/icons/green_apple.svg';
+    import { IMAGES } from '../../assets/scripts/images';
 
 
     import Testimonials from '../../components/Standalone/Testimonials.vue';
@@ -16,7 +12,7 @@
     <main>
         <div class="loginContainer">
             <div class="login">
-                <img :src="loginDesign" alt="abstract design">
+                <img :src="IMAGES.SignUpLogin.signUpLoginDesign" alt="abstract design">
 
                 <h1>login</h1>
                 <p>Welcome back! Please log in to access your account.</p>
@@ -50,19 +46,19 @@
                         <div class="socialLogins">
                             <button>
                                 <a href="">
-                                    <img :src="greenGoogle" alt="Green Google icon">
+                                    <img :src="IMAGES.SignUpLogin.greenGoogle" alt="Green Google icon">
                                 </a>
                             </button>
 
                             <button>
                                 <a href="">
-                                    <img :src="greenFacebook" alt="Green Google icon">
+                                    <img :src="IMAGES.SignUpLogin.greenFacebook" alt="Green Google icon">
                                 </a>
                             </button>
 
                             <button>
                                 <a href="">
-                                    <img :src="greenApple" alt="Green Google icon">
+                                    <img :src="IMAGES.SignUpLogin.greenApple" alt="Green Google icon">
                                 </a>
                             </button>
                         </div>
@@ -157,22 +153,6 @@
                             position: relative;
                         }   
                     }
-
-                    // .showPWBtn {
-                    //     position: absolute;
-                    //     right: 2.4rem;
-                    //     width: 2.4rem;
-                    //     height: 2.4rem;
-                    //     background-color: transparent;
-                    //     border: none;
-                    //     cursor: pointer;
-
-                    //     .icon {
-                    //         height: 100%;
-                    //     }
-                    // }
-
-                    
                 }
 
                 a[href="#password"] {
@@ -280,7 +260,7 @@
                             justify-content: center;
                             align-items: flex-start;
                             gap: 1rem;
-
+                            border: unset;
                             border-radius: 7rem;
                             background: linear-gradient(180deg, rgba(202, 255, 51, 0.05) 0%, rgba(202, 255, 51, 0.00) 100%);
 
@@ -290,7 +270,7 @@
                                 justify-content: center;
                                 align-items: center;
                                 gap: 1rem;
-
+                                border: unset;
                                 border-radius: 5rem;
                                 background: linear-gradient(180deg, rgba(202, 255, 51, 0.10) -66.22%, rgba(202, 255, 51, 0.00) 85.46%);
 

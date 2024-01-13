@@ -1,34 +1,13 @@
 <script setup>
-    import { ref } from "vue";
     import Testimonial from './Testimonials/Testimonial.vue';
     import TitleIndividualBusiness from "./titleIndividualBusiness.vue";
     
-    import leftArrow from '../../assets/img/Login/icons/arrows/leftArrow.svg';
-    import rightArrow from '../../assets/img/Login/icons/arrows/rightArrow.svg';
+    import { IMAGES } from '../../assets/scripts/images';
     
-    let testimonials = ref([
-        {
-            id: 0,
-            testimonial: `YourBank has been my trusted financial partner for years. Their personalized service and innovative digital banking solutions have made managing my finances a breeze.`,
-            author: "Sara T",
-        },
-        {
-            id: 1,
-            testimonial: `I recently started my own business, and
-            YourBank has been instrumental in helping 
-            me set up my business accounts and secure
-            the financing I needed. Their expert guidance
-            and tailored solutions have been invaluable.`,
-            author: "John D",
-        },
-        {
-            id: 2,
-            testimonial: `I love the convenience of YourBank's mobile banking app. It allows me to stay on top of my finances and make transactions on the go. The app is user-friendly and secure, giving me peace of mind.`,
-            author: "Emily G",
-        },
-    ]);
-
-    const testimonialmResume = "Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service. See why our clients trust us for a secure and prosperous financial journey";
+    
+    import { testimonialmResume } from '../../assets/scripts/texts';
+    import { testimonials } from '../../assets/scripts/arrays';
+    
 </script>
 
 <template>
@@ -40,7 +19,7 @@
         />
         <div class="testimonialCarousel">
             <button id="slideLeft" class="leftArrow">
-                <img :src="leftArrow" alt="Green left arrow">
+                <img :src="IMAGES.Home.testimonialsImages.leftArrowIcon" alt="Green left arrow">
             </button>
             <div class="items">
                 <div class="fadeLeft"></div>
@@ -54,7 +33,7 @@
                 <div class="fadeRight"></div>
             </div>
             <button id="slideRight" class="rightArrow">
-                <img :src="rightArrow" alt="Green right arrow">
+                <img :src="IMAGES.Home.testimonialsImages.rightArrowIcon" alt="Green right arrow">
             </button>
         </div>
     </div>

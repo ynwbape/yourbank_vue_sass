@@ -1,5 +1,5 @@
 <script setup>
-    import transacIcon from '../../../../assets/img/icons/Home/transactionicon.svg';
+    import { IMAGES } from '../../../../assets/scripts/images';
 
     const props = defineProps({
         transacName: String,
@@ -7,13 +7,12 @@
         money: Number,
     });
 
-    // console.log(props.opacity);
 </script>
 
 <template>
     <div class="transaction">
         <div class="name">
-            <img :src="transacIcon" alt="Transaction Icon">
+            <img :src="IMAGES.Home.HeroSectionImages.transacIcon" alt="Transaction Icon">
             <div class="texts">
                 <p>Transaction</p>
                 <p>{{ transacName }}</p>

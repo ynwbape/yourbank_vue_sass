@@ -1,5 +1,5 @@
 <script setup>
-    import arrowTopDiagonal from '../../../assets/img/Home/icons/arrowtopdiagonal.svg';
+    import { IMAGES } from '../../../assets/scripts/images';
 
     const props = defineProps({
         feature: String,
@@ -11,7 +11,7 @@
         <div class="featureName">
             <h5>{{ feature }}</h5>
             
-            <img :src="arrowTopDiagonal" alt="Green arrow pointing to top right direction">
+            <img :src="IMAGES.Home.FeaturesImages.arrowTopDiagonalIcon" alt="Green arrow pointing to top right direction">
         </div>
 
         <p>{{ featureResume }}</p>

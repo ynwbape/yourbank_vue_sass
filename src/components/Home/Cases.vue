@@ -1,99 +1,19 @@
 <script setup>
-    import { ref } from "vue";
     import SectionTitles from '../Standalone/SectionTitles.vue';
-    import CaseCard from './Cases/CaseCard.vue';
     import CaseContent from './Cases/CaseContent.vue';
 
-    import abDesign from '../../assets/img/Home/abstract_design.svg';
     import CaseItem from "./Cases/CaseItem.vue";
     
-    const casesResume = "At YourBank, we cater to the diverse needs of individuals and businesses alike, offering a wide range of financial solutions";
+    import {
+        casesResume,
+        individualResume,
+        businessResume
+    } from '../../assets/scripts/texts';
 
-    const individualResume = 'For individuals, our mortgage services pave the way to homeownership, and our flexible personal loans provide vital support during various life milestones. We also prioritize retirement planning, ensuring a financially secure future for our customers';
-    
-    const businessResume = ' For businesses, we empower growth with working capital solutions that optimize cash flow, and our tailored financing options fuel business expansion. Whatever your financial aspirations, YourBank is committed to providing the right tools and support to achieve them';
-
-    let caseContentStatArray = ref({
-        individual: [
-            {
-                id: 0,
-                number: 78,
-                statName: "Secure Retirement Planning", 
-            },
-            {
-                id: 1,
-                number: 63,
-                statName: "Manageable Debt Consolidation", 
-            },
-            {
-                id: 2,
-                number: 91,
-                statName: "Reducing financial burdens", 
-            },
-        ],
-        business: [
-            {
-                id: 0,
-                number: 65,
-                statName: "Cash Flow Management", 
-            },
-            {
-                id: 1,
-                number: 70,
-                statName: "Drive Business Expansion", 
-            },
-            {
-                id: 3,
-                number: 45,
-                statName: "Streamline payroll processing", 
-            },
-        ]
-    });
-
-    import mpf from '../../assets/img/Home/icons/CaseItem/mpf.svg';
-    import sftf from '../../assets/img/Home/icons/CaseItem/sftf.svg';
-    import hos from '../../assets/img/Home/icons/CaseItem/hos.svg';
-    import efunding from '../../assets/img/Home/icons/CaseItem/efunding.svg';
-    import sae from '../../assets/img/Home/icons/CaseItem/sae.svg';
-    import cfm from '../../assets/img/Home/icons/CaseItem/cfm.svg';
-    import bex from '../../assets/img/Home/icons/CaseItem/bex.svg';
-    import psol from '../../assets/img/Home/icons/CaseItem/psol.svg';
-
-    let caseItemArray = ref([
-        {
-            name: "Managing Personal Finances",
-            img: mpf,
-        },
-        {
-            name: "Saving for the Future",
-            img: sftf,
-        },
-        {   
-            name: "Homeownership",
-            img: hos,
-        },
-        {
-            name: "Education Funding",
-            img: efunding,
-        },
-        {
-            name: "Startups and Entrepreneurs",
-            img: sae,
-        },
-        {
-            name: "Cash Flow Management",
-            img: cfm,
-        },
-        {
-            name: "Business Expansion",
-            img: bex,
-        },
-        {
-            name: "Payment Solutions",
-            img: psol,
-        },
-
-    ])
+    import { 
+        caseContentStatArray, 
+        caseItemArray 
+    } from '../../assets/scripts/arrays';
 </script>
 <template>
     <div class="casesContainer">

@@ -1,43 +1,4 @@
 <script setup>
-    // When content is loaded
-    window.addEventListener('DOMContentLoaded', () => {
-        
-        const individual = document.getElementById('individual');
-        const business = document.getElementById('business');
-        
-        let isIndivualClicked = false
-        let isBusinessClicked = false
-        
-        function changeClassName() {
-            business.addEventListener("click", () => {
-                !isBusinessClicked;
-                individual.classList.remove("active");
-                individual.classList.add("unfocused");
-                business.classList.remove("unfocused");
-                business.classList.add("active");
-            });
-
-            if (isBusinessClicked === true && business.classList.contains("active")) {
-                console.log("Business already have this class !");
-            }
-            
-            individual.addEventListener("click", () => {
-                !isIndivualClicked;
-                business.classList.remove("active");
-                business.classList.add("unfocused");
-                individual.classList.remove("unfocused");
-                individual.classList.add("active");
-                
-            });
-            
-            if (isIndivualClicked === true && individual.classList.contains("active")) {
-                console.log("Individual already have this class !");
-            }
-        };
-
-        changeClassName();
-    });
-
     const props = defineProps({
         title: String,
         greenTitle: String,

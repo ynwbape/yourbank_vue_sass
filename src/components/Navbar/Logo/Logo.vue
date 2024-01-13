@@ -1,12 +1,11 @@
 <script setup>
-    import shape from '../../../assets/img/icons/logo/yb_shape.svg';
-    import yourbank from '../../../assets/img/icons/logo/YourBanK.svg';
+    import { IMAGES } from '../../../assets/scripts/images';
 </script>
 
 <template>
     <div class="logo">
-        <img class="shape" :src="shape" alt="Logo's shape">
-        <img class="navTitle" :src="yourbank" alt="Website's name">
+        <img class="shape" :src="IMAGES.Navbar.Logo.shape" alt="Logo's shape">
+        <img class="navTitle" :src="IMAGES.Navbar.Logo.yourbank" alt="Website's name">
     </div>  
 </template>
 

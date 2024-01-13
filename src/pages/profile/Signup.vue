@@ -1,12 +1,8 @@
 <script setup>
-    import loginDesign from '../../assets/img/Login/Login_Abstract_Design.png';
-
-    import greenGoogle from '../../assets/img/Login/icons/green_google.svg';
-    import greenFacebook from '../../assets/img/Login/icons/green_facebook.svg';
-    import greenApple from '../../assets/img/Login/icons/green_apple.svg';
-
-
     import Testimonials from '../../components/Standalone/Testimonials.vue';
+
+    import { IMAGES } from '../../assets/scripts/images';
+
 </script>
 
 <script>
@@ -16,7 +12,7 @@
     <main>
         <div class="signupContainer">
             <div class="signup">
-                <img :src="loginDesign" alt="abstract design">
+                <img :src="IMAGES.SignUpLogin.signUpLoginDesign" alt="abstract design">
 
                 <h1>Sign Up</h1>
                 <p>Join our community today! Create an account to unlock exclusive features and personalized experiences.</p>
@@ -47,19 +43,19 @@
                         <div class="socialSignup">
                             <button>
                                 <a href="">
-                                    <img :src="greenGoogle" alt="Green Google icon">
+                                    <img :src="IMAGES.SignUpLogin.greenGoogle" alt="Green Google icon">
                                 </a>
                             </button>
 
                             <button>
                                 <a href="">
-                                    <img :src="greenFacebook" alt="Green Google icon">
+                                    <img :src="IMAGES.SignUpLogin.greenFacebook" alt="Green Google icon">
                                 </a>
                             </button>
 
                             <button>
                                 <a href="">
-                                    <img :src="greenApple" alt="Green Google icon">
+                                    <img :src="IMAGES.SignUpLogin.greenApple" alt="Green Google icon">
                                 </a>
                             </button>
                         </div>
@@ -262,17 +258,17 @@
                             justify-content: center;
                             align-items: flex-start;
                             gap: 1rem;
-
+                            border: unset;
                             border-radius: 7rem;
                             background: linear-gradient(180deg, rgba(202, 255, 51, 0.05) 0%, rgba(202, 255, 51, 0.00) 100%);
-
+                            
                             a {
                                 display: flex;
                                 padding: 2rem;
                                 justify-content: center;
                                 align-items: center;
                                 gap: 1rem;
-
+                                border: unset;
                                 border-radius: 5rem;
                                 background: linear-gradient(180deg, rgba(202, 255, 51, 0.10) -66.22%, rgba(202, 255, 51, 0.00) 85.46%);
 

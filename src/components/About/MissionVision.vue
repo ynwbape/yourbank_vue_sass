@@ -1,13 +1,14 @@
 <script setup>
     import SectionTitles from '../Standalone/SectionTitles.vue';
 
-    import mvAbstractDesign from "../../assets/img/About/mvAbstractDesign.svg";
-    import missionImg from "../../assets/img/About/missionimage.png";
-    import visionImg from "../../assets/img/About/visionimage.png";
+    import { IMAGES } from '../../assets/scripts/images';
     
-    // let mvTitle = ""
-    let mvGreenTitle = "Mission & Vision";
-    let mvTitleDescription = "We envision being a leading force in the industry, driven by innovation, integrity, and inclusivity, creating a brighter financial future for individuals and businesses while maintaining a strong commitment to customer satisfaction and community development";
+    import {
+        mvGreenTitle,
+        mvTitleResume,
+        missionResume,
+        visionResume
+    } from '../../assets/scripts/texts';
 
 
 </script>
@@ -16,22 +17,22 @@
     <div class="mvContainer">
         <SectionTitles 
             :green-title="mvGreenTitle"
-            :title-description="mvTitleDescription"
+            :title-description="mvTitleResume"
         />   
         
         <div class="mvSubContainer">
             <div class="missionSection">
                 <div class="missionImg">
-                    <img class="designBackground" :src="mvAbstractDesign" alt="Dots Design in background">
+                    <img class="designBackground" :src="IMAGES.About.aboutImages.missionVision.mvAbstractDesign" alt="Dots Design in background">
                     
-                    <img :src="missionImg" alt="A plant with a ton of coins on the ground">
+                    <img :src="IMAGES.About.aboutImages.missionVision.missionImg" alt="A plant with a ton of coins on the ground">
                 </div>
 
                 <div class="missionTexts">
                     <h4>Mission</h4>
 
                     <p>
-                        At YourBank, our mission is to empower our customers to achieve financial success. We are dedicated to delivering innovative banking solutions that cater to their unique needs. Through personalized services, expert guidance, and cutting-edge technology, we aim to build strong, lasting relationships with our customers. Our mission is to be their trusted partner, helping them navigate their financial journey and realize their dreams.
+                        {{ missionResume }}
                     </p>
                 </div>
             </div>
@@ -40,14 +41,14 @@
                     <h4>Vision</h4>
 
                     <p>
-                        Our vision at YourBank is to redefine banking by creating a seamless and personalized experience for our customers. We envision a future where banking is accessible, transparent, and tailored to individual preferences. Through continuous innovation and collaboration, we strive to be at the forefront of the industry, setting new standards for customer-centric banking. Our vision is to be the preferred financial institution, known for our unwavering commitment to excellence, trust, and customer satisfaction.
+                        {{ visionResume }}
                     </p>
                 </div>
 
                 <div class="visionImg">
-                    <img class="designBackground" :src="mvAbstractDesign" alt="Dots Design in background">
+                    <img class="designBackground" :src="IMAGES.About.aboutImages.missionVision.mvAbstractDesign" alt="Dots Design in background">
                     
-                    <img :src="visionImg" alt="Eye of a human visualize in front of him">
+                    <img :src="IMAGES.About.aboutImages.missionVision.visionImg" alt="Eye of a human visualize in front of him">
                 </div>
             </div>
         </div>

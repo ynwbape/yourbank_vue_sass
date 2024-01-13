@@ -1,32 +1,19 @@
 <script setup>
-    // Images
-    import check from '../../assets/img/icons/Home/check.png';
-    import plusIcon from '../../assets/img/icons/Home/plusicon.svg';
-    
-    // Currencies
-    import dollar from '../../assets/img/icons/Home/dollar.svg';
-    import euro from '../../assets/img/icons/Home/euro.svg';
-    import bitcoin from '../../assets/img/icons/Home/bitcoin.svg';
-    import eth from '../../assets/img/icons/Home/eth.svg';
-
-    // Flags
-    import indiaFlag from "../../assets/img/flags/in-flag.gif";
-    import usFlag from "../../assets/img/flags/us-flag.gif";
-
     // Components
     import Transaction from './HeroSection/Transaction/Transaction.vue';
     import Exchange from './HeroSection/Exchange/Exchange.vue';
 
-    import arrows from '../../assets/img/Home/Abstract Design (1).png';
+    // Object of images 
+    import { IMAGES } from '../../assets/scripts/images';
 </script>
 
 <template>
     <section>
-        <img :src="arrows" alt="" class="arrowsdesign">
+        <img :src="IMAGES.Home.HeroSectionImages.arrows" alt="Green arrows" class="arrowsdesign">
 
         <article class="container1">
             <div class="no-check-bank">
-                <img :src="check" alt="Green Check">
+                <img :src="IMAGES.Home.HeroSectionImages.checkIcon" alt="Green Check">
                 <p>
                     No LLC Required, No Credit Check
                 </p>
@@ -45,7 +32,7 @@
         </article>
         <article class="container2">
             <div class="income">
-                <img :src="plusIcon" alt="Plus icon">
+                <img :src="IMAGES.Home.HeroSectionImages.plusIcon" alt="Plus icon">
                 <p>
                     <strong>+ $5000,00</strong> <br>
                     Monthly Income
@@ -65,14 +52,14 @@
 
                 <div class="exchanges">
                     <Exchange 
-                        :flag="indiaFlag" 
+                        :flag="IMAGES.Home.HeroSectionImages.indiaFlag" 
                         country-currensy-abbv="INR" 
                         country-currensy="Indian Rupees"
                         :amount="5"
                     />
                     
                     <Exchange 
-                        :flag="usFlag" 
+                        :flag="IMAGES.Home.HeroSectionImages.usFlag" 
                         country-currensy-abbv="USD" 
                         country-currensy="United States Dollar"
                         :amount="12"
@@ -85,10 +72,10 @@
             <div class="supported">
                 <p>Supported Currensy</p>
                 <div class="currencies">
-                    <img :src="dollar" alt="">
-                    <img :src="euro" alt="">
-                    <img :src="bitcoin" alt="">
-                    <img :src="eth" alt="">
+                    <img :src="IMAGES.Home.HeroSectionImages.dollarIcon" alt="Dollar Icon">
+                    <img :src="IMAGES.Home.HeroSectionImages.euroIcon" alt="Euro icon">
+                    <img :src="IMAGES.Home.HeroSectionImages.bitcoinIcon" alt="Bitcoin icon">
+                    <img :src="IMAGES.Home.HeroSectionImages.ethIcon" alt="Ethereum icon">
                 </div>
             </div>
         </article>
@@ -139,7 +126,6 @@
                 margin-bottom: 1.4rem;
 
                 strong {
-                    font-weight: 400;
                     color: variables.$green_60;
                 }
             }

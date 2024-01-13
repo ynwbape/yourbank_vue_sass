@@ -1,15 +1,15 @@
 <script setup> 
-    import quoteIcon from '../../../assets/img/Login/icons/quoteicon.svg'
+    import { IMAGES } from '../../../assets/scripts/images';
 
     const props = defineProps({
         testimonial: String,
         author: String,
-    })
+    });
 </script>
 
 <template>
     <div class="item">
-        <img :src="quoteIcon" alt="Green quote icon">
+        <img :src="IMAGES.Home.testimonialsImages.quoteIcon" alt="Green quote icon">
 
         <p>
             {{ testimonial }}

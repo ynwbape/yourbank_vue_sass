@@ -1,14 +1,7 @@
 <script setup>
     import Logo from '../Navbar/Logo/Logo.vue';
 
-    import mailIcon from '../../assets/img/icons/Footer/mailicon.svg'; 
-    import phoneIcon from '../../assets/img/icons/Footer/phoneicon.Svg';
-    import placeIcon from '../../assets/img/icons/Footer/placeicon.svg';
-    
-    // socials
-    import facebook from '../../assets/img/icons/Footer/facebookicon.svg';
-    import twitter from '../../assets/img/icons/Footer/twittericon.svg';
-    import linkedin from '../../assets/img/icons/Footer/linkedinicon.svg';
+    import { IMAGES } from '../../assets/scripts/images';
 
     const props = defineProps({
         mail: String,
@@ -37,15 +30,15 @@
 
             <div class="contacts">
                 <a :href="'mailto:' + (props.mail)" target="_blank">
-                    <img :src="mailIcon" alt="Mail icon">
+                    <img :src="IMAGES.Footer.mailIcon" alt="Mail icon">
                     {{ mail }}
                 </a>
                 <a :href="'tel:' + (props.phone)" target="_blank">
-                    <img :src="phoneIcon" alt="Phone icon">
+                    <img :src="IMAGES.Footer.phoneIcon" alt="Phone icon">
                     {{ showPhone }}
                 </a>
                 <a :href="address" target="_blank">
-                    <img :src="placeIcon" alt="Place icon Mark">
+                    <img :src="IMAGES.Footer.placeIcon" alt="Place icon Mark">
                     {{ location }}
                 </a>
             </div>
@@ -53,13 +46,13 @@
             <div class="copyrights">
                 <div class="socials">
                     <a href="https://fr-fr.facebook.com/" target="_blank">
-                        <img :src="facebook" alt="Facebook icon">
+                        <img :src="IMAGES.Footer.facebook" alt="Facebook icon">
                     </a>
                     <a href="https://twitter.com/" target="_blank">
-                        <img :src="twitter" alt="Twitter icon">
+                        <img :src="IMAGES.Footer.twitter" alt="Twitter icon">
                     </a>
                     <a href="https://fr.linkedin.com/in/pierre-nangi-362938221" target="_blank">
-                        <img :src="linkedin" alt="Linkedin icon">
+                        <img :src="IMAGES.Footer.linkedin" alt="Linkedin icon">
                     </a>
                 </div>
                 <p class="copyright">
