@@ -25,7 +25,7 @@
         position: relative;
         border-radius: 2rem;
         border: .1px solid variables.$grey_15;
-        background-image: url('../../assets/img/icons/Home/abstractdesign2.svg');
+        background-image: url('../../assets/img/Home/abstractdesign2.svg');
         background-repeat: no-repeat;
         background-blend-mode: normal, screen, normal;
 
