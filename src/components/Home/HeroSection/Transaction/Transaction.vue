@@ -63,10 +63,48 @@
         }
 
         .numbers {
+            display: flex;
+            align-items: flex-end;
             p {
                 font-size: 2.1rem;
                 font-weight: 500;
                 line-height: 150%;
+            }
+        }
+    }
+
+    // Laptop
+    @media screen and (max-width: 1440px) {
+        .transaction {
+            padding: 1.1rem 1.7rem;
+            border-radius: .8rem;
+            border: .069rem solid variables.$grey_15;
+
+            .name {
+                display: flex;
+                gap: .7rem;
+
+                img {
+                    padding: .7rem;
+                    border-radius: 3.6rem;
+                    background-color: variables.$green_60;
+                }
+
+                .texts {
+                    p {
+                        font-size: 1.2rem;
+
+                        &:last-child {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+
+            .numbers {
+                p {
+                    font-size: 1.7rem;
+                }
             }
         }
     }

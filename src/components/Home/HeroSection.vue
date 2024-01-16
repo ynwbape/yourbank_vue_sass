@@ -196,7 +196,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
-                    gap: 0.867px;
+                    gap: .087rem;
 
                     strong {
                         font-size: 1.7rem;
@@ -251,6 +251,8 @@
 
                 .exchanges {
                     display: flex;
+                    align-items: flex-start;
+                    align-self: stretch;
                 }
 
                 .exchangeBtn {
@@ -290,6 +292,133 @@
 
                     img {
                         height: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1440px) {
+        section {
+            width: 144rem;
+            padding: 6rem 20rem 6rem 8rem;
+            gap: 10rem;
+
+            .arrowsdesign {
+                right: 6.9rem;
+                height: 27.5rem;
+            }
+            .container1 {
+                gap: 4rem;
+
+                .no-check-bank {
+                    gap: .4rem;
+                    padding: .8rem 1.6rem .8rem .8rem;
+                    
+                    img {
+                        height: 2rem;
+                    }
+
+                    p {
+                        font-size: 1.8rem;
+                        font-weight: 300;
+                        line-height: 2.4rem;
+                    }
+                }
+
+                h2 {
+                    font-size: 3.8rem;
+                    margin-top: 1.6rem;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+
+                a {
+                    padding: 1.4rem 2.4rem;
+                    font-size: 1.4rem;
+                    margin-top: 4rem;
+                }
+
+            }
+            .container2 {
+                gap: 2.1rem;
+                width: 41.1rem;
+                padding: 2.8rem;
+                border-radius: .8rem;
+
+                .income {
+                    gap: .7rem;
+                    padding: 1.1rem 1.4rem;
+                    left: -4.8rem;
+                    top: -3.4rem;
+                    border-radius: .8rem;
+
+                    img {
+                        padding: .7rem;
+                        border-radius: 3.6rem;
+                    }
+
+                    .incomeTexts {
+                        gap: .069rem;
+
+                        strong {
+                            font-size: 1.4rem;
+                        }
+                        
+                        p {
+                            font-size: 1.1rem;
+                        }
+                    }
+
+                }
+
+                .transactionPart {
+                    height: 18.2rem;
+
+                    p {
+                        font-size: 1.4rem;
+                        margin-bottom: 1.4rem;
+                    }
+                }
+
+                .exchangePart {
+                    height: 24.3rem;
+                    gap: 2rem;
+                    
+                    p {
+                        font-size: 1.4rem;
+                    }
+
+                    .exchangeBtn {
+                        border-radius: 5.7rem;
+                        padding: 1.1rem 2.1rem;
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .supported {
+                    right: -4.1rem;
+                    bottom: -6.8rem;
+                    border-radius: 5.6rem;
+                    padding: .7rem .7rem .7rem 1.7rem;
+                    gap: .7rem;
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+
+                    .currencies {
+                        padding: .7rem;
+                        gap: .55rem;
+                        border-radius: 3.8rem;
+                        border: .087rem solid variables.$grey_15;
+
+                        img {
+                            height: 2.7rem;
+                        }
                     }
                 }
             }

@@ -74,7 +74,8 @@
                     color: variables.$absolute_white;
                     text-decoration: none;
                     font-size: 1.8rem;
-
+                    font-weight: 400;
+                    line-height: 150%;
                     &:active,
                     &:focus,
                     &:hover {
@@ -95,6 +96,43 @@
                     }
                 }
             }
+        }
+    }
+
+    // Laptop
+    @media screen and (max-width: 1440px)  {
+        header {
+            display: flex;
+            justify-content: center;
+
+            nav {
+                width: 128rem;
+                padding: 1.4rem 2.4rem;
+
+                menu {
+                    a {
+                        display: block;
+                        padding: 1rem 1.8rem;
+                        font-size: 1.4rem;
+                        
+                        
+                    }
+                }
+
+                .login {
+                    gap: 2rem;
+    
+                    a {
+                        font-size: 1.4rem;
+                    }
+    
+                    a:last-child {
+                        padding: 1.2rem 2.4rem;
+                        
+                    }
+                }
+            }
+
         }
     }
 </style>

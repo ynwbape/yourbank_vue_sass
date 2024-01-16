@@ -15,7 +15,7 @@
                 <img :src="flag" alt="India's Flag">
                 <p>{{ countryCurrensyAbbv }}</p>
             </div>
-            <p>{{ countryCurrensy }}</p>
+            <p class="whiteGrey">{{ countryCurrensy }}</p>
         </div>
         <div class="amount">
             <p>{{ amount }}</p>
@@ -48,7 +48,6 @@
                     width: 3.5rem;
                     height: 3.5rem;
                     border-radius: 3.5rem;
-                    border-radius: 3.5rem;
                     background: variables.$lightgray 50% / cover no-repeat;
                 }
                 
@@ -62,7 +61,8 @@
                 }
             }
             
-            p {
+            p.whiteGrey {
+                color: variables.$white_90;
                 font-size: 1.4rem;
                 font-style: normal;
                 font-weight: 300;
@@ -89,4 +89,43 @@
             }
         }
     }
+
+    // Laptop 
+    @media screen and (max-width: 1440px) {
+        .exchangeCurrensy {
+            .country {
+                padding: 1.4rem;
+                gap: .7rem;
+                flex: 1 0 0;  
+                border: .069rem solid variables.$grey_15;
+                
+                div {
+                    gap: .7rem;
+                    
+                    img {
+                        width: 2.7rem;
+                        height: 2.7rem;
+                        border-radius: 2.7rem;
+                    }
+                    
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+                
+                p.whiteGrey {
+                    font-size: 1.1rem;
+                }
+            }
+            
+            .amount {
+                padding: 2.1rem 1.4rem;
+                gap: .7rem;
+                
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    } 
 </style>
