@@ -2,16 +2,16 @@
     import SectionTitles from '../Standalone/SectionTitles.vue';
     import FeatureCard from './Features/FeatureCard.vue';
     
-    import { featuresResume } from '../../assets/scripts/texts'; 
+    import { TEXTS } from '../../assets/scripts/texts'; 
 
     import { featureCardArray } from '../../assets/scripts/arrays';
 </script>
 <template>
     <div class="featuresContainer">
         <SectionTitles 
-            title="Our"
-            green-title="Features"
-            :title-description="featuresResume"
+            :title="TEXTS.Home.Features.title"
+            :green-title="TEXTS.Home.Features.greenTitle"
+            :title-description="TEXTS.Home.Features.paragraph"
         />
 
         <div class="features">

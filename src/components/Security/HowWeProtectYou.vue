@@ -2,6 +2,8 @@
     import Card from '../Standalone/TitleCardsSection/Card.vue';
     import SectionTitles from '../Standalone/SectionTitles.vue';
     
+    import { TEXTS } from '../../assets/scripts/texts';
+    
     const props = defineProps({
         title: String,
         greenBoldTitle: String,
@@ -30,15 +32,14 @@
         cardDescription4: String,
     });
 
-    const pyDescription = "At YourBank, we prioritize the security and confidentiality of your financial information. Our state-of-the-art encryption technology and stringent data protection measures ensure your assets and transactions are safeguarded at all times"; 
 </script>
 
 <template>
     <section id="HWPYID" class="hwpyContainer">
         <SectionTitles 
-            title="How We"
-            green-title="Protect You"
-            :title-description="pyDescription"
+            :title="TEXTS.Security.HowWeProtectYou.title"
+            :green-title="TEXTS.Security.HowWeProtectYou.greenTitle"
+            :title-description="TEXTS.Security.HowWeProtectYou.pyDescription"
         />
 
         <div class="hwpyCards">

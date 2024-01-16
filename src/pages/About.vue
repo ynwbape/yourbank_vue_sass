@@ -6,24 +6,19 @@
     // Image background for TitleImageSection component
     import { IMAGES } from '../assets/scripts/images';
     
-     import {
-        abeResume,
-        abeTitle,
-        abeGreenBoldTtitle,
-        abeImgDesc
-     } from '../assets/scripts/texts';
+     import { TEXTS } from '../assets/scripts/texts';
 </script>
 
 <template>
     <main>
         <!-- <Toppriority /> -->
         <TitleImageSection 
-            :opt-sentence="abeOptSentence"
-            :title="abeTitle"
-            :green-bold-title="abeGreenBoldTtitle"
-            :description="abeResume"
+            :opt-sentence="TEXTS.About.BankExcellence.abeOptSentence"
+            :title="TEXTS.About.BankExcellence.abeTitle"
+            :green-bold-title="TEXTS.About.BankExcellence.abeGreenBoldTtitle"
+            :description="TEXTS.About.BankExcellence.abeResume"
             :image="IMAGES.About.aboutImages.abeImg"
-            :image-description="abeImgDesc"
+            :image-description="TEXTS.About.BankExcellence.abeImgDesc"
         />
 
         <MissionVision />

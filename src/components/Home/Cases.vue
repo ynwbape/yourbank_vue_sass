@@ -4,11 +4,7 @@
 
     import CaseItem from "./Cases/CaseItem.vue";
     
-    import {
-        casesResume,
-        individualResume,
-        businessResume
-    } from '../../assets/scripts/texts';
+    import { TEXTS} from '../../assets/scripts/texts';
 
     import { 
         caseContentStatArray, 
@@ -18,8 +14,8 @@
 <template>
     <div class="casesContainer">
         <SectionTitles
-            green-title="Use Cases"
-            :title-description="casesResume"
+            :green-title="TEXTS.Home.Cases.greenTitle"
+            :title-description="TEXTS.Home.Cases.casesResume"
         />
 
         <div class="casesContent">
@@ -48,7 +44,7 @@
                 </div>
                 <CaseContent
                     ccon-title="For Individual"
-                    :ccon-resume="individualResume"
+                    :ccon-resume="TEXTS.Home.Cases.individualResume"
                     :ccon-stat="caseContentStatArray.individual[0].number"
                     :ccon-stat-name="caseContentStatArray.individual[0].statName"
                     :ccon-stat2="caseContentStatArray.individual[1].number"
@@ -61,7 +57,7 @@
             <div class="indiBusiContainer">
                 <CaseContent
                     ccon-title="For Business"
-                    :ccon-resume="businessResume"
+                    :ccon-resume="TEXTS.Home.Cases.businessResume"
                     :ccon-stat="caseContentStatArray.business[0].number"
                     :ccon-stat-name="caseContentStatArray.business[0].statName"
                     :ccon-stat2="caseContentStatArray.business[1].number"

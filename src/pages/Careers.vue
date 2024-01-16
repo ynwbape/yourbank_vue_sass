@@ -21,13 +21,7 @@
     import { IMAGES } from '../assets/scripts/images';
 
     // YourBank Careers headings section
-    import {
-        ybcTitle,
-        ybcGreenBoldTtitle,
-        ybcEndTitle,
-        ybcDescription,
-        ybcImgDesc
-    } from '../assets/scripts/texts';
+    import { TEXTS } from '../assets/scripts/texts';
     
     // arrays 
     import { 
@@ -43,12 +37,12 @@
     <main> 
         <!-- Welcome to YourBank Section -->
         <TitleImageSection 
-            :title="ybcTitle"
-            :green-bold-title="ybcGreenBoldTtitle"
-            :end-title="ybcEndTitle"
-            :description="ybcDescription"
+            :title="TEXTS.Careers.YourBankCareer.ybcTitle"
+            :green-bold-title="TEXTS.Careers.YourBankCareer.ybcGreenBoldTtitle"
+            :end-title="TEXTS.Careers.YourBankCareer.ybcEndTitle"
+            :description="TEXTS.Careers.YourBankCareer.ybcDescription"
             :image="IMAGES.Careers.careersImages.ybcImg"
-            :image-description="ybcImgDesc"
+            :image-description="TEXTS.Careers.YourBankCareer.ybcImgDesc"
         />
 
         <!-- Our Values Section -->

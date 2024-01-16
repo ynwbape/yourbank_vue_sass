@@ -1,6 +1,8 @@
 <script setup>
     import Question from './FAQ/Question.vue'
 
+    import { TEXTS } from '../../assets/scripts/texts';
+    
     const props = defineProps({
         faq_id: Number,
         faq_question: String,
@@ -24,12 +26,12 @@
     <section class="faqContainer">
         <div class="faqTitles">
             <h2>
-                <strong>Frequently</strong>
-                Asked Quesions
+                <strong>{{ TEXTS.Standalone.FAQ.greenTitle }}</strong>
+                {{ TEXTS.Standalone.FAQ.title }}
             </h2>
 
             <p>
-                Still you have any questions? Contact our Team via support@yourbank.com
+                {{TEXTS.Standalone.FAQ.paragraph}}
             </p>
         </div>
 

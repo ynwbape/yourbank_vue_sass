@@ -1,13 +1,19 @@
+<script setup>
+    import { TEXTS } from '../../assets/scripts/texts';
+
+</script>
 <template>
     <section class="CTA">
         <div class="ctaTitles">
             <h2>
-                Start your financial journey with
-                <strong>YourBank Today!</strong>
+                {{ TEXTS.Standalone.CTA.title }}
+                <strong>
+                    {{ TEXTS.Standalone.CTA.greenTitle }}
+                </strong>
             </h2>
 
             <p>
-                Ready to take control of your finances? Join YourBank now, and let us help you achieve your financial goals with our tailored <br> solutions and exceptional customer service
+                {{ TEXTS.Standalone.CTA.paragraph }}
             </p>
         </div>
 
@@ -18,6 +24,7 @@
 <style lang="scss" scoped>
     @use '../../assets/stylesheets/variables';
     .CTA {
+        width: 159.6rem;
         padding: 8rem;
         display: flex;
         align-items: center;
@@ -44,15 +51,12 @@
             flex: 1 0 0;
 
             h2 {
-                font-size: 4.8rem;
-                font-weight: 500;
+                font-size: 4rem;
+                font-weight: 400;
                 line-height: 150%;
                 align-self: stretch;
-                margin-top: 2rem;
-                margin-bottom: 1.4rem;
     
                 strong {
-                    font-weight: 400;
                     color: variables.$green_60;
                 }
             }

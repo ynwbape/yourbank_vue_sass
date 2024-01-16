@@ -2,7 +2,7 @@
     import SectionTitles from '../Standalone/SectionTitles.vue';
     import ValueCard from './Values/ValueCard.vue';
 
-    import { valueTitleDescription } from '../../assets/scripts/texts';
+    import { TEXTS } from '../../assets/scripts/texts';
 
     import { valuesDescriptionArray } from '../../assets/scripts/arrays';
     
@@ -11,9 +11,9 @@
 <template>
     <div class="valuesContainer">
         <SectionTitles
-            title="Our"
-            green-title="Values"
-            :title-description="valueTitleDescription"
+            :title="TEXTS.Careers.Values.title"
+            :green-title="TEXTS.Careers.Values.greenTitle"
+            :title-description="TEXTS.Careers.Values.valueTitleDescription"
         />
 
         <div class="valueCardsContainer">

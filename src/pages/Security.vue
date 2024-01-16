@@ -11,12 +11,7 @@
     // Image background for TitleImageSection component
     import { IMAGES } from '../assets/scripts/images';
     
-    import {
-        tisTitle, 
-        tisGreenBoldTtitle, 
-        tisDescription, 
-        tisImgDescription
-    } from '../assets/scripts/texts';
+    import { TEXTS } from '../assets/scripts/texts';
 
     // arrays of questions for FAQ Component
     import { faqArray, cardArray } from '../assets/scripts/arrays';
@@ -26,11 +21,11 @@ t<template>
     <main>
         <!-- <Toppriority /> -->
         <TitleImageSection 
-            :title="tisTitle"
-            :green-bold-title="tisGreenBoldTtitle"
-            :description="tisDescription"
+            :title="TEXTS.Security.TopPriority.tisTitle"
+            :green-bold-title="TEXTS.Security.TopPriority.tisGreenBoldTtitle"
+            :description="TEXTS.Security.TopPriority.tisDescription"
             :image="IMAGES.Security.SecurityImages.tisTopPriorityImage"
-            :image-description="tisImgDescription"
+            :image-description="TEXTS.Security.TopPriority.tisImgDescription"
         />
 
         <!-- How we protect you section -->

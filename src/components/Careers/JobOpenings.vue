@@ -2,12 +2,7 @@
     import SectionTitles from '../Standalone/SectionTitles.vue';
     import JobsCard from './JobOpenings/JobsCard.vue';
 
-    import {
-        joDescription,
-        rmResume,
-        raResume,
-        itssResume
-    } from '../../assets/scripts/texts';
+    import { TEXTS } from '../../assets/scripts/texts';
     
     import {
         relationManager,
@@ -22,13 +17,13 @@
     <div class="joContainer">
         <SectionTitles 
             green-title="Job Openings"
-            :title-description="joDescription"
+            :title-description="TEXTS.Careers.JobOpenings.joDescription"
         />
         
         <div class="joCardContainer">
             <JobsCard 
                 job-name="Relationship Manager"
-                :job-resume="rmResume"
+                :job-resume="TEXTS.Careers.JobOpenings.rmResume"
                 job-tag-type="Location"
                 job-tag-value="India"
                 job-tag-type2="Department"
@@ -37,7 +32,7 @@
             />
             <JobsCard 
                 job-name="Risk Analyst"
-                :job-resume="raResume"
+                :job-resume="TEXTS.Careers.JobOpenings.raResume"
                 job-tag-type="Location"
                 job-tag-value="India"
                 job-tag-type2="Department"
@@ -49,7 +44,7 @@
         <div class="joCardContainer">
             <JobsCard 
                 job-name="IT Security Specialist"
-                :job-resume="itssResume"
+                :job-resume="TEXTS.Careers.JobOpenings.itssResume"
                 job-tag-type="Location"
                 job-tag-value="India"
                 job-tag-type2="Department"

@@ -2,10 +2,7 @@
     import SectionTitles from '../Standalone/SectionTitles.vue';
     import PressCard from '../About/PressReleases/PressCard.vue';
 
-    import {
-        prGreenTitle,
-        prTitleResume
-    } from '../../assets/scripts/texts';
+    import { TEXTS} from '../../assets/scripts/texts';
 
 
     import { pressCardArray } from '../../assets/scripts/arrays';
@@ -16,8 +13,8 @@
 <template>
     <div class="prContainer">
         <SectionTitles 
-            :green-title="prGreenTitle"
-            :title-description="prTitleResume"
+            :green-title="TEXTS.About.PressReleases.prGreenTitle"
+            :title-description="TEXTS.About.PressReleases.prTitleResume"
         />   
         
         <div class="prCardSubContainer">

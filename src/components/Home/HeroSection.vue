@@ -5,6 +5,9 @@
 
     // Object of images 
     import { IMAGES } from '../../assets/scripts/images';
+
+    // Objects of texts
+    import { TEXTS } from '../../assets/scripts/texts';
 </script>
 
 <template>
@@ -15,17 +18,15 @@
             <div class="no-check-bank">
                 <img :src="IMAGES.Home.HeroSectionImages.checkIcon" alt="Green Check">
                 <p>
-                    No LLC Required, No Credit Check
+                    {{ TEXTS.Home.HeroSection.noCheckBank }}
                 </p>
             </div>
             <h2>
-                Welcome to YourBank <br>
-                Empowering Your 
-                <strong>Financial <br> Journey</strong>
+                {{ TEXTS.Home.HeroSection.title }}
+                <strong>{{ TEXTS.Home.HeroSection.greenTitle }}</strong>
             </h2>
             <p>
-                At YourBank, our mission is to provide comprehensive banking solutions that empower <br>
-                individuals and businesses to achieve their financial goals. We are committed to delivering <br> personalized and innovative services that prioritize our customers' needs.
+                {{ TEXTS.Home.HeroSection.paragraph }}
             </p>
 
             <a href="#openaccount" target="_blank">Open Account</a>
@@ -33,17 +34,20 @@
         <article class="container2">
             <div class="income">
                 <img :src="IMAGES.Home.HeroSectionImages.plusIcon" alt="Plus icon">
-                <p>
-                    <strong>+ $5000,00</strong> <br>
-                    Monthly Income
-                </p>
+                <div class="incomeTexts">
+                    <strong>
+                        {{ TEXTS.Home.HeroSection.incomeValue }}
+                    </strong>
+
+                    <p> Monthly Income </p>
+                </div>
             </div>
 
             <div class="transactionPart">
                 <p>Your Transactions</p>
                 <div class="transactions">
                     <Transaction transac-name="Joel Kenley" currency="$" :money=68 />
-                    <Transaction transac-name="Mark Smith" currency="$" :money=68 />
+                    <Transaction transac-name="Mark Smith" currency="$" :money=180 />
                 </div>
             </div>
 
@@ -188,7 +192,12 @@
                     background-color: variables.$green_60;
                 }
 
-                p {
+                .incomeTexts {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0.867px;
+
                     strong {
                         font-size: 1.7rem;
                         color: variables.$absolute_white;
@@ -196,14 +205,17 @@
                         font-weight: 400;
                         line-height: 150%;
                     }
-
-                    text-align: center;
-                    align-self: stretch;
-                    color: variables.$white_90;
-                    font-size: 1.3rem;
-                    font-weight: 300;
-                    line-height: 150%;
+                    
+                    p {
+                        text-align: center;
+                        align-self: stretch;
+                        color: variables.$white_90;
+                        font-size: 1.3rem;
+                        font-weight: 300;
+                        line-height: 150%;
+                    }
                 }
+
             }
 
             .transactionPart {

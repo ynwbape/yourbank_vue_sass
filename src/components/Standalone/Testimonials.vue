@@ -5,7 +5,7 @@
     import { IMAGES } from '../../assets/scripts/images';
     
     
-    import { testimonialmResume } from '../../assets/scripts/texts';
+    import { TEXTS } from '../../assets/scripts/texts';
     import { testimonials } from '../../assets/scripts/arrays';
     
 </script>
@@ -15,7 +15,7 @@
         <TitleIndividualBusiness 
             title="Our"
             green-title="Testimonials"
-            :title-resume="testimonialmResume"
+            :title-resume="TEXTS.Standalone.titleIndividualBusiness.paragraph"
         />
         <div class="testimonialCarousel">
             <button id="slideLeft" class="leftArrow">

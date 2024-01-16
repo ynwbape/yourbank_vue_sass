@@ -2,7 +2,7 @@
     import TitleIndividualBusiness from '../Standalone/titleIndividualBusiness.vue';
     import ProductCard from './Products/ProductCard.vue';
     
-    import { productsResume } from '../../assets/scripts/texts'
+    import { TEXTS } from '../../assets/scripts/texts'
     import { products } from '../../assets/scripts/arrays';
 
 
@@ -14,7 +14,7 @@
         <TitleIndividualBusiness 
             title="Our"
             green-title="Products"
-            :title-resume="productsResume"
+            :title-resume="TEXTS.Home.Products.paragraph"
         />
 
         <div class="productCards">

@@ -3,12 +3,7 @@
 
     import { IMAGES } from '../../assets/scripts/images';
     
-    import {
-        mvGreenTitle,
-        mvTitleResume,
-        missionResume,
-        visionResume
-    } from '../../assets/scripts/texts';
+    import { TEXTS } from '../../assets/scripts/texts';
 
 
 </script>
@@ -16,8 +11,8 @@
 <template>
     <div class="mvContainer">
         <SectionTitles 
-            :green-title="mvGreenTitle"
-            :title-description="mvTitleResume"
+            :green-title="TEXTS.About.MissionVision.mvGreenTitle"
+            :title-description="TEXTS.About.MissionVision.mvTitleResume"
         />   
         
         <div class="mvSubContainer">
@@ -32,7 +27,7 @@
                     <h4>Mission</h4>
 
                     <p>
-                        {{ missionResume }}
+                        {{ TEXTS.About.MissionVision.Mission.missionResume }}
                     </p>
                 </div>
             </div>
@@ -41,7 +36,7 @@
                     <h4>Vision</h4>
 
                     <p>
-                        {{ visionResume }}
+                        {{ TEXTS.About.MissionVision.Vision.visionResume }}
                     </p>
                 </div>
 

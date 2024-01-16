@@ -2,7 +2,7 @@
     import SectionTitles from '../Standalone/SectionTitles.vue';
     import Card from '../Standalone/TitleCardsSection/Card.vue';
     
-    import { obResume } from '../../assets/scripts/texts';
+    import { TEXTS } from '../../assets/scripts/texts';
     
     const props = defineProps({
         title: String,
@@ -40,7 +40,7 @@
         <SectionTitles 
             title="Our"
             green-title="Benefits"
-            :title-description="obResume"
+            :title-description="TEXTS.Careers.Benefits.obResume"
         />
 
         <div class="obCards">
