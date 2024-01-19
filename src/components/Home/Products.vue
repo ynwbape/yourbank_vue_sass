@@ -1,12 +1,12 @@
 <script setup>
-    import TitleIndividualBusiness from '../Standalone/titleIndividualBusiness.vue';
+    import TitleIndividualBusiness from '../Standalone/TitleIndividualBusiness.vue';
     import ProductCard from './Products/ProductCard.vue';
     
     import { TEXTS } from '../../assets/scripts/texts'
     import { products } from '../../assets/scripts/arrays';
 
-
-    
+    // Products StyleSheet
+    import '../../assets/stylesheets/Home/Products.scss';
 </script>
 
 <template>
@@ -29,22 +29,3 @@
         </div>
     </div>
 </template>
-
-<style lang="scss" scoped>
-    @use '../../assets/stylesheets/variables';
-
-    .productsContainer {
-        display: flex;
-        width: 159.6rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10rem;
-
-        .productCards {
-            display: flex;
-            align-items: flex-start;
-            gap: 5rem;
-            align-self: stretch;
-        }
-    }
-</style>

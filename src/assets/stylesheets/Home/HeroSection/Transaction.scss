@@ -1,0 +1,98 @@
+@use '../../variables';
+
+.transaction {
+    display: flex;
+    padding: 1.4rem 2.1rem;
+    justify-content: space-between;
+    align-self: stretch;
+    border-radius: 1rem;
+    border: .087rem solid variables.$grey_15;
+    background-color: variables.$grey_11;
+
+    .name {
+        display: flex;
+        align-items: center;
+        gap: .9rem;
+
+        .nameIconContainer {
+            display: flex;
+            padding: .9rem;
+            border-radius: 4.6rem;
+            background-color: variables.$green_60;
+            
+            img {
+                height: 2.1rem;
+            }
+        }
+
+
+        .texts {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            p {
+                font-size: 1.6rem;
+                font-weight: 300;
+                line-height: 150%;
+                margin: unset;
+
+                &:last-child {
+                    font-size: 1.7rem;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+            }
+
+            
+        }
+    }
+
+    .numbers {
+        p {
+            font-size: 2.1rem;
+            font-weight: 500;
+            line-height: 150%;
+        }
+    }
+}
+
+// Laptop
+@media screen and (max-width: 1440px) {
+    .transaction {
+        padding: 1.1rem 1.7rem;
+        border-radius: .8rem;
+        border: .069rem solid variables.$grey_15;
+
+        .name {
+            display: flex;
+            gap: .7rem;
+
+            .nameIconContainer {
+                display: flex;
+                padding: .7rem;
+                border-radius: 3.6rem;
+                
+                img {
+                    height: 1.7rem;
+                }
+            }
+
+            .texts {
+                p {
+                    font-size: 1.2rem;
+
+                    &:last-child {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+
+        .numbers {
+            p {
+                font-size: 1.7rem;
+            }
+        }
+    }
+}

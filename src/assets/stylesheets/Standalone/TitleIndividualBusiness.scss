@@ -1,0 +1,109 @@
+@use '../variables';
+
+.tibHeader {
+    display: flex;
+    align-items: flex-end;
+    gap: 30rem;
+    align-self: stretch;
+    .tibTitles {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.4rem;
+        flex: 1 0 0;
+
+        h2 {
+            font-size: 4.8rem;
+            font-weight: 500;
+            line-height: 150%;
+            align-self: stretch;
+
+            strong {
+                font-weight: 500;
+                color: variables.$green_60;
+            }
+        }
+
+        p {
+            color: variables.$grey_70;
+            font-size: 1.8rem;
+            font-weight: 300;
+            line-height: 150%;
+            align-self: stretch;
+        }
+    }
+
+    .tibTabButtons {
+        display: flex;
+        padding: 1.4rem;
+        align-items: flex-start;
+        border-radius: 8.2rem;
+        border: .1rem solid variables.$grey_15;
+        background-color: variables.$grey_11;
+
+        button {
+            // Button Shape
+            display: flex;
+            padding: 1.4rem 2.4rem;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 14rem;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 150%;
+
+            &.active {
+                background-color: variables.$green_60;
+                // Text
+                color: variables.$grey_11;
+                
+            }
+
+            &.active:hover {
+                background-color: variables.$green_65;
+            }
+
+            &.unfocused {
+                background-color: transparent;
+
+                color: variables.$absolute_white;
+            }
+
+            &.unfocused:hover {
+                background-color: variables.$grey_20;
+            }
+        }
+    }
+}
+
+// Laptop
+@media screen and (max-width: 1440px) {
+    .tibHeader {
+        gap: 15rem;
+
+        .tibTitles {
+            gap: 1rem;
+                
+            h2 {
+                font-size: 3.8rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+        }
+
+        .tibTabButtons {
+            padding: 1.2rem;
+
+            button {
+                padding: 1rem 1.8rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
