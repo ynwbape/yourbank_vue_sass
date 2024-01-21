@@ -1,0 +1,45 @@
+@use '../../variables';
+
+.question {
+    display: flex;
+    padding: 5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 1.4rem;
+    border: .1rem solid variables.$grey_15;
+
+    h4 {
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        align-self: stretch;
+    }
+
+    p {
+        color: variables.$grey_70;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 150%; /* 27px */
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .question {
+        padding: 4rem;
+        gap: 2.4rem;
+        border-radius: 1rem;
+
+        h4 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+    }
+}

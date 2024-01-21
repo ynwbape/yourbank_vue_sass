@@ -2,13 +2,15 @@
     const props = defineProps({
         type: String,
         value: String,
-    })
+    });
 </script>
+
 <template>
     <p class="tags">
         {{ type }}: {{ value }}
     </p>
 </template>
+
 <style lang="scss" scoped>
     @use '../../assets/stylesheets/variables';
 

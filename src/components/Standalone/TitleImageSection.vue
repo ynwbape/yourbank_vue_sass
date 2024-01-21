@@ -12,7 +12,7 @@
         description: String,
         image: String,
         imageDescription: String
-    })
+    });
 </script>
 
 <template>

@@ -1,0 +1,63 @@
+@use '../../variables';
+
+.featureCard {
+    display: flex;
+    padding: 5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 1.2rem;
+    border: .1rem solid variables.$grey_15;
+    background: variables.$grey_11;
+
+    .featureName {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        align-self: stretch;
+
+        h5 {
+            flex: 1 0 0;
+            font-size: 2.2rem;
+            font-weight: 400;
+            line-height: 150%;
+        }
+
+        img {
+            height: 3.4rem;
+        }
+    }
+
+    p {
+        color: variables.$grey_70;
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 150%;
+        letter-spacing: -.011rem;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .featureCard {
+        padding: 4rem;
+        gap: 2.4rem;
+        border-radius: 1rem;
+
+        .featureName {
+
+            h5 {
+                font-size: 1.8rem;
+            }
+
+            img {
+                height: 2.4rem;
+            }
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+    }
+}

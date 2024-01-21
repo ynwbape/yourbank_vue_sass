@@ -4,6 +4,7 @@
     // CTA StyleSheet 
     import '../../assets/stylesheets/Standalone/CTA.scss';
 </script>
+
 <template>
     <section class="CTA">
         <div class="ctaTitles">

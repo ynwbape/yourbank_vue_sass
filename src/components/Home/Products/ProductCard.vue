@@ -7,8 +7,9 @@
         imgAlt: String,
         productName: String,
         productResume: String,
-    })
+    });
 </script>
+
 <template>
     <div class="productCard">
         <div class="pcIconContainer">

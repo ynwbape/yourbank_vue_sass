@@ -10,6 +10,7 @@
     });
 
 </script>
+
 <template>
     <div class="exchangeCurrensy">
         <div class="country">

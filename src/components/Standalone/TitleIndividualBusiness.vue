@@ -7,7 +7,7 @@
         title: String,
         greenTitle: String,
         titleResume: String,
-    })
+    });
 </script>
 
 <template>
