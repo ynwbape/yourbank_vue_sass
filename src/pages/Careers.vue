@@ -1,4 +1,7 @@
 <script setup>    
+    // Welcome to yourbank careers Section
+    import WelcomeCareers from '../components/Careers/WelcomeCareers.vue';
+
     //Start Your Career Component 
     import CTA from '../components/Standalone/CTA.vue';
     
@@ -14,9 +17,6 @@
     // Frequently Asked Quesiton component
     import FAQ from '../components/Standalone/FAQ.vue';
     
-    // Title + image component
-    import TitleImageSection from '../components/Standalone/TitleImageSection.vue';
-    
     // Image background for TitleImageSection component
     import { IMAGES } from '../assets/scripts/images';
 
@@ -28,15 +28,12 @@
         faqArray, 
         benefitsArray 
     } from '../assets/scripts/arrays';
-    
-    
-    
 </script>
 
 <template>
     <main> 
         <!-- Welcome to YourBank Section -->
-        <TitleImageSection 
+        <WelcomeCareers
             :title="TEXTS.Careers.YourBankCareer.ybcTitle"
             :green-bold-title="TEXTS.Careers.YourBankCareer.ybcGreenBoldTtitle"
             :end-title="TEXTS.Careers.YourBankCareer.ybcEndTitle"

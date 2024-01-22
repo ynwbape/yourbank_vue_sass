@@ -1,6 +1,6 @@
 @use '../variables';
 
-section {
+.hsContainer {
     display: flex;
     gap: 12rem;
     align-items: flex-start;
@@ -10,7 +10,8 @@ section {
         position: absolute;
         right: 11rem;
     }
-    .container1 {
+
+    .fjContainer {
         width: 82.6rem;
 
         .no-check-bank {
@@ -73,7 +74,8 @@ section {
         }
 
     }
-    .container2 {
+
+    .teContainer {
         display: flex;
         flex-direction: column;
         gap: 2.6rem;
@@ -211,7 +213,7 @@ section {
 
 // Laptop
 @media screen and (max-width: 1440px) {
-    section {
+    .hsContainer {
         width: 144rem;
         padding: 6rem 20rem 6rem 8rem;
         gap: 10rem;
@@ -220,7 +222,8 @@ section {
             right: 6.9rem;
             height: 27.5rem;
         }
-        .container1 {
+
+        .fjContainer {
             gap: 4rem;
 
             .no-check-bank {
@@ -255,7 +258,7 @@ section {
             }
 
         }
-        .container2 {
+        .teContainer {
             gap: 2.1rem;
             width: 41.1rem;
             padding: 2.8rem;

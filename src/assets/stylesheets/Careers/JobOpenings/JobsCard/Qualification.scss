@@ -1,0 +1,26 @@
+@use '../../../variables';
+
+.qualification {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+
+    p {
+        color: variables.$grey_70;
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 150%; /* 27px */
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    .qualification {
+        gap: .8rem;
+        
+        p {
+            font-size: 1.6rem;
+        }
+    }
+}

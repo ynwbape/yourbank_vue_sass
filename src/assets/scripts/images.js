@@ -70,6 +70,7 @@ import prCardImg4 from "../img/About/PressCard/prcard4.png";
 
 // Standalone/TitleImageSection.vue 
 import svgBG from '../img/Security/svgBG.png'
+import tagsBriefcase from '../img/Careers/icons/briefcase.fill.svg';
 
 // Sign Up & Login vues
 import signUpLoginDesign from '../img/Login/Login_Abstract_Design.png';
@@ -190,5 +191,8 @@ export let IMAGES = {
         TitleImageSection: {
             svgBG,
         },
+        Tags: {
+            tagsBriefcase,
+        }
     }
 }

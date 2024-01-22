@@ -1,6 +1,6 @@
 <script setup>
     // Card StyleSheet
-    import '../../../assets/stylesheets/Standalone/TitleCardsSection/Card.scss';
+    import '../../../assets/stylesheets/Careers/OurBenefits/Card.scss';
 
     const props = defineProps({
         img: String,
@@ -10,11 +10,11 @@
 </script>
 
 <template>
-    <div class="card">
-        <div class="cardTitle">
-            <div class="cardIconContainer">
-                <div class="cardIcon">
-                    <img :src="props.img" alt="">
+    <div class="obCard">
+        <div class="obCardTitle">
+            <div class="obCardIconContainer">
+                <div class="obCardIcon">
+                    <img :src="props.img" alt="Green Icons">
                 </div>
             </div>
             <h4>{{ service }}</h4>

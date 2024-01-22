@@ -10,7 +10,8 @@
         itSecuritySpecialist
     } from '../../assets/scripts/arrays';
 
-      
+    // JobOpenings StyleSheet
+    import '../../assets/stylesheets/Careers/JobOpenings.scss';
 </script>
 
 <template>
@@ -54,22 +55,3 @@
         </div>
     </div>
 </template>
-
-<style lang="scss" scoped>
-    @use '../../assets/stylesheets/variables';
-
-    .joContainer {
-        display: flex;
-        width: 159.6rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8rem;
-        
-        .joCardContainer {
-            display: flex;
-            align-items: flex-start;
-            gap: 3rem;
-            align-self: stretch;
-        }
-    }
-</style>

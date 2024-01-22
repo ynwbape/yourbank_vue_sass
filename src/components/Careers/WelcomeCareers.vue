@@ -2,7 +2,7 @@
     import { IMAGES } from '../../assets/scripts/images';
 
     // TitleImageSection StyleSheet
-    import '../../assets/stylesheets/Standalone/TitleImageSection.scss';
+    import '../../assets/stylesheets/Careers/WelcomeCareers.scss';
 
     const props = defineProps({
         // Optionnal sentence for this component 
@@ -19,10 +19,10 @@
 </script>
 
 <template>
-    <section class="tisContainer">
-        <img class="tisImgBg" :src="IMAGES.Standalone.TitleImageSection.svgBG" alt="Abstract Design Background of green dots">
+    <section class="wybcContainer">
+        <img class="wybcImgBg" :src="IMAGES.Standalone.TitleImageSection.svgBG" alt="Abstract Design Background of green dots">
         
-        <div class="tisTitles">
+        <div class="wybcTitles">
             <p>{{ optSentence }}</p>
             
             <h2>
@@ -36,6 +36,6 @@
             </p>
         </div>
         
-        <img class="tisYBCImg" :src="props.image" :alt="props.imageDescription">
+        <img class="wybcYBCImg" :src="props.image" :alt="props.imageDescription">
     </section>
 </template>

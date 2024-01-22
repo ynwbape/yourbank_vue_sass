@@ -14,10 +14,10 @@
 </script>
 
 <template>
-    <section>
+    <section class="hsContainer">
         <img :src="IMAGES.Home.HeroSectionImages.arrows" alt="Green arrows" class="arrowsdesign">
 
-        <article class="container1">
+        <article class="fjContainer">
             <div class="no-check-bank">
                 <img :src="IMAGES.Home.HeroSectionImages.checkIcon" alt="Green Check">
                 <p>
@@ -34,7 +34,7 @@
 
             <a href="#openaccount" target="_blank">Open Account</a>
         </article>
-        <article class="container2">
+        <article class="teContainer">
             <div class="income">
                 <img :src="IMAGES.Home.HeroSectionImages.plusIcon" alt="Plus icon">
                 <div class="incomeTexts">
