@@ -1,6 +1,6 @@
 <script setup>
-    // Title + image component
-    // import TitleImageSection from '../components/Standalone/TitleImageSection.vue';
+    // Top priority section
+    import TopPriority from '../components/Security/TopPriority.vue';
     
     // How we protect you component
     import HowWeProtectYou from '../components/Security/HowWeProtectYou.vue';
@@ -19,14 +19,14 @@
 
 t<template>
     <main>
-        <!-- <Toppriority /> -->
-        <!-- <TitleImageSection 
+        <!-- Top priority section -->
+        <TopPriority 
             :title="TEXTS.Security.TopPriority.tisTitle"
             :green-bold-title="TEXTS.Security.TopPriority.tisGreenBoldTtitle"
             :description="TEXTS.Security.TopPriority.tisDescription"
             :image="IMAGES.Security.SecurityImages.tisTopPriorityImage"
             :image-description="TEXTS.Security.TopPriority.tisImgDescription"
-        /> -->
+        />
 
         <!-- How we protect you section -->
         <HowWeProtectYou 
@@ -72,7 +72,3 @@ t<template>
         />
     </main>
 </template>
-
-<style lang="scss" scoped>
-    @use '../assets/stylesheets/variables';
-</style>

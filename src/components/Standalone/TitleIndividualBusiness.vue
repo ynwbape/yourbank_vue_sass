@@ -2,7 +2,6 @@
     // TitleIndividualBusiness StyleSheet
     import '../../assets/stylesheets/Standalone/TitleIndividualBusiness.scss';
 
-    
     const props = defineProps({
         title: String,
         greenTitle: String,

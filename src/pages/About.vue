@@ -26,7 +26,3 @@
         <PressReleases />
     </main>
 </template>
-
-<style lang="scss" scoped>
-    @use '../assets/stylesheets/variables';
-</style>

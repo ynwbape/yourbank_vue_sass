@@ -3,6 +3,9 @@
     import SectionTitles from '../Standalone/SectionTitles.vue';
     
     import { TEXTS } from '../../assets/scripts/texts';
+
+    // StyleSheet file
+    import '../../assets/stylesheets/Security/HowWeProtectYou.scss';
     
     const props = defineProps({
         title: String,
@@ -31,7 +34,6 @@
         cardTitle4: String,
         cardDescription4: String,
     });
-
 </script>
 
 <template>
@@ -43,7 +45,7 @@
         />
 
         <div class="hwpyCards">
-            <img :src="props.img" alt="" :style="props.imgClass">
+            <img class="hwpyCardsImg" :src="props.img" alt="" :style="props.imgClass">
 
             <div class="hwpySubContainer">
                 <Card
@@ -77,40 +79,3 @@
         </div>
     </section>
 </template>
-<style lang="scss" scoped>
-    @use '../../assets/stylesheets/variables';
-
-    .hwpyContainer {
-        display: flex;
-        width: 160rem;
-        flex-direction: column;
-        align-items: center;
-        gap: 20rem;
-
-        .hwpyCards {
-            display: flex;
-            padding: 0rem 10rem;
-            flex-direction: column;
-            gap: 3rem;
-            align-self: stretch;
-            position: relative;
-
-            img {
-                width: 159.3rem;
-                height: 63.1rem;
-                position: absolute;
-                top: -8.2rem;
-                right: .6rem;
-                border-radius: 50px 50px 20px 20px;
-                background-blend-mode: normal, normal, screen;
-            }
-
-            .hwpySubContainer {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 3rem;
-                align-self: stretch;
-            }
-        }
-    }
-</style>
