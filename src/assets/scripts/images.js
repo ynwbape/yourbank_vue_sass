@@ -81,6 +81,8 @@ import greenApple from '../img/Login/icons/green_apple.svg';
 // Navbar.vue
 import shape from '../img/logo/yb_shape.svg';
 import yourbank from '../img/logo/YourBanK.svg';
+// Navbar button mobile
+import collapse from '../img/Navbar/collapse.svg';
 
 // Footer.vue 
 import mailIcon from '../img/Footer/mailicon.svg'; 
@@ -92,12 +94,16 @@ import facebook from '../img/Footer/facebookicon.svg';
 import twitter from '../img/Footer/twittericon.svg';
 import linkedin from '../img/Footer/linkedinicon.svg';
 
+
 export let IMAGES = {
     Navbar: {
         Logo: {
             shape,
             yourbank,
-        }
+        },
+        Button: {
+            collapse,
+        },
     },
     Footer: {
         mailIcon,

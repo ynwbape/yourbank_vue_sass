@@ -1,14 +1,17 @@
 <script setup>
-    import Logo from '../Standalone/Logo.vue';
+    import Logo from './Standalone/Logo.vue';
+    
+    import { IMAGES } from '../assets/scripts/images';
     
     // Navbar StyleSheet
-    import '../../assets/stylesheets/Navbar/Navbar.scss';
+    import '../assets/stylesheets/Navbar.scss';
 </script>
 
 <template>
     <header>
         <nav>
             <Logo />
+            
             <menu>
                 <router-link to="/">Home</router-link>
                 <router-link to="/careers">Careers</router-link>
@@ -19,6 +22,11 @@
                 <router-link to="/signup">Sign Up</router-link>
                 <router-link to="/login">Login</router-link>
             </div>
+        
+            <!-- Mobile Responsive -->
+            <button>
+                <img class="collapseImg" :src="IMAGES.Navbar.Button.collapse" alt="Button icon">
+            </button>
         </nav>
     </header>
 </template>

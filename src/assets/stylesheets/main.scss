@@ -13,3 +13,26 @@ main {
     gap: 15rem;
     overflow: hidden;
 }
+
+// Content hidden 
+@media all and (max-width: 319px) {
+    body {
+        display: none;
+        background-color: black;
+    }   
+}
+
+@media all and (min-width: 427px) and (max-width: 1438px) {
+    body {
+        display: none;
+        background-color: black;
+    }   
+}
+
+@media all and (min-width: 1442px) and (max-width: 1600px) {
+    body {
+        display: none;
+        background-color: black;
+    }   
+}
+

@@ -1,10 +1,10 @@
 <script setup>
-    import Logo from '../Standalone/Logo.vue';
+    import Logo from './Standalone/Logo.vue';
 
-    import { IMAGES } from '../../assets/scripts/images';
+    import { IMAGES } from '../assets/scripts/images';
 
     // Footer StyleSheet
-    import '../../assets/stylesheets/Footer/Footer.scss'; 
+    import '../assets/stylesheets/Footer.scss'; 
 
     const props = defineProps({
         mail: String,

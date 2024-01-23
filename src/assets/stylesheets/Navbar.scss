@@ -1,6 +1,8 @@
-@use '../variables';
+@use 'variables';
 
 header {
+    display: flex;
+    justify-content: center;
     box-sizing: content-box;
     padding: 5rem 16.2rem 5.3rem 16.2rem;
 
@@ -17,7 +19,7 @@ header {
             display: flex;
             justify-content: center;
             gap: 2.6rem;
-
+            
             a {
                 display: block;
                 padding: 1.2rem 2.4rem;
@@ -28,7 +30,7 @@ header {
                 &:visited {
                     color: variables.$absolute_white;
                 }
-
+                
                 &:hover,
                 &:active,
                 &:focus {
@@ -36,9 +38,9 @@ header {
                     background-color: variables.$grey_15;
                 } 
             }
-
+            
         }
-
+        
         .login {
             display: flex;
             gap: 3rem;
@@ -59,28 +61,29 @@ header {
                     background-color: variables.$grey_20;
                 }
             } 
-
+            
             a:last-child {
                 display: block;
                 padding: 1.4rem 3rem;
                 color: variables.$grey_11;
                 background-color: variables.$green_60;
                 border-radius: variables.$borderRadius82;
-
+                
                 &:hover {
                     background-color: variables.$green_65;
                 }
             }
         }
+
+        button {
+            display: none;
+        }
     }
 }
 
 // Laptop
-@media screen and (max-width: 1440px)  {
+@media screen and (min-width: 1439px) and (max-width: 1441px) {
     header {
-        display: flex;
-        justify-content: center;
-
         nav {
             width: 128rem;
             padding: 1.4rem 2.4rem;
@@ -108,6 +111,33 @@ header {
                 }
             }
         }
+    }
+}
 
+// Mobile
+@media screen and (max-width: 426px) {
+    header {
+        nav {
+            gap: 16.3rem;
+            padding: 1.4rem 1.4rem 1.4rem 2.4rem;
+
+            menu, .login {
+                display: none;
+            }
+
+            button {
+                display: flex;
+                padding: .6rem 1.4rem;
+                align-items: center;
+                gap: 1rem;
+                border-radius: 8.2rem;
+                background-color: variables.$green_60;
+    
+                .collapseImg {
+                    width: 2.8rem;
+                    height: 2.8rem;
+                }
+            }
+        }
     }
 }
