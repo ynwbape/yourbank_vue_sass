@@ -2,7 +2,7 @@
     import { IMAGES } from '../../assets/scripts/images';
 
     // TitleImageSection StyleSheet
-    import '../../assets/stylesheets/Standalone/TitleImageSection.scss';
+    import '../../assets/stylesheets/About/BankExcellence.scss';
 
     const props = defineProps({
         // Optionnal sentence for this component 
@@ -19,11 +19,11 @@
 </script>
 
 <template>
-    <section class="tisContainer">
-        <img class="tisImgBg" :src="IMAGES.Standalone.TitleImageSection.svgBG" alt="Abstract Design Background of green dots">
+    <section class="beContainer">
+        <img class="beImgBg" :src="IMAGES.Standalone.TitleImageSection.svgBG" alt="Abstract Design Background of green dots">
         
-        <div class="tisTitles">
-            <p>{{ optSentence }}</p>
+        <div class="beTitles">
+            <p class="beBeforeTitle">{{ optSentence }}</p>
             
             <h2>
                 {{ title }}
@@ -36,6 +36,6 @@
             </p>
         </div>
         
-        <img class="tisYBCImg" :src="props.image" :alt="props.imageDescription">
+        <img class="bemImg" :src="props.image" :alt="props.imageDescription">
     </section>
 </template>

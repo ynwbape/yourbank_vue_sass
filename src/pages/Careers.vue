@@ -12,7 +12,7 @@
     import OurBenefits from '../components/Careers/OurBenefits.vue';
     
     // Job openings section
-    import JobOpenings from '../components/Careers/JobOpenings.vue';
+    import JobOpenings from  '../components/Careers/JobOpenings.vue';
     
     // Frequently Asked Quesiton component
     import FAQ from '../components/Standalone/FAQ.vue';

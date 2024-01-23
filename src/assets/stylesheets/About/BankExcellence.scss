@@ -1,21 +1,21 @@
 @use '../variables';
 
-.tisContainer {
-    width: 159.9rem;
-    padding: 5rem;
+.beContainer {
     display: flex;
     align-items: flex-start;
     position: relative;
+    width: 159.9rem;
+    padding: 5rem;
     border-radius: 2rem;
     background-color: variables.$grey_11;
     
-    .tisImgBg {
+    .beImgBg {
         position: absolute;
         top: 0;
         right: 0;
     }
     
-    .tisTitles {
+    .beTitles {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -26,6 +26,13 @@
         z-index: 5;
         border-radius: 2rem 0rem 8rem 2rem;      
         background-color: variables.$grey_10;
+        
+        .beBeforeTitle {
+            color: variables.$absolute_white;
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: -2.3rem; 
+        }
 
         h2 {
             align-self: stretch;
@@ -42,56 +49,45 @@
             color: variables.$grey_70;
             font-size: 1.8rem;
             font-weight: 300;
-            line-height: 150%; /* 27px */
-
-            &:first-child {
-                color: variables.$absolute_white;
-                font-size: 2rem;
-                font-weight: 400;
-                line-height: 150%; 
-            }
         }
     }
   
-    .tisYBCImg {
+    .bemImg {
         z-index: 2;
-        margin-left: -38rem;
+        margin-left: -26rem;
         width: 96.8rem;
+        height: 71.6rem;
         border-radius: 1.6rem;
         background-blend-mode: overlay, normal, normal;
-        height: 71.6rem;
     }
 }
 
 @media screen and (max-width: 1440px) {
-    .tisContainer {
+    .beContainer {
         width: 128rem;
         padding: 4rem;
         
-        .tisTitles {
+        .beTitles {
             width: 66rem;
             padding: 6rem;
             gap: 2rem;
             border-radius: 2rem 0rem 6rem 2rem;      
-    
+            
+            .beBeforeTitle {
+                font-size: 1.8; 
+            }
+
             h2 {
                 font-size: 4.8rem;
             }
     
             p {
                 font-size: 1.6rem;
-                
-                &:first-child {
-                    color: variables.$absolute_white;
-                    font-size: 2rem;
-                    font-weight: 400;
-                    line-height: 150%; 
-                }
             }
         }
       
-        .tisYBCImg {
-            margin-left: -17.2em;
+        .bemImg {
+            margin-left: -17.4em;
             width: 71.5rem;
             height: 56.8rem;
         }

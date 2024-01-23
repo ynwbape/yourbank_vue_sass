@@ -1,5 +1,6 @@
 <script setup>
-    import TitleImageSection from '../components/Standalone/TitleImageSection.vue';
+    // import TitleImageSection from '../components/Standalone/TitleImageSection.vue';
+    import BankExcellence from '../components/About/BankExcellence.vue';
     import MissionVision from '../components/About/MissionVision.vue';
     import PressReleases from '../components/About/PressReleases.vue';
 
@@ -12,7 +13,7 @@
 <template>
     <main>
         <!-- <Toppriority /> -->
-        <TitleImageSection 
+        <BankExcellence 
             :opt-sentence="TEXTS.About.BankExcellence.abeOptSentence"
             :title="TEXTS.About.BankExcellence.abeTitle"
             :green-bold-title="TEXTS.About.BankExcellence.abeGreenBoldTtitle"

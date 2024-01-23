@@ -4,6 +4,7 @@
     
     import { TEXTS } from '../../assets/scripts/texts';
 
+    // OurBenefits StyleSheet 
     import '../../assets/stylesheets/Careers/OurBenefits.scss';
     
     const props = defineProps({

@@ -23,7 +23,7 @@
         <img class="wybcImgBg" :src="IMAGES.Standalone.TitleImageSection.svgBG" alt="Abstract Design Background of green dots">
         
         <div class="wybcTitles">
-            <p>{{ optSentence }}</p>
+            <p class="wybcBeforeTitle">{{ optSentence }}</p>
             
             <h2>
                 {{ title }}
