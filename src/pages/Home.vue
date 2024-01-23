@@ -14,30 +14,26 @@
     <main>
         <HeroSection />  
         <Products />
-        <Testimonials />
         <Cases />
         <Features />
         <FAQ 
             :faq_id="faqArray[0].id"
             :faq_question="faqArray[0].question"
             :faq_answer="faqArray[0].answer"
-
+        
             :faq_id2="faqArray[1].id"
             :faq_question2="faqArray[1].question"
             :faq_answer2="faqArray[1].answer"
-
+        
             :faq_id3="faqArray[2].id"
             :faq_question3="faqArray[2].question"
             :faq_answer3="faqArray[2].answer"
-
+        
             :faq_id4="faqArray[3].id"
             :faq_question4="faqArray[3].question"
             :faq_answer4="faqArray[3].answer"
         />
+        <Testimonials />
         <CTA />
     </main>    
 </template>
-
-<style lang="scss">
-    @use '../assets/stylesheets/variables';
-</style>

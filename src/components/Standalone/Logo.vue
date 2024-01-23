@@ -1,5 +1,8 @@
 <script setup>
-    import { IMAGES } from '../../../assets/scripts/images';
+    import { IMAGES } from '../../assets/scripts/images';
+
+    // Laptop responsive 
+    import '../../assets/stylesheets/Standalone/Logo.scss';
 </script>
 
 <template>
@@ -8,13 +11,3 @@
         <img class="navTitle" :src="IMAGES.Navbar.Logo.yourbank" alt="Website's name">
     </div>  
 </template>
-
-<style lang="scss">
-    @use '../../../assets/stylesheets/variables';
-
-    .logo {
-        display: flex;
-        gap: .4rem;
-        flex-shrink: 0;
-    }
-</style>

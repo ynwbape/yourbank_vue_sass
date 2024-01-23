@@ -8,13 +8,16 @@
 
     // Objects of texts
     import { TEXTS } from '../../assets/scripts/texts';
+
+    // HeroSection StyleSheet
+    import '../../assets/stylesheets/Home/HeroSection.scss';
 </script>
 
 <template>
-    <section>
+    <section class="hsContainer">
         <img :src="IMAGES.Home.HeroSectionImages.arrows" alt="Green arrows" class="arrowsdesign">
 
-        <article class="container1">
+        <article class="fjContainer">
             <div class="no-check-bank">
                 <img :src="IMAGES.Home.HeroSectionImages.checkIcon" alt="Green Check">
                 <p>
@@ -31,7 +34,7 @@
 
             <a href="#openaccount" target="_blank">Open Account</a>
         </article>
-        <article class="container2">
+        <article class="teContainer">
             <div class="income">
                 <img :src="IMAGES.Home.HeroSectionImages.plusIcon" alt="Plus icon">
                 <div class="incomeTexts">
@@ -85,214 +88,3 @@
         </article>
     </section>
 </template>
-
-<style lang="scss" scoped>
-    @use '../../assets/stylesheets/variables';
-
-    section {
-        display: flex;
-        gap: 12rem;
-        align-items: flex-start;
-        padding: 10rem 29.7rem 10rem 16.2rem;
-        position: relative;
-        .arrowsdesign {
-            position: absolute;
-            right: 11rem;
-        }
-        .container1 {
-            width: 82.6rem;
-
-            .no-check-bank {
-                display: inline-flex;
-                align-items: center;
-                gap: .6rem;
-                padding: 1rem 2rem 1rem 1.2rem;
-                background-color: variables.$grey-15;
-                border-radius: variables.$borderRadius61;
-
-                img {
-                    height: 2.4rem;
-                }
-
-                p {
-                    font-size: 1.8rem;
-                    font-weight: 300;
-                    line-height: 2.4rem;
-                }
-            }
-
-            h2 {
-                font-size: 4.8rem;
-                font-weight: 500;
-                line-height: 150%;
-                align-self: stretch;
-                margin-top: 2rem;
-                margin-bottom: 1.4rem;
-
-                strong {
-                    color: variables.$green_60;
-                }
-            }
-
-            p {
-                font-size: 1.8rem;
-                font-weight: 300;
-                line-height: 150%;
-                color: variables.$white-90;
-                align-self: stretch;
-            }
-
-            a {
-                display: inline-block;
-                background-color: variables.$green_60;
-                padding: 1.8rem 3rem;
-                text-align: center;
-                color: variables.$grey_11;
-                border-radius: variables.$borderRadius82;
-                font-size: 1.8rem;
-                font-weight: 400;
-                line-height: 150%;
-                text-decoration: none;
-                margin-top: 5rem;
-
-                &:visited {
-                    text-decoration: none;
-                    color: variables.$grey_11;
-                }
-            }
-
-        }
-        .container2 {
-            display: flex;
-            flex-direction: column;
-            gap: 2.6rem;
-            flex-shrink: 0;
-            width: 51.5rem;
-            padding: 3.5rem;
-            border-radius: 1rem;
-            border: 0.087rem solid variables.$grey_15;
-            position: relative;
-            background-color: variables.$grey_10;
-            background-blend-mode: normal, screen, normal;
-
-            .income {
-                display: flex;
-                align-items: center;
-                gap: .9rem;
-                position: absolute;
-                padding: 1.4rem 1.7rem;
-                background-color: variables.$grey_14;
-                left: -6.1rem;
-                top: -4.3rem;
-                border-radius: 1rem;
-
-                img {
-                    padding: .9rem;
-                    border-radius: 4.6rem;
-                    background-color: variables.$green_60;
-                }
-
-                .incomeTexts {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    gap: 0.867px;
-
-                    strong {
-                        font-size: 1.7rem;
-                        color: variables.$absolute_white;
-                        align-self: stretch;
-                        font-weight: 400;
-                        line-height: 150%;
-                    }
-                    
-                    p {
-                        text-align: center;
-                        align-self: stretch;
-                        color: variables.$white_90;
-                        font-size: 1.3rem;
-                        font-weight: 300;
-                        line-height: 150%;
-                    }
-                }
-
-            }
-
-            .transactionPart {
-                height: 22.5rem;
-
-                p {
-                    font-size: 1.7rem;
-                    font-weight: 500;
-                    align-self: stretch;
-                    line-height: 150%;
-                    margin-bottom: 1.7rem;
-                }
-
-                .transactions { 
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                }
-            }
-
-            .exchangePart {
-                height: 30.4rem;
-                display: flex;
-                flex-direction: column;
-                gap: 2.5rem;
-                
-                p {
-                    font-size: 1.7rem;
-                    font-weight: 500;
-                    align-self: stretch;
-                    line-height: 150%;
-                }
-
-                .exchanges {
-                    display: flex;
-                }
-
-                .exchangeBtn {
-                    background-color: variables.$grey_14;
-                    color: variables.$green_65;
-                    border: none;
-                    border-radius: 7.1rem;
-                    align-self: stretch;
-                    padding: 1.4rem 2.6rem;
-                }
-            }
-
-            .supported {
-                position: absolute;
-                right: -5.2rem;
-                bottom: -8.2rem;
-                border-radius: 6.9rem;
-                padding: .9rem .9rem .9rem 2rem;
-                display: flex;
-                gap: .9rem;
-                align-items: center;
-                background-color: variables.$grey_14;
-
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 400;
-                    line-height: 150%;
-                }
-
-                .currencies {
-                    display: flex;
-                    padding: .9rem;
-                    gap: .7rem;
-                    border-radius: 4.8rem;
-                    border: .087rem solid variables.$grey_15;
-                    background-color: variables.$grey_10;
-
-                    img {
-                        height: 3.5rem;
-                    }
-                }
-            }
-        }
-    }
-</style>

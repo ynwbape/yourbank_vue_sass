@@ -1,16 +1,19 @@
 <script setup>
     import SectionTitles from '../Standalone/SectionTitles.vue';
     import CaseContent from './Cases/CaseContent.vue';
-
     import CaseItem from "./Cases/CaseItem.vue";
     
-    import { TEXTS} from '../../assets/scripts/texts';
+    import { TEXTS } from '../../assets/scripts/texts';
 
     import { 
         caseContentStatArray, 
         caseItemArray 
     } from '../../assets/scripts/arrays';
+
+    // Cases StyleSheet
+    import '../../assets/stylesheets/Home/Cases.scss';
 </script>
+
 <template>
     <div class="casesContainer">
         <SectionTitles
@@ -91,59 +94,4 @@
             </div>
         </div>
     </div>
-
 </template>
-<style lang="scss" scoped>
-    @use '../../assets/stylesheets/variables';
-
-    .casesContainer {
-        display: flex;
-        width: 159.6rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8rem;
-
-        .casesContent {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 6rem;
-            align-self: stretch;
-
-            .indiBusiContainer {
-                display: flex;
-                align-items: center;
-                gap: 10rem;
-                align-self: stretch;
-
-                .indiBusiItems {
-                    display: flex;
-                    padding: 5rem;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    gap: 2rem;
-                    flex: 1 0 0;
-                    border-radius: 2rem;
-                    background-color: variables.$grey_11;
-                    position: relative;
-                    background-image: url('../../assets/img/Home/abstract_design.svg');
-                    background-repeat: no-repeat;
-
-                    &:last-child {
-                        background-image: url('../../assets/img/Home/abstract_design_reversed.svg');
-                        background-position: top right; 
-                    }
-                    
-                    .casesSubItems {
-                        display: flex;
-                        align-items: flex-start;
-                        gap: 2rem;
-                        align-self: stretch;
-
-                        
-                    }
-                }
-            }
-        }
-    }
-</style>

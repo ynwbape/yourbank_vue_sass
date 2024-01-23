@@ -7,6 +7,9 @@
     
     import { TEXTS } from '../../assets/scripts/texts';
     import { testimonials } from '../../assets/scripts/arrays';
+
+    // Testimonials StyleSheet
+    import '../../assets/stylesheets/Home/Testimonials.scss';
     
 </script>
 
@@ -38,76 +41,3 @@
         </div>
     </div>
 </template>
-
-<style lang="scss" scoped>
-    @use '../../assets/stylesheets/variables';
-    .testimonials {
-        display: flex;
-        width: 159.6rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10rem;
-
-        .testimonialCarousel {
-            display: flex;
-            align-items: center;
-            gap: 5rem;
-            align-self: stretch;
-
-            .leftArrow, .rightArrow {
-                display: flex;
-                padding: 1.4rem;
-                align-items: flex-start;
-                gap: 1rem;
-
-                border-radius: 10rem;
-                border: .1rem solid variables.$grey_15;
-                background-color: variables.$grey_11;
-
-                cursor: pointer;
-            }
-
-            .items {
-                max-width: 137.2rem;
-                overflow: hidden;
-                display: flex;
-                align-items: flex-start;
-                gap: 8rem;
-                flex: 1 0 0;
-                position: relative;
-
-                .fadeLeft, .fadeRight {
-                    height: 34.9rem;
-                    position: absolute;
-                    top: -1.4rem;
-                }
-
-                .fadeLeft {
-                    width: 55.6rem;
-                    left: 0;
-                    
-                    background: 
-                        linear-gradient(
-                            270deg, 
-                            rgba(25,25,25, 0.00) 0%,
-                            variables.$grey_19 105.84%
-                        )
-                    ;
-                }
-
-                .fadeRight {
-                    width: 48rem;
-                    right: .1px;
-
-                    background: 
-                        linear-gradient(
-                            270deg, 
-                            variables.$grey_19 10.8%,
-                            rgba(25,25,25, 0.00) 105.84%
-                        )
-                    ;
-                }
-            }
-        }
-    }
-</style>

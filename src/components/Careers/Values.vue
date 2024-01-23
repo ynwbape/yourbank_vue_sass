@@ -6,6 +6,9 @@
 
     import { valuesDescriptionArray } from '../../assets/scripts/arrays';
     
+    // Values StyleSheet
+    import '../../assets/stylesheets/Careers/Values.scss';
+
 </script>
 
 <template>
@@ -41,29 +44,8 @@
     </div>
 </template>
 
-<style lang="scss" scoped>
+<!-- <style lang="scss" scoped>
     @use '../../assets/stylesheets/variables';
 
-    .valuesContainer {
-        display: flex;
-        width: 159.6rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8rem;
-
-        .valueCardsContainer {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 8rem;
-            align-self: stretch;
-
-            .vcSubContainer {
-                display: flex;
-                align-items: flex-start;
-                gap: 8rem;
-                align-self: stretch;
-            }
-        }
-    }
-</style>
+    
+</style> -->

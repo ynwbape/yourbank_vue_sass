@@ -1,0 +1,40 @@
+@use '../variables';
+
+.obContainer {
+    display: flex;
+    width: 160rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+    padding: unset;
+
+    .obCards {
+        display: flex;
+        padding: unset;
+        gap: 10rem;
+        flex-direction: column;
+        align-self: stretch;
+        position: relative;
+
+        .obSubContainer {
+            display: flex;
+            gap: 10rem;
+            align-self: stretch;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .obContainer {
+        width: 128rem;
+        gap: 6rem;
+
+        .obCards {
+            gap: 5rem;
+            
+            .obSubContainer {
+                gap: 5rem;
+            }
+        }
+    }
+}

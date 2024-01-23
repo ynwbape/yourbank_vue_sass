@@ -1,0 +1,32 @@
+@use '../variables';
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    flex-shrink: 0;
+
+    .shape {
+        height: 4rem;
+    }
+
+    .navTitle {
+        height: 1.8rem;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+    .logo {
+        gap: .35rem;
+        align-items: center;
+        
+        .shape {
+            height: 3rem;
+        }
+
+        .navTitle {
+            height: 1.4rem;
+        }
+    }
+}

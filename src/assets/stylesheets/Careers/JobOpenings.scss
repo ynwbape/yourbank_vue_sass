@@ -1,0 +1,27 @@
+@use '../variables';
+
+.joContainer {
+    display: flex;
+    width: 159.6rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+    
+    .joCardContainer {
+        display: flex;
+        align-items: flex-start;
+        gap: 3rem;
+        align-self: stretch;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .joContainer {
+        width: 128rem;
+        gap: 6rem;
+        
+        .joCardContainer {
+            gap: 2rem;
+        }
+    }
+}

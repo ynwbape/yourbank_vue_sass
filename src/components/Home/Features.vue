@@ -5,7 +5,13 @@
     import { TEXTS } from '../../assets/scripts/texts'; 
 
     import { featureCardArray } from '../../assets/scripts/arrays';
+
+    // Features StyleSheet
+    import "../../assets/stylesheets/Home/Features.scss";
+    // SectionTitles StyleSheet
+    import '../../assets/stylesheets/Standalone/SectionTitles.scss';
 </script>
+
 <template>
     <div class="featuresContainer">
         <SectionTitles 
@@ -46,66 +52,3 @@
         </div>
     </div>
 </template>
-<style lang="scss" scoped>
-    @use '../../assets/stylesheets/variables';
-
-    .featuresContainer {
-        display: flex;
-        width: 159.6rem;
-        flex-direction: column;
-        align-items: center;
-        gap: 8rem;
-
-        .features {
-            display: flex;
-            align-items: flex-start;
-            gap: 3rem;
-            align-self: stretch;
-
-            .featuresTypes {
-                display: flex;
-                padding: 5rem;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 2.4rem;
-                border-radius: 1.2rem;
-                background-color: variables.$grey_11;
-
-                button {
-                    display: flex;
-                    padding: 1.8rem 2.4rem;
-                    align-items: center;
-                    gap: 1rem;
-                    align-self: stretch;
-                    border-radius: 10rem;
-                    border: .1rem solid variables.$grey_15;
-                    background-color: transparent;
-                    font-size: 1.8rem;
-                    cursor: pointer;
-                    &.activeFeature {
-                        background-color: variables.$grey_10;
-                        color: variables.$green_60;
-                        font-weight: 400;
-                        line-height: 150%;
-                    }
-                }
-
-            }
-
-            .featuresCardContainer {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 3rem;
-                flex: 1 0 0;
-
-                .fcSubContainer {
-                    display: flex;
-                    align-items: flex-start;
-                    gap: 3rem;
-                    align-self: stretch;
-                }
-            }
-        }
-    }
-</style>

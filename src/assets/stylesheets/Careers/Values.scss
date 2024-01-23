@@ -1,0 +1,39 @@
+@use '../variables';
+
+.valuesContainer {
+    display: flex;
+    width: 159.6rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+
+    .valueCardsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8rem;
+        align-self: stretch;
+
+        .vcSubContainer {
+            display: flex;
+            align-items: flex-start;
+            gap: 8rem;
+            align-self: stretch;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .valuesContainer {
+        width: 128rem;
+        gap: 6rem;
+
+        .valueCardsContainer {
+            gap: 6rem;
+
+            .vcSubContainer {
+                gap: 6rem;
+            }
+        }
+    }
+}

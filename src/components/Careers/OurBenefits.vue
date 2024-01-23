@@ -1,8 +1,11 @@
 <script setup>
     import SectionTitles from '../Standalone/SectionTitles.vue';
-    import Card from '../Standalone/TitleCardsSection/Card.vue';
+    import Card from '../Careers/OurBenefits/Card.vue';
     
     import { TEXTS } from '../../assets/scripts/texts';
+
+    // OurBenefits StyleSheet 
+    import '../../assets/stylesheets/Careers/OurBenefits.scss';
     
     const props = defineProps({
         title: String,
@@ -76,29 +79,3 @@
         </div>
     </section>
 </template>
-<style lang="scss" scoped>
-    @use '../../assets/stylesheets/variables';
-
-    .obContainer {
-        display: flex;
-        width: 160rem;
-        flex-direction: column;
-        align-items: center;
-        gap: 8rem;
-
-        .obCards {
-            display: flex;
-            padding: unset;
-            gap: 10rem;
-            flex-direction: column;
-            align-self: stretch;
-            position: relative;
-
-            .obSubContainer {
-                display: flex;
-                gap: 10rem;
-                align-self: stretch;
-            }
-        }
-    }
-</style>

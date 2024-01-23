@@ -2,12 +2,13 @@
     import SectionTitles from '../Standalone/SectionTitles.vue';
     import PressCard from '../About/PressReleases/PressCard.vue';
 
-    import { TEXTS} from '../../assets/scripts/texts';
+    import { TEXTS } from '../../assets/scripts/texts';
 
 
     import { pressCardArray } from '../../assets/scripts/arrays';
     
-    
+    // PressReleases StyleSheet
+    import '../../assets/stylesheets/About/PressReleases.scss';
 </script>
 
 <template>
@@ -74,28 +75,3 @@
         </div>
     </div>
 </template>
-
-<style lang="scss" scoped>
-    @use '../../assets/stylesheets/variables';
-
-    .prContainer {
-        display: flex;
-        width: 159.6rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8rem;
-        .prCardSubContainer {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 3rem;
-            align-self: stretch;    
-            .prSubContainer {
-                display: flex;
-                align-items: flex-start;
-                gap: 3rem;
-                align-self: stretch;
-            }
-        }
-    }
-</style>
