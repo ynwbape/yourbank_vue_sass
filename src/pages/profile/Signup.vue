@@ -3,6 +3,7 @@
 
     import { IMAGES } from '../../assets/scripts/images';
 
+    import '../../assets/stylesheets/profile/Signup.scss';
 </script>
 
 <script>
@@ -12,10 +13,13 @@
     <main>
         <div class="signupContainer">
             <div class="signup">
-                <img :src="IMAGES.SignUpLogin.signUpLoginDesign" alt="abstract design">
+                <img class="signupAbstractdesign" :src="IMAGES.SignUpLogin.signUpLoginDesign" alt="abstract design">
 
-                <h1>Sign Up</h1>
-                <p>Join our community today! Create an account to unlock exclusive features and personalized experiences.</p>
+                <div class="signupHeadings">
+                    <h1>Sign Up</h1>
+    
+                    <p>Join our community today! Create an account to unlock exclusive features and personalized experiences.</p>
+                </div>
 
                 <form action="">
                     <div class="inputs">
@@ -68,221 +72,3 @@
     </main>
 
 </template>
-
-<style lang="scss" scoped>
-    @use '../../assets/stylesheets/variables';
-
-    .signupContainer {
-        .signup {
-            display: flex;
-            width: 132.6rem;
-            padding: 10rem 15rem;
-            flex-direction: column;
-            align-items: center;
-            gap: 2rem;
-            position: relative;
-    
-            border-radius: 2rem;
-            border: .1rem solid variables.$grey_15;
-            background: lightgray 50% / cover no-repeat, variables.$grey_11;
-            background-blend-mode: overlay, normal;
-            
-            img {
-                position: absolute;
-                top: 0;
-                right: 0;
-            }
-
-            h1 {
-                text-transform: capitalize;
-                color: variables.$green_60;
-                text-align: center;
-                font-size: 4.8rem;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                align-self: stretch;
-            }
-
-            p {
-                color: variables.$grey_75;
-                text-align: center;
-                font-size: 1.8rem;
-                font-style: normal;
-                font-weight: 300;
-                line-height: normal;
-            }
-
-            form {
-                margin-top: 8rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 4rem;
-                align-self: stretch;
-
-                .inputs {
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    gap: 3rem;
-                    align-self: stretch;
-                    position: relative;
-                    input {
-                        display: flex;
-                        padding: 2.4rem;
-                        align-items: center;
-                        gap: 1rem;
-                        flex: 1 0 0;
-                        border-radius: 8.8rem;
-                        border: .1rem solid variables.$grey_15;
-                        background-color: variables.$grey_10;
-
-                        &::placeholder,
-                        &:-moz-placeholder {
-                            color: variables.$grey_35;
-                            font-family: Lexend;
-                            font-size: 1.8rem;
-                            font-weight: 300;
-                            line-height: 150%;
-                        }
-
-                        &.passwordInput {
-                            position: relative;
-                        }   
-                    }
-                }
-
-                a[href="#password"] {
-                    color: variables.$absolute_white;
-                    text-align: center;
-                    font-size: 1.8rem;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 150%;
-                    text-decoration: underline;
-                    align-self: stretch;
-
-                }
-
-                .buttons {
-                    display: flex;
-                    padding: 0 25.4rem;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    gap: 2.4rem;
-                    align-self: stretch;
-
-                    button[type="submit"] {
-                        display: flex;
-                        padding: 1.8rem 2rem;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 1rem;
-                        align-self: stretch;
-                        border-radius: 6.3rem;
-                        background-color: variables.$green_60;
-
-                        // text
-                        color: variables.$grey_15;
-                        text-align: center;
-                        font-size: 1.8rem;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 150%; /* 27px */
-                        flex: 1 0 0;
-
-                        cursor: pointer;
-
-                        &:hover {
-                            background-color: variables.$green_65;
-                        }
-                    }
-
-                    a {
-                        display: flex;
-                        padding: 1.8rem 2rem;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 1rem;
-                        align-self: stretch;
-
-                        border-radius: 6.3rem;
-                        border: .1rem solid variables.$grey_20;
-                        background-color: variables.$grey_15;
-
-                        color: variables.$grey_70;
-                        text-align: center;
-                        text-decoration: none;
-                        font-size: 1.8rem;
-                        font-weight: 400;
-                        line-height: 150%;
-
-                        &:hover {
-                            background-color: variables.$grey_20;
-                        }
-                    }
-                    
-
-                    .moreOptions {
-                        display: flex;
-                        align-items: center;
-                        gap: 2rem;
-                        align-self: stretch;
-
-                        .line {
-                            width: 16.6rem;
-                            height: .1rem;
-                            background-color: variables.$grey_70;
-                        }
-
-                        p {
-                            color: variables.$grey_70;
-                            text-align: center;
-                            font-size: 1.8rem;
-                            font-weight: 400;
-                            line-height: 150%;
-                        }
-                    }
-
-                    .socialSignup {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 2.4rem;
-                        align-self: stretch;
-
-                        button {
-                            display: flex;
-                            padding: 1.2rem;
-                            justify-content: center;
-                            align-items: flex-start;
-                            gap: 1rem;
-                            border: unset;
-                            border-radius: 7rem;
-                            background: linear-gradient(180deg, rgba(202, 255, 51, 0.05) 0%, rgba(202, 255, 51, 0.00) 100%);
-                            
-                            a {
-                                display: flex;
-                                padding: 2rem;
-                                justify-content: center;
-                                align-items: center;
-                                gap: 1rem;
-                                border: unset;
-                                border-radius: 5rem;
-                                background: linear-gradient(180deg, rgba(202, 255, 51, 0.10) -66.22%, rgba(202, 255, 51, 0.00) 85.46%);
-
-                                img {
-                                    position: unset;
-                                    width: 3rem;
-                                    height: 3rem;
-                                }
-                            }
-                        }
-                    }
-                }
-                
-            }
-        }
-    }
-</style>
