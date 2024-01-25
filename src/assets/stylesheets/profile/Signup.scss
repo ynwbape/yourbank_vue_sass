@@ -20,6 +20,7 @@
             top: 0;
             right: 0;
         }
+        
         .signupHeadings {
             display: flex;
             flex-direction: column;
@@ -322,6 +323,62 @@
                     }
                 }
                 
+            }
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width: 426px) {
+    .signupContainer {
+        .signup {
+            flex-direction: column;
+            align-items: flex-start;
+            width: 35.8rem;
+            padding: 3rem;
+            gap: 4rem;
+            border-radius: 1.6rem;
+
+            .signupAbstractdesign {
+                height: 16.9rem;
+            }
+
+            .signupHeadings {
+                gap: 1rem;
+            
+                h1 {
+                    font-size: 2.8rem;
+                }
+    
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+
+            form {
+                flex-direction: column;
+                align-items: center;
+                gap: 2.4rem;
+
+                .inputs {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 2rem;
+
+                    input {
+                        padding: 1.6rem;
+                        align-self: stretch;
+                    }
+                }
+
+                a[href="#password"] {
+                    font-size: 1.4rem;
+                }
+
+                .buttons {
+                    padding: unset;
+                }
             }
         }
     }

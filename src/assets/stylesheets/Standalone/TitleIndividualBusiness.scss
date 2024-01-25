@@ -104,3 +104,25 @@
         }
     }
 }
+
+// Mobile
+@media screen and (max-width: 426px) {
+    .tibHeader {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        .tibTitles {
+            text-align: center;
+
+            h2 {
+                font-size: 2.8rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

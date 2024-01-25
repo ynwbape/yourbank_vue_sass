@@ -15,7 +15,8 @@
         background: lightgray 50% / cover no-repeat, variables.$grey_11;
         background-blend-mode: overlay, normal;
         
-        img {
+        // Img
+        .loginAbstractdesign {
             position: absolute;
             top: 0;
             right: 0;
@@ -226,6 +227,10 @@
             gap: 6rem;
             border-radius: 1rem;
 
+            .loginAbstractdesign {
+                height: 24.3rem;
+            }
+
             .loginHeadings {
                 gap: 1.6rem;
             
@@ -304,6 +309,61 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .loginContainer {
+        .login {
+            flex-direction: column;
+            align-items: flex-start;
+            width: 35.8rem;
+            padding: 3rem;
+            gap: 4rem;
+            border-radius: 1.6rem;
+
+            .loginAbstractdesign {
+                height: 16.9rem;
+            }
+
+            .loginHeadings {
+                gap: 1rem;
+            
+                h1 {
+                    font-size: 2.8rem;
+                }
+    
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+
+            form {
+                flex-direction: column;
+                align-items: center;
+                gap: 2.4rem;
+
+                .inputs {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 2rem;
+
+                    input {
+                        padding: 1.6rem;
+                        align-self: stretch;
+                    }
+                }
+
+                a[href="#password"] {
+                    font-size: 1.4rem;
+                }
+
+                .buttons {
+                    padding: unset;
                 }
             }
         }

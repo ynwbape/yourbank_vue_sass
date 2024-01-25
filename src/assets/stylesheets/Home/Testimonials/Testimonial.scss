@@ -29,6 +29,7 @@
     }
 }
 
+// Laptop
 @media screen and  (max-width: 1440px) {
     .item {
         gap: 4rem;
@@ -39,6 +40,24 @@
 
         p, span {
             font-size: 1.6rem;
+        }
+    }
+}
+
+// Mobile
+@media screen and  (max-width: 426px) {
+    .item {
+        padding: 2rem;
+        gap: 3rem;
+        border-radius: 1.2rem;
+        border: .1rem solid variables.$grey_15;
+
+        p {
+            font-size: 1.4rem;
+        }
+
+        span {
+            font-size: 1.6;
         }
     }
 }
