@@ -14,7 +14,7 @@
 </script>
 
 <template>
-    <div class="testimonials">
+    <section class="testimonials">
         <TitleIndividualBusiness 
             title="Our"
             green-title="Testimonials"
@@ -61,5 +61,5 @@
                 </button>
             </div>
         </div>
-    </div>
+    </section>
 </template>

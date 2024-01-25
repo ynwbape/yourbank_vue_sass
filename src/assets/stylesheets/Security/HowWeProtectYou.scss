@@ -38,6 +38,7 @@
     }
 }
 
+// Laptop
 @media screen and (max-width: 1440px) {
     .hwpyContainer {
         width: 128rem;
@@ -54,6 +55,32 @@
             }
 
             .hwpySubContainer {
+                gap: 2rem;
+            }
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width: 430px) {
+    .hwpyContainer {
+        width: 35.8rem;
+        gap: 4rem;
+    
+        .hwpyCards {
+            padding: unset;
+            gap: 2rem;
+            align-self: stretch;
+            position: unset;
+    
+            .hwpyCardsImg {
+                display: none;
+            }
+    
+            .hwpySubContainer {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: unset;
                 gap: 2rem;
             }
         }

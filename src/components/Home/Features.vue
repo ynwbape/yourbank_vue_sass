@@ -13,14 +13,14 @@
 </script>
 
 <template>
-    <div class="featuresContainer">
+    <section class="featuresContainer">
         <SectionTitles 
             :title="TEXTS.Home.Features.title"
             :green-title="TEXTS.Home.Features.greenTitle"
             :title-description="TEXTS.Home.Features.paragraph"
         />
 
-        <div class="features">
+        <article class="features">
             <div class="featuresTypes">
                 <button class="activeFeature">Online Banking</button>
                 <button>Financial Tools</button>
@@ -49,6 +49,6 @@
                     />    
                 </div>
             </div>
-        </div>
-    </div>
+        </article>
+    </section>
 </template>

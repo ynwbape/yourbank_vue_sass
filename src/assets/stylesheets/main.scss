@@ -14,7 +14,27 @@ main {
     overflow: hidden;
 }
 
-// Content hidden 
+// Laptop gap between sections
+@media only screen and (min-width: 1435px) and (max-width: 1440px) {
+    main {
+        gap: 12rem;
+    }
+}
+
+// Mobile gap between sections
+@media only screen and (min-width: 360px) and (max-width: 430px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    main {
+        gap: 8rem;
+    }
+}
+
+/*******************************************
+********* CONTENT HIDDEN *******************
+*******************************************/ 
 @media all and (max-width: 319px) {
     body {
         display: none;
@@ -22,7 +42,7 @@ main {
     }   
 }
 
-@media all and (min-width: 427px) and (max-width: 1438px) {
+@media all and (min-width: 431px) and (max-width: 1438px) {
     body {
         display: none;
         background-color: black;

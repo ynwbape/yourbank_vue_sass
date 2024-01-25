@@ -62,6 +62,7 @@
     }
 }
 
+// Laptop
 @media screen and (max-width: 1440px) {
     .card {
         padding: 4rem;
@@ -90,6 +91,38 @@
 
         p {
             font-size: 1.6rem;
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width: 430px) {
+    .card {
+        padding: 2.4rem;
+        gap: 1rem;
+    
+        .cardTitle {
+            gap: 1.4rem;
+    
+            h4 {
+                font-size: 1.8rem;
+            }
+    
+            .cardIconContainer {
+                padding: .8rem;
+
+                .cardIcon {
+                    padding: 1.4rem;
+
+                    img {
+                        height: 2.4rem;
+                    }
+                }
+            }
+        }
+    
+        p {
+            font-size: 1.4rem;
         }
     }
 }
