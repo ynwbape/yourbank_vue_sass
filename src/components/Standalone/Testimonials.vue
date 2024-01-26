@@ -42,14 +42,12 @@
             
             <!-- For Mobile -->
             <div class="itemsMobile">
-                <div class="fadeLeftMobile"></div>
                 <Testimonial 
                     v-for="testimonial in testimonials"
                     :key="testimonial.id"
                     :testimonial="testimonial.testimonial" 
                     :author="testimonial.author"
                 />
-                <div class="fadeRightMobile"></div>
             </div>
             
             <div class="tCarouselBtnMobile">

@@ -47,7 +47,7 @@
             </div>
 
             <div class="transactionPart">
-                <p>Your Transactions</p>
+                <p class="teTitle">Your Transactions</p>
                 <div class="transactions">
                     <Transaction transac-name="Joel Kenley" currency="$" :money=68 />
                     <Transaction transac-name="Mark Smith" currency="$" :money=180 />
@@ -55,7 +55,7 @@
             </div>
 
             <div class="exchangePart">
-                <p>Money Exchange</p>
+                <p class="teTitle">Money Exchange</p>
 
                 <div class="exchanges">
                     <Exchange 
@@ -76,7 +76,7 @@
                 <button class="exchangeBtn">Exchange</button>
             </div>
 
-            <div class="supported">
+            <div class="supportedCurrencyContainer">
                 <p>Supported Currensy</p>
                 <div class="currencies">
                     <img :src="IMAGES.Home.HeroSectionImages.dollarIcon" alt="Dollar Icon">
