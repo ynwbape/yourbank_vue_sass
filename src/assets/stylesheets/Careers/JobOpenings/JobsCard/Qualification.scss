@@ -14,13 +14,27 @@
     }
 }
 
-
+// Laptop
 @media screen and (max-width: 1440px) {
     .qualification {
         gap: .8rem;
         
         p {
             font-size: 1.6rem;
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width: 480px) {
+    .qualification {
+        img {
+            height: 1.9rem;
+            height: 1.6rem;
+        }
+
+        p {
+            font-size: 1.4rem;
         }
     }
 }

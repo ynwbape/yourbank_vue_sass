@@ -14,9 +14,9 @@
         qualification: Array,
     });
 </script>
+
 <template>
     <div class="jobsCardContainer">
-
         <div class="jcTexts">
             <div class="jcJobName">
                 <h5>{{ jobName }}</h5>

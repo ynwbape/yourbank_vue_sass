@@ -7,12 +7,11 @@
     // Image background for TitleImageSection component
     import { IMAGES } from '../assets/scripts/images';
     
-     import { TEXTS } from '../assets/scripts/texts';
+    import { TEXTS } from '../assets/scripts/texts';
 </script>
 
 <template>
     <main>
-        <!-- <Toppriority /> -->
         <BankExcellence 
             :opt-sentence="TEXTS.About.BankExcellence.abeOptSentence"
             :title="TEXTS.About.BankExcellence.abeTitle"

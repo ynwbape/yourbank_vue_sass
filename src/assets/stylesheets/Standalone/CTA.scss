@@ -6,19 +6,19 @@
     display: flex;
     align-items: center;
     gap: 15rem;
-    position: relative;
+    // position: relative;
     border-radius: 2rem;
     border: .1px solid variables.$grey_15;
     background-image: url('../../img/Home/abstractdesign2.svg');
     background-repeat: no-repeat;
     background-blend-mode: normal, screen, normal;
     
-    img {
-        position: relative;
-        top: 0;
-        left: 0;
-        bottom: -1rem;  
-    }
+    // img {
+    //     position: relative;
+    //     top: 0;
+    //     left: 0;
+    //     bottom: -1rem;  
+    // }
     
     .ctaTitles {
         display: flex;
@@ -67,6 +67,7 @@
     }
 }
 
+// Laptop
 @media screen and (max-width: 1440px) {
     .CTA {
         width: 128rem;
@@ -91,5 +92,36 @@
             font-size: 1.4rem;
         }
         
+    }
+}
+
+// Mobile 
+@media screen and (max-width: 480px) {
+    .CTA {
+        width: 35.8rem;
+        padding: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.4rem;
+        background-size: 14.3rem;
+
+        
+        .ctaTitles {
+            text-align: center;
+
+            h2 {
+                font-size: 2.4rem;
+            }
+            
+            p {
+                font-size: 1.4rem;
+            }
+        }
+        
+        a {
+            padding: 1.4rem 2.4rem;
+            font-size: 1.4rem;
+        }
     }
 }

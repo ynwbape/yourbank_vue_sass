@@ -16,7 +16,7 @@
             </h2>
 
             <p>
-                {{ TEXTS.Standalone.CTA.paragraph }}
+                {{ TEXTS.Standalone.CTA.paragraph2ndver }}
             </p>
         </div>
 

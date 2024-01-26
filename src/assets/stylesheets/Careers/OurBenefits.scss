@@ -16,14 +16,27 @@
         align-self: stretch;
         position: relative;
 
+        .obSubLine {
+            width: auto;
+            height: .1rem;
+            background-color: variables.$grey_15;
+        }
+
         .obSubContainer {
             display: flex;
             gap: 10rem;
             align-self: stretch;
+
+            .obCardLine {
+                width: .1rem;
+                height: auto;
+                background-color: variables.$grey_15;
+            }
         }
     }
 }
 
+// Laptop
 @media screen and (max-width: 1440px) {
     .obContainer {
         width: 128rem;
@@ -34,6 +47,29 @@
             
             .obSubContainer {
                 gap: 5rem;
+            }
+        }
+    }
+}
+
+// Mobile 
+@media screen and (max-width: 480px) {
+    .obContainer {
+        width: 35.8rem;
+        gap: 6rem;
+    
+        .obCards {
+            gap: 2.4rem;
+
+            .obSubLine, 
+            .obSubContainer > .obCardLine {
+                width: 100%;
+                height: .1rem;
+            }
+    
+            .obSubContainer {
+                flex-direction: column;
+                gap: 2.4rem;
             }
         }
     }

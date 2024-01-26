@@ -13,7 +13,6 @@
         align-self: stretch;
         color: variables.$grey_30;
         font-size: 5.8rem;
-        font-style: normal;
         font-weight: 500;
         line-height: 150%; /* 87px */
     }
@@ -22,12 +21,12 @@
         align-self: stretch;
         color: variables.$grey_70;
         font-size: 1.8rem;
-        font-style: normal;
         font-weight: 300;
         line-height: 150%; /* 27px */
     }
 }
 
+// Laptop
 @media screen and (max-width: 1440px) {
     .valueCard {
         padding-left: 2.4rem;
@@ -39,6 +38,22 @@
         
         p {
             font-size: 1.6rem;
+        }
+    }
+}
+
+// Mobile 
+@media screen and (max-width: 480px) {
+    .valueCard {
+        padding-left: 2rem;
+        gap: 1.4rem;
+        
+        h4 {
+            font-size: 3rem;
+        }
+        
+        p {
+            font-size: 1.4rem;
         }
     }
 }

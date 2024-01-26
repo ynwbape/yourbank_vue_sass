@@ -95,7 +95,8 @@ export const TEXTS = {
         CTA: {
             title: "Start your financial journey with",
             greenTitle: "YourBank Today!",
-            paragraph: "Ready to take control of your finances? Join YourBank now, and let us help you achieve your financial goals with our tailored solutions and exceptional customer service"
+            paragraph: "Ready to take control of your finances? Join YourBank now, and let us help you achieve your financial goals with our tailored solutions and exceptional customer service",
+            paragraph2ndver: "Lorem ipsum dolor sit amet consectetur. Blandit odio semper risus pellentesque elit. Pellentesque eget ut imperdiet nulla penatibus. Nascetur viverra arcu sed amet cursus purus."
         }
     }
 }

@@ -20,7 +20,7 @@
 
 <template>
     <section class="wybcContainer">
-        <img class="wybcImgBg" :src="IMAGES.Standalone.TitleImageSection.svgBG" alt="Abstract Design Background of green dots">
+        <img class="wybcImgAbstract" :src="IMAGES.Standalone.TitleImageSection.svgBG" alt="Abstract Design Background of green dots">
         
         <div class="wybcTitles">
             <p class="wybcBeforeTitle">{{ optSentence }}</p>

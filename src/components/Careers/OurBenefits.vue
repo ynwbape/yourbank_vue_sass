@@ -34,8 +34,6 @@
         cardTitle4: String,
         cardDescription4: String,
     });
-
-    
 </script>
 
 <template>
@@ -54,21 +52,24 @@
                     :service="props.cardTitle" 
                     :synopsis="props.cardDescription"
                 />
+
+                <div class="obCardLine"></div>
                 <Card
-                    :key="props.cardId2"
-                    :img="props.cardIcon2" 
-                    :service="props.cardTitle2" 
-                    :synopsis="props.cardDescription2"
+                :key="props.cardId2"
+                :img="props.cardIcon2" 
+                :service="props.cardTitle2" 
+                :synopsis="props.cardDescription2"
                 />    
             </div>
-            
+            <div class="obSubLine"></div>
             <div class="obSubContainer">
                 <Card
-                    :key="props.cardId3"
-                    :img="props.cardIcon3" 
-                    :service="props.cardTitle3" 
-                    :synopsis="props.cardDescription3"
+                :key="props.cardId3"
+                :img="props.cardIcon3" 
+                :service="props.cardTitle3" 
+                :synopsis="props.cardDescription3"
                 />    
+                <div class="obCardLine"></div>
                 <Card
                     :key="props.cardId4"
                     :img="props.cardIcon4" 

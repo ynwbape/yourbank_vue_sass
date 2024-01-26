@@ -8,7 +8,6 @@
     
     // Values StyleSheet
     import '../../assets/stylesheets/Careers/Values.scss';
-
 </script>
 
 <template>
@@ -43,9 +42,3 @@
         </article>
     </section>
 </template>
-
-<!-- <style lang="scss" scoped>
-    @use '../../assets/stylesheets/variables';
-
-    
-</style> -->
