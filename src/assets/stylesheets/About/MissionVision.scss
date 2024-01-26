@@ -86,6 +86,7 @@
     }
 }
 
+// Laptop
 @media screen and (max-width: 1440px) {
     .mvContainer {
         width: 128rem;
@@ -127,6 +128,76 @@
                 .visionTexts {
                     padding-right: 4rem;
                 }
+            }
+        }
+    }
+}
+
+// Mobile 
+@media screen and (max-width: 480px) {
+    .mvContainer {
+        width: 35.8rem;
+        gap: 6rem;
+    
+        .mvSubContainer {
+            gap: 5rem;
+    
+            .visionSection {
+                margin-top: unset;
+            }
+
+            .missionSection, .visionSection {
+                flex-direction: column;
+                
+                &.visionSection {
+                    flex-direction: column-reverse;
+                }
+
+                .missionImg, .visionImg  {
+                    width: 35.8rem;
+                    height: auto;
+                    padding: 2rem 2rem 0rem 2rem;
+                    border-radius: 5rem 5rem 0rem 0rem;
+                    background-image: url('../../img/About/mvAbstractDesign.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+
+                    .designBackground {
+                        display: none;
+                    }
+    
+                    img {
+                        flex: unset;
+                        height: 32.9rem;
+                        z-index: 2;
+                        align-self: stretch;
+                        border-radius: 5rem 5rem 0rem 0rem;
+                    }
+                }
+    
+                .missionTexts, .visionTexts {
+                    padding-top: 3rem;
+                    padding-left: unset;
+                    padding-right: unset;
+                    gap: 1rem;
+                    text-align: center;
+                    align-items: center;
+                    border-top: .1rem solid variables.$green_60;
+                    border-left: unset;
+
+                    h4 {
+                        font-size: 2.8rem;
+                    }
+    
+                    p {
+                        font-size: 1.4rem;
+                    }
+                }
+    
+                .visionTexts {
+                    border-right:unset;
+                }   
             }
         }
     }

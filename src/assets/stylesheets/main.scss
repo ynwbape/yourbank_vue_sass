@@ -22,7 +22,7 @@ main {
 }
 
 // Mobile gap between sections
-@media only screen and (min-width: 360px) and (max-width: 430px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     html, body {
         overflow-x: hidden;
     }
@@ -42,7 +42,7 @@ main {
     }   
 }
 
-@media all and (min-width: 431px) and (max-width: 1438px) {
+@media all and (min-width: 481px) and (max-width: 1430px) {
     body {
         display: none;
         background-color: black;

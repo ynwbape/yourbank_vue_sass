@@ -35,3 +35,21 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    .prContainer {
+        width: 35.8rem;
+        align-items: center;
+        gap: 4rem;
+        
+        .prCardSubContainer {
+            gap: 2rem;
+
+            .prSubContainer {
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+            }
+        }
+    }
+}

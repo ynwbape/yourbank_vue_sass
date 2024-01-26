@@ -20,7 +20,7 @@
 
 <template>
     <section class="beContainer">
-        <img class="beImgBg" :src="IMAGES.Standalone.TitleImageSection.svgBG" alt="Abstract Design Background of green dots">
+        <img class="beImgAbstract" :src="IMAGES.Standalone.TitleImageSection.svgBG" alt="Abstract Design Background of green dots">
         
         <div class="beTitles">
             <p class="beBeforeTitle">{{ optSentence }}</p>
