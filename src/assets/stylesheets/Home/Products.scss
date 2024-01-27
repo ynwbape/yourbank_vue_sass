@@ -16,6 +16,7 @@
     }
 }
 
+// Laptop
 @media screen and (max-width: 1440px) {
     .productsContainer {
         display: flex;
@@ -24,6 +25,20 @@
 
         .productCards {
             gap: 4rem;
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width: 480px) {
+    .productsContainer {
+        width: 35.8rem;
+        gap: 5rem;
+    
+        .productCards {
+            flex-direction: column;
+            gap: 6rem;
+            padding: 0rem 1rem;
         }
     }
 }

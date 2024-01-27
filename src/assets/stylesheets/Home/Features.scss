@@ -60,6 +60,7 @@
     }
 }
 
+// Laptop
 @media screen and (max-width: 1440px) {
     .featuresContainer {
         width: 128rem;
@@ -84,6 +85,47 @@
                 gap: 2rem;
 
                 .fcSubContainer {
+                    gap: 2rem;
+                }
+            }
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width: 480px) {
+    .featuresContainer {
+        width: 35.8rem;
+        gap: 6rem;
+    
+        .features {
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+    
+            .featuresTypes {
+                width: 32.6rem;
+                flex-direction: row;
+                flex: auto;
+                overflow: scroll;
+                padding: 2rem;
+                gap: 2rem;
+                border-radius: 1rem;
+
+                button {
+                    white-space: nowrap;
+                    padding: 1.4rem 2rem;
+                    font-size: 1.4rem;
+                }
+            }
+    
+            .featuresCardContainer {
+                align-items: center;
+                gap: 2rem;
+    
+                .fcSubContainer {
+                    flex-direction: column;
+                    align-items: center;
                     gap: 2rem;
                 }
             }

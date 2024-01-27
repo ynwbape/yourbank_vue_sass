@@ -13,46 +13,55 @@
     }
 
     .fjContainer {
-        width: 82.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5rem;
+        flex: 1 0 0;
 
-        .no-check-bank {
-            display: inline-flex;
-            align-items: center;
-            gap: .6rem;
-            padding: 1rem 2rem 1rem 1.2rem;
-            background-color: variables.$grey-15;
-            border-radius: variables.$borderRadius61;
-
-            img {
-                height: 2.4rem;
+        .fjHeadings {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+            align-self: stretch;
+            .no-check-bank {
+                display: inline-flex;
+                align-items: center;
+                gap: .6rem;
+                padding: 1rem 2rem 1rem 1.2rem;
+                background-color: variables.$grey-15;
+                border-radius: variables.$borderRadius61;
+    
+                img {
+                    height: 2.4rem;
+                }
+    
+                p {
+                    font-size: 1.8rem;
+                    font-weight: 300;
+                    line-height: 2.4rem;
+                }
             }
-
+    
+            h2 {
+                font-size: 4.8rem;
+                font-weight: 500;
+                line-height: 150%;
+                align-self: stretch;
+    
+                strong {
+                    color: variables.$green_60;
+                }
+            }
+    
             p {
                 font-size: 1.8rem;
                 font-weight: 300;
-                line-height: 2.4rem;
+                line-height: 150%;
+                color: variables.$white-90;
+                align-self: stretch;
             }
-        }
-
-        h2 {
-            font-size: 4.8rem;
-            font-weight: 500;
-            line-height: 150%;
-            align-self: stretch;
-            margin-top: 2rem;
-            margin-bottom: 1.4rem;
-
-            strong {
-                color: variables.$green_60;
-            }
-        }
-
-        p {
-            font-size: 1.8rem;
-            font-weight: 300;
-            line-height: 150%;
-            color: variables.$white-90;
-            align-self: stretch;
         }
 
         a {
@@ -66,14 +75,12 @@
             font-weight: 400;
             line-height: 150%;
             text-decoration: none;
-            margin-top: 5rem;
-
+    
             &:visited {
                 text-decoration: none;
                 color: variables.$grey_11;
             }
         }
-
     }
 
     .teContainer {
@@ -218,35 +225,34 @@
         .fjContainer {
             gap: 4rem;
 
-            .no-check-bank {
-                gap: .4rem;
-                padding: .8rem 1.6rem .8rem .8rem;
-                
-                img {
-                    height: 2rem;
-                }
+            .fjHeadings {
+                gap: 1rem;
 
+                .no-check-bank {
+                    gap: .4rem;
+                    padding: .8rem 1.6rem .8rem .8rem;
+                    
+                    img {
+                        height: 2rem;
+                    }
+        
+                    p {
+                        font-size: 1.4rem;
+                    }
+                }
+        
+                h2 {
+                    font-size: 3.8rem;
+                }
+        
                 p {
-                    font-size: 1.8rem;
-                    font-weight: 300;
-                    line-height: 2.4rem;
+                    font-size: 1.6rem;
                 }
             }
-
-            h2 {
-                font-size: 3.8rem;
-                margin-top: 1.6rem;
-                margin-bottom: 1rem;
-            }
-
-            p {
-                font-size: 1.6rem;
-            }
-
+    
             a {
                 padding: 1.4rem 2.4rem;
                 font-size: 1.4rem;
-                margin-top: 4rem;
             }
         }
 
@@ -293,10 +299,11 @@
             }
 
             .exchangePart {
+                gap: 1.5rem;
                 .exchangeBtn {
                     border-radius: 5.7rem;
                     padding: 1.1rem 2.1rem;
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                 }
             }
 
@@ -319,6 +326,134 @@
 
                     img {
                         height: 2.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width: 480px) {
+    .hsContainer {
+        width: 35.8rem;
+        flex-direction: column;
+        gap: 8rem;
+        align-items: center;
+        padding: unset;
+        margin-bottom: 4rem;
+    
+        .arrowsdesign {
+            right: -2.1rem;
+            bottom: 17rem;
+            height: 20rem;
+        }
+    
+        .fjContainer {
+            gap: 3rem;
+            align-items: center;
+
+            .fjHeadings {
+                gap: .8rem;
+                align-items: center;
+                text-align: center;
+                .no-check-bank {
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+        
+                h2 {
+                    font-size: 2.8rem;
+                }
+        
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    
+        .teContainer {
+            gap: 1.5rem;
+            flex-shrink: 0;
+            width: 30.5rem;
+            padding: 2.1rem;
+            border-radius: .6rem;
+            border: 0.051rem solid variables.$grey_15;
+    
+            .income {
+                gap: .5rem;
+                padding: .8rem 1rem;
+                left: -3.6rem;
+                top: -2.6rem;
+                border-radius: .6rem;
+    
+                img {
+                    padding: .5rem;
+                    border-radius: 2.7rem;
+                }
+    
+                .incomeTexts {
+                    gap: .051rem;
+    
+                    strong {
+                        font-size: 1rem;
+                    }
+                    
+                    p {
+                        font-size: .8rem;
+                    }
+                }
+            }
+    
+            .transactionPart, .exchangePart {
+                gap: 1rem;
+    
+                .teTitle {  
+                    font-size: 1.2rem;
+                }
+            }
+    
+            .transactionPart {
+                .transactions { 
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+    
+            .exchangePart {
+                .exchanges {
+                    display: flex;
+                    align-items: flex-start;
+                    align-self: stretch;
+                }
+    
+                .exchangeBtn {
+                    border-radius: 4.2rem;
+                    padding: .8rem 1.5rem;
+                }
+            }
+    
+            .supportedCurrencyContainer {
+                position: absolute;
+                right: -3.1rem;
+                bottom: -5.1rem;
+                border-radius: 6.9rem;
+                padding: .5rem .5rem .5rem 1.2rem;
+                
+                p {
+                    font-size: 1rem;
+                }
+    
+                .currencies {
+                    padding: .5rem;
+                    gap: .4rem;
+                    border-radius: 2.8rem;
+                    border: .051rem solid variables.$grey_15;
+                    
+                    img {
+                        height: 2rem;
                     }
                 }
             }

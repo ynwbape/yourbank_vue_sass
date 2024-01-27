@@ -8,8 +8,6 @@
 
     // Features StyleSheet
     import "../../assets/stylesheets/Home/Features.scss";
-    // SectionTitles StyleSheet
-    import '../../assets/stylesheets/Standalone/SectionTitles.scss';
 </script>
 
 <template>

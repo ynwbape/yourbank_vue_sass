@@ -27,6 +27,7 @@
         gap: 1rem;
         border-radius: 7rem;
         background: linear-gradient(180deg, rgba(202, 255, 51, 0.05) 0%, rgba(202, 255, 51, 0.00) 100%);
+        
         .casesIcon {
             display: flex;
             padding: 2rem;
@@ -42,6 +43,7 @@
     }
 }
 
+// Laptop
 @media screen and (max-width: 1440px) {
     .casesItem {
         padding: 2.4rem;
@@ -60,6 +62,34 @@
 
                 img {
                     height: 2.2rem;
+                }
+            }
+        }
+    }
+}
+
+// Mobile 
+@media screen and (max-width: 480px) {
+    .casesItem {
+        height: 100%;
+        padding: 2rem 1.4rem;
+        gap: 1.4rem;
+    
+        border-radius: 1.2rem;
+        
+        p {
+            font-size: 1.4rem;
+        }
+    
+        .casesIconContainer {
+            padding: .8rem;
+            
+            .casesIcon {
+                padding: 1.2rem;
+                gap: 1rem;
+                
+                img {
+                    height: 2.4rem;
                 }
             }
         }

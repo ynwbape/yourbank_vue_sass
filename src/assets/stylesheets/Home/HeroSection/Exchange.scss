@@ -104,3 +104,45 @@
         }
     }
 } 
+
+// Mobile 
+@media screen and (max-width: 480px) {
+    .exchangeCurrensy {
+        width: 50%;
+        border-radius: 1rem;
+        
+        .country {
+            padding: 1rem;
+            gap: .5rem;
+            border: .051rem solid variables.$grey_15;
+            
+            div {
+                gap: .5rem;
+                
+                img {
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 2rem;
+                }
+                
+                p {
+                    font-size: .9rem;
+                }
+            }
+            
+            p.whiteGrey {
+                font-size: .8rem;
+            }
+        }
+        
+        .amount {
+            padding: 1.5rem 1rem;
+            gap: .5rem;
+            border: .051rem solid variables.$grey_15;
+            
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}

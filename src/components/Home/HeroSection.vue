@@ -18,19 +18,21 @@
         <img :src="IMAGES.Home.HeroSectionImages.arrows" alt="Green arrows" class="arrowsdesign">
 
         <article class="fjContainer">
-            <div class="no-check-bank">
-                <img :src="IMAGES.Home.HeroSectionImages.checkIcon" alt="Green Check">
+            <div class="fjHeadings">
+                <div class="no-check-bank">
+                    <img :src="IMAGES.Home.HeroSectionImages.checkIcon" alt="Green Check">
+                    <p>
+                        {{ TEXTS.Home.HeroSection.noCheckBank }}
+                    </p>
+                </div>
+                <h2>
+                    {{ TEXTS.Home.HeroSection.title }}
+                    <strong>{{ TEXTS.Home.HeroSection.greenTitle }}</strong>
+                </h2>
                 <p>
-                    {{ TEXTS.Home.HeroSection.noCheckBank }}
+                    {{ TEXTS.Home.HeroSection.paragraph }}
                 </p>
             </div>
-            <h2>
-                {{ TEXTS.Home.HeroSection.title }}
-                <strong>{{ TEXTS.Home.HeroSection.greenTitle }}</strong>
-            </h2>
-            <p>
-                {{ TEXTS.Home.HeroSection.paragraph }}
-            </p>
 
             <a href="#openaccount" target="_blank">Open Account</a>
         </article>
