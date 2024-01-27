@@ -1,7 +1,7 @@
 <script setup>
     import { IMAGES } from '../../../../assets/scripts/images';
 
-
+    // Transaction StyleSheet
     import '../../../../assets/stylesheets/Home/HeroSection/Transaction.scss';
 
     const props = defineProps({

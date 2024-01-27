@@ -14,7 +14,7 @@
         <div class="cardTitle">
             <div class="cardIconContainer">
                 <div class="cardIcon">
-                    <img :src="props.img" alt="">
+                    <img :src="props.img" alt="Card green icon">
                 </div>
             </div>
             <h4>{{ service }}</h4>

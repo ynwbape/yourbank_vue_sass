@@ -78,6 +78,7 @@
     }
 }
 
+// Laptop 
 @media screen and (max-width: 1440px) {
     .individualContent {
         gap: 5rem;
@@ -113,6 +114,58 @@
 
             .statLine {
                 height: 11.1rem;
+            }
+        }
+    }
+}
+
+// Mobile 
+@media screen and (max-width: 480px) {
+    .individualContent {
+        width: 100%;
+        align-items: center;
+        gap: 5rem;
+    
+        a {
+            padding: 1.4rem 2rem;
+            font-size: 1.4rem;
+        }
+
+        .indiHeadings {
+            align-items: center;
+            gap: 1rem;
+            text-align: center;
+            
+            h5 {
+                font-size: 2rem;
+            }
+    
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    
+        .statistics {
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+            text-align: center;
+    
+            .stat {
+                gap: .2rem;
+    
+                span {
+                    font-size: 4rem;
+                }
+    
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+    
+            .statLine {
+                width: 100%;
+                height: .1rem;
             }
         }
     }

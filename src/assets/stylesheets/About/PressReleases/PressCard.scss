@@ -86,3 +86,35 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    .prCard {
+        padding: 2rem;
+        gap: 3rem;  
+    
+        img {
+            height: 20.6rem;
+        }
+    
+        .prCardTexts {
+            padding: unset;
+            gap: 2.4rem;
+    
+            .prTitlesTags {
+                gap: 1rem;
+    
+                h4 {
+                    font-size: 1.8rem;
+                }
+    
+                .prTags {
+                    gap: .8rem;
+                }
+            }
+    
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

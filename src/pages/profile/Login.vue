@@ -14,7 +14,7 @@
     <main>
         <div class="loginContainer">
             <div class="login">
-                <img :src="IMAGES.SignUpLogin.signUpLoginDesign" alt="abstract design">
+                <img class="loginAbstractdesign" :src="IMAGES.SignUpLogin.signUpLoginDesign" alt="abstract design">
 
                 <div class="loginHeadings">
                     <h1>login</h1>
@@ -40,7 +40,7 @@
                     <div class="buttons">
                         <button type="submit">Login</button>
 
-                        <router-link to="/signup" >Sign Up</router-link>
+                        <router-link to="/signup">Sign Up</router-link>
                         
                         <div class="moreOptions">
                             <div class="line"></div>

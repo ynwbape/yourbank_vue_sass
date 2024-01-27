@@ -19,9 +19,18 @@
     line-height: 150%; /* 27px */
 }
 
+// Laptop
 @media screen and (max-width: 1440px) {
     .tags {
         padding: .6rem 1.4rem;
         font-size: 1.6rem;
+    }
+}
+
+// Mobile 
+@media screen and (max-width: 480px) {
+    .tags {
+        padding: .6rem 1.2rem;
+        font-size: 1.4rem;
     }
 }

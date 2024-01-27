@@ -10,14 +10,14 @@
 </script>
 
 <template>
-    <div class="productsContainer">
+    <section class="productsContainer">
         <TitleIndividualBusiness 
             title="Our"
             green-title="Products"
             :title-resume="TEXTS.Home.Products.paragraph"
         />
 
-        <div class="productCards">
+        <article class="productCards">
             <ProductCard 
                 v-for="product in products"
                 :key="product.id"
@@ -26,6 +26,6 @@
                 :img-url="product.url"
                 :img-alt="product.alt"
             />
-        </div>
-    </div>
+        </article>
+    </section>
 </template>

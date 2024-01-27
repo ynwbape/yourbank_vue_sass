@@ -11,7 +11,7 @@
 </script>
 
 <template>
-    <div class="mvContainer">
+    <section class="mvContainer">
         <SectionTitles 
             :green-title="TEXTS.About.MissionVision.mvGreenTitle"
             :title-description="TEXTS.About.MissionVision.mvTitleResume"
@@ -49,5 +49,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>

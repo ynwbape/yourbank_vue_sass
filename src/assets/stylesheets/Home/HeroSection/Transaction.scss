@@ -25,7 +25,6 @@
             }
         }
 
-
         .texts {
             display: flex;
             flex-direction: column;
@@ -43,8 +42,6 @@
                     line-height: 150%;
                 }
             }
-
-            
         }
     }
 
@@ -92,6 +89,48 @@
         .numbers {
             p {
                 font-size: 1.7rem;
+            }
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width: 480px) {
+    .transaction {
+        padding: .8rem 1.2rem;
+        border-radius: .6rem;
+        border: .051rem solid variables.$grey_15;
+        
+        .name {
+            gap: .5rem;
+    
+            .nameIconContainer {
+                padding: .5rem;
+                border-radius: 2.7rem;
+
+                img {
+                    height: 1.2rem;
+                }
+            }
+    
+            .texts {
+                p {
+                    font-size: .9rem;
+    
+                    &:last-child {
+                        font-size: 1rem;
+                        font-weight: 400;
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    
+        .numbers {
+            p {
+                font-size: 1.2rem;
+                font-weight: 500;
+                line-height: 150%;
             }
         }
     }

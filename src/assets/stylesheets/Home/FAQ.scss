@@ -80,6 +80,7 @@
     }
 }
 
+// Laptop
 @media screen and (max-width: 1440px) {
     .faqContainer {
         width: 128rem;
@@ -111,6 +112,50 @@
             button {
                 font-size: 1.4rem;
                 padding: 1.4rem 2rem;
+            }
+        }
+    }
+}
+
+// Mobile 
+@media screen and (max-width: 480px) {
+    .faqContainer {
+        width: 35.7rem;
+        gap: 5rem;
+    
+        .faqTitles {
+            padding: unset;
+            gap: 1rem;
+            text-align: center;
+    
+            h2 {
+                font-size: 2.8rem;
+            }
+    
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    
+        .questionsContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: stretch;
+    
+            .questions {
+                gap: 2rem;
+                
+                .row {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 2rem;
+                }
+    
+            }
+    
+            button {
+                border-radius: 10rem;
             }
         }
     }

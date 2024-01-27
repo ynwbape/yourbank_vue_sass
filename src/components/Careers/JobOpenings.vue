@@ -15,13 +15,13 @@
 </script>
 
 <template>
-    <div class="joContainer">
+    <section class="joContainer">
         <SectionTitles 
             green-title="Job Openings"
             :title-description="TEXTS.Careers.JobOpenings.joDescription"
         />
         
-        <div class="joCardContainer">
+        <article class="joCardContainer">
             <JobsCard 
                 job-name="Relationship Manager"
                 :job-resume="TEXTS.Careers.JobOpenings.rmResume"
@@ -40,9 +40,9 @@
                 job-tag-value2="Risk Management"
                 :qualification="riskAnalyst"
             />
-        </div>
+        </article>
 
-        <div class="joCardContainer">
+        <article class="joCardContainer">
             <JobsCard 
                 job-name="IT Security Specialist"
                 :job-resume="TEXTS.Careers.JobOpenings.itssResume"
@@ -52,6 +52,6 @@
                 job-tag-value2="Informarion Technology"
                 :qualification="itSecuritySpecialist"
             />
-        </div>
-    </div>
+        </article>
+    </section>
 </template>

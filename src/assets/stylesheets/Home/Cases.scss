@@ -51,6 +51,7 @@
     }
 }
 
+// Laptop
 @media screen and (max-width: 1440px) {
     .casesContainer {
         width: 128rem;
@@ -65,6 +66,40 @@
                 .indiBusiItems {
                     gap: 1rem;
                     
+                    .casesSubItems {
+                        gap: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Mobile 
+@media screen and (max-width: 480px) {
+    .casesContainer {
+        width: 35.8rem;
+        gap: 6rem;
+    
+        .casesContent {
+            align-items: center;
+            gap: 4rem;
+    
+            .indiBusiContainer {
+                flex-direction: column;
+                gap: 3rem;
+                
+                &:last-child {
+                    flex-direction: column-reverse;
+                }
+                
+                .indiBusiItems {
+                    padding: 2rem;
+                    gap: 1rem;
+                    flex: 1 0 0;
+                    background-size: 11.2rem;
+                    
+
                     .casesSubItems {
                         gap: 1rem;
                     }

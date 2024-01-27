@@ -18,19 +18,21 @@
         <img :src="IMAGES.Home.HeroSectionImages.arrows" alt="Green arrows" class="arrowsdesign">
 
         <article class="fjContainer">
-            <div class="no-check-bank">
-                <img :src="IMAGES.Home.HeroSectionImages.checkIcon" alt="Green Check">
+            <div class="fjHeadings">
+                <div class="no-check-bank">
+                    <img :src="IMAGES.Home.HeroSectionImages.checkIcon" alt="Green Check">
+                    <p>
+                        {{ TEXTS.Home.HeroSection.noCheckBank }}
+                    </p>
+                </div>
+                <h2>
+                    {{ TEXTS.Home.HeroSection.title }}
+                    <strong>{{ TEXTS.Home.HeroSection.greenTitle }}</strong>
+                </h2>
                 <p>
-                    {{ TEXTS.Home.HeroSection.noCheckBank }}
+                    {{ TEXTS.Home.HeroSection.paragraph }}
                 </p>
             </div>
-            <h2>
-                {{ TEXTS.Home.HeroSection.title }}
-                <strong>{{ TEXTS.Home.HeroSection.greenTitle }}</strong>
-            </h2>
-            <p>
-                {{ TEXTS.Home.HeroSection.paragraph }}
-            </p>
 
             <a href="#openaccount" target="_blank">Open Account</a>
         </article>
@@ -47,7 +49,7 @@
             </div>
 
             <div class="transactionPart">
-                <p>Your Transactions</p>
+                <p class="teTitle">Your Transactions</p>
                 <div class="transactions">
                     <Transaction transac-name="Joel Kenley" currency="$" :money=68 />
                     <Transaction transac-name="Mark Smith" currency="$" :money=180 />
@@ -55,7 +57,7 @@
             </div>
 
             <div class="exchangePart">
-                <p>Money Exchange</p>
+                <p class="teTitle">Money Exchange</p>
 
                 <div class="exchanges">
                     <Exchange 
@@ -76,7 +78,7 @@
                 <button class="exchangeBtn">Exchange</button>
             </div>
 
-            <div class="supported">
+            <div class="supportedCurrencyContainer">
                 <p>Supported Currensy</p>
                 <div class="currencies">
                     <img :src="IMAGES.Home.HeroSectionImages.dollarIcon" alt="Dollar Icon">

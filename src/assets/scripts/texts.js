@@ -85,7 +85,7 @@ export const TEXTS = {
     },
     Standalone: {
         titleIndividualBusiness: {
-            paragraph: "Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service. See why our clients trust us for a secure and prosperous financial journey",
+            paragraph: "Lorem ipsum dolor sit amet consectetur. Blandit odio semper risus pellentesque elit. Pellentesque eget ut imperdiet nulla penatibus. Nascetur viverra arcu sed amet cursus purus.",
         },
         FAQ: {
             title: "Asked Quesions",
@@ -95,8 +95,16 @@ export const TEXTS = {
         CTA: {
             title: "Start your financial journey with",
             greenTitle: "YourBank Today!",
-            paragraph: "Ready to take control of your finances? Join YourBank now, and let us help you achieve your financial goals with our tailored solutions and exceptional customer service"
+            paragraph: "Ready to take control of your finances? Join YourBank now, and let us help you achieve your financial goals with our tailored solutions and exceptional customer service",
+            paragraph2ndver: "Lorem ipsum dolor sit amet consectetur. Blandit odio semper risus pellentesque elit. Pellentesque eget ut imperdiet nulla penatibus. Nascetur viverra arcu sed amet cursus purus."
         }
+    },
+    Footer: {
+        mail: "hello@skillbirdge.com",
+        phoneText: "+91 91813 23 2309",
+        phoneNumber: 9191813232309,
+        location: "Somewhere in the World",
+        address: "https://www.google.com/maps/place/%C3%89tats-Unis/@44.2423649,-119.8093025,3z/data=!3m1!4b1!4m6!3m5!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d37.09024!4d-95.712891!16zL20vMDljN3cw?entry=ttu",
     }
 }
 

@@ -15,14 +15,13 @@
 </script>
 
 <template>
-    <div class="casesContainer">
+    <section class="casesContainer">
         <SectionTitles
             :green-title="TEXTS.Home.Cases.greenTitle"
             :title-description="TEXTS.Home.Cases.casesResume"
         />
-
         <div class="casesContent">
-            <div class="indiBusiContainer">
+            <article class="indiBusiContainer">
                 <div class="indiBusiItems">
                     <div class="casesSubItems">
                         <CaseItem 
@@ -55,9 +54,8 @@
                     :ccon-stat3="caseContentStatArray.individual[2].number"
                     :ccon-stat-name3="caseContentStatArray.individual[2].statName"
                 />
-
-            </div>
-            <div class="indiBusiContainer">
+            </article>
+            <article class="indiBusiContainer">
                 <CaseContent
                     ccon-title="For Business"
                     :ccon-resume="TEXTS.Home.Cases.businessResume"
@@ -90,8 +88,7 @@
                         />
                     </div>
                 </div>
-
-            </div>
+            </article>
         </div>
-    </div>
+    </section>
 </template>

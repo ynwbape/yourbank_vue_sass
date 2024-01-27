@@ -12,7 +12,7 @@
 </script>
 
 <template>
-    <div class="prContainer">
+    <section class="prContainer">
         <SectionTitles 
             :green-title="TEXTS.About.PressReleases.prGreenTitle"
             :title-description="TEXTS.About.PressReleases.prTitleResume"
@@ -73,5 +73,5 @@
                 />
             </div>
         </div>
-    </div>
+    </section>
 </template>

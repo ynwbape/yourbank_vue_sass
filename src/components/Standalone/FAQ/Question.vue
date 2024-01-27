@@ -12,6 +12,8 @@
     <div class="question">
         <h4>{{ question }}</h4>
 
+        <div class="questionLine"></div>
+        
         <p>{{ answer }}</p>
     </div>
 </template>

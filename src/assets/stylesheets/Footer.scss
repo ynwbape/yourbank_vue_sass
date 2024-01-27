@@ -1,4 +1,4 @@
-@use '../variables';
+@use 'variables';
 
 footer {
     margin-top: 15rem;
@@ -9,8 +9,6 @@ footer {
     gap: 5rem;
     background-color: variables.$grey_11;
 
-    
-    
     .footerLine {
         width: 100%;
         height: .1rem;
@@ -44,6 +42,7 @@ footer {
         align-items: center;
         gap: 2rem;
         align-self: stretch;
+        flex-wrap: wrap;
 
         a {
             display: flex;
@@ -110,63 +109,107 @@ footer {
             }
         }
     }
-
 }
 
-@media screen and (max-width: 1440px) {
+@media only screen and (min-width: 1435px) and (max-width: 1440px) {
     footer {
         padding: 6rem 8rem 3rem 8rem;
         gap: 4rem;
 
-        .footerContainer {
+        .footerNav {
             gap: 4rem;
-
-            .footerNav {
-                gap: 4rem;
-                
-                .logo {
-                    .navTitle {
-                        height: 1.6rem;
-                    }
-                }
-
-                nav {
-                    gap: 1.4rem;
-    
-                    a {
-                        font-size: 1.6rem;
-                    }
+            
+            .logo {
+                .navTitle {
+                    height: 1.6rem;
                 }
             }
 
-            .contacts {
+            nav {
+                gap: 1.4rem;
+
                 a {
                     font-size: 1.6rem;
+                }
+            }
+        }
+
+        .contacts {
+            a {
+                font-size: 1.6rem;
+                
+                img {
+                    height: 2rem;
+                }
+            }
+        }
+
+        .copyrights {
+            padding: 1.2rem 2.4rem 1.2rem 1.2rem;
+
+            .socials {
+                gap: .8rem;
+                
+                a {
+                    padding: 1.2rem;
                     
                     img {
-                        height: 2rem;
+                        height: 2rem;       
                     }
                 }
             }
 
-            .copyrights {
-                padding: 1.2rem 2.4rem 1.2rem 1.2rem;
+            .copyright, .policy {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
 
-                .socials {
-                    gap: .8rem;
-                    
-                    a {
-                        padding: 1.2rem;
-                        
-                        img {
-                            height: 2rem;       
-                        }
-                    }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    footer {
+        padding: 5rem 1.6rem 3rem 1.6rem;
+        gap: 3rem;
+
+
+        .footerNav {
+            gap: 4rem;
+            
+            .logo {
+                .navTitle {
+                    height: 1.32rem;
                 }
+            }
 
-                .copyright, .policy {
+            nav {
+                gap: 1.4rem;
+
+                a {
                     font-size: 1.4rem;
                 }
+            }
+        }
+
+        .contacts {
+            a {
+                font-size: 1.4rem;
+            }
+        }
+
+        .copyrights {
+            flex-direction: column;
+            position: relative;
+
+            padding: 5rem 1.2rem 3rem 1.2rem;
+            border-radius: 1.2rem;
+
+            .socials {
+                position: absolute;
+                top: -2.4rem;
+            }
+
+            .copyright {
+                margin-bottom: 2rem;
             }
         }
     }
