@@ -13,7 +13,7 @@ Cela vient d'un template figma ayant trois écrans responsive :
  4. **https://yourbank-2b2f6.web.app/#/**
  5. **https://yourbank-2b2f6.firebaseapp.com/#/**
 
-La maquette originale se trouve [ici](https://www.figma.com/community/file/1298887728670431393)
+La maquette originale se trouve [ici, <br>](https://www.figma.com/community/file/1298887728670431393)
 Son auteur est [Produce UI](https://www.figma.com/@produce_ui)
 
 
