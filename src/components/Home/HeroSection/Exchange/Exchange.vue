@@ -7,6 +7,7 @@
         countryCurrensyAbbv: String,
         countryCurrensy: String,
         amount: Number,
+        flagDescription: String,
     });
 
 </script>
@@ -15,7 +16,12 @@
     <div class="exchangeCurrensy">
         <div class="country">
             <div>
-                <img :src="flag" alt="India's Flag">
+                <img 
+                    fetchpriority="high" 
+                    width="35"
+                    height="35"
+                    :src="flag" 
+                    :alt="flagDescription">
                 <p>{{ countryCurrensyAbbv }}</p>
             </div>
             <p class="whiteGrey">{{ countryCurrensy }}</p>

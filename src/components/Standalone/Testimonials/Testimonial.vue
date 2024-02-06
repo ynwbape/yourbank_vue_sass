@@ -12,7 +12,13 @@
 
 <template>
     <div class="item">
-        <img :src="IMAGES.Home.testimonialsImages.quoteIcon" alt="Green quote icon">
+        <img 
+            fetchpriority="high" 
+            width="60" 
+            height="60"
+            :src="IMAGES.Home.testimonialsImages.quoteIcon" 
+            alt="Green quote icon"
+        >
 
         <p>
             {{ testimonial }}

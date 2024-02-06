@@ -13,7 +13,7 @@
     <main>
         <div class="signupContainer">
             <div class="signup">
-                <img class="signupAbstractdesign" :src="IMAGES.SignUpLogin.signUpLoginDesign" alt="abstract design">
+                <img fetchpriority="low" class="signupAbstractdesign" :src="IMAGES.SignUpLogin.signUpLoginDesign" alt="abstract design">
 
                 <div class="signupHeadings">
                     <h1>Sign Up</h1>
@@ -47,19 +47,37 @@
                         <div class="socialSignup">
                             <button>
                                 <a href="">
-                                    <img :src="IMAGES.SignUpLogin.greenGoogle" alt="Green Google icon">
+                                    <img
+                                        fetchpriority="high"
+                                        width="30"
+                                        height="30"
+                                        :src="IMAGES.SignUpLogin.greenGoogle"
+                                        alt="Green Google icon"
+                                    >
                                 </a>
                             </button>
 
                             <button>
                                 <a href="">
-                                    <img :src="IMAGES.SignUpLogin.greenFacebook" alt="Green Google icon">
+                                    <img
+                                        fetchpriority="high"
+                                        width="30"
+                                        height="30" 
+                                        :src="IMAGES.SignUpLogin.greenFacebook" 
+                                        alt="Green Google icon"
+                                    >
                                 </a>
                             </button>
 
                             <button>
                                 <a href="">
-                                    <img :src="IMAGES.SignUpLogin.greenApple" alt="Green Google icon">
+                                    <img
+                                        fetchpriority="high"
+                                        width="30"
+                                        height="30" 
+                                        :src="IMAGES.SignUpLogin.greenApple" 
+                                        alt="Green Google icon"
+                                    >
                                 </a>
                             </button>
                         </div>

@@ -1,14 +1,14 @@
 //Images for Home's components
 //HeroSection.vue part
-import checkIcon from '../img/Home/icons/check.png';
+import checkIcon from '../img/Home/icons/check.webp';
 import plusIcon from '../img/Home/icons/plusicon.svg';
 import dollarIcon from '../img/Home/icons/dollar.svg';
 import euroIcon from '../img/Home/icons/euro.svg';
 import bitcoinIcon from '../img/Home/icons/bitcoin.svg';
 import ethIcon from '../img/Home/icons/eth.svg';
-import indiaFlag from "../img/flags/in-flag.gif";
-import usFlag from "../img/flags/us-flag.gif";
-import arrows from '../img/Home/arrows.png';
+import indiaFlag from "../img/flags/in-flag.webp";
+import usFlag from "../img/flags/us-flag.webp";
+import arrows from '../img/Home/arrows.webp';
 import transacIcon from '../img/Home/icons/transactionicon.svg';
 
 // Products.vue 
@@ -35,8 +35,8 @@ import psolIcon from '../img/Home/icons/CaseItem/psol.svg';
 import arrowTopDiagonalIcon from '../img/Home/icons/arrowtopdiagonal.svg';
 
 // Security's components
-import tisTopPriorityImage from '../img/Security/toppriorityimage.png';
-import pyImg from '../img/Security/protectyouimage.png';
+import tisTopPriorityImage from '../img/Security/toppriorityimage.webp';
+import pyImg from '../img/Security/protectyouimage.webp';
 
 // For cardArray's array of images 
 // icons for the cards in "How we protect you" component
@@ -46,7 +46,7 @@ import starsIcon from '../img/Security/icons/starsicon.svg';
 import mobileBankIcon from '../img/Security/icons/mobilebankicon.svg';
 
 // Careers.vue & sub components
-import ybcImg from '../img/Careers/careerimgbg.png';
+import ybcImg from '../img/Careers/careerimgbg.webp';
     
 // icons for Our Benefits section
 import marketChartIcon from '../img/Careers/icons/marketcharticon.svg';
@@ -55,25 +55,25 @@ import workBagIcon from '../img/Careers/icons/workbagicon.svg';
 import folderIcon from '../img/Careers/icons/foldericon.svg';
 
 // About.vue 
-import abeImg from '../img/About/aboutbankexcellence.png';
+import abeImg from '../img/About/aboutbankexcellence.webp';
 
 // MissionVision.vue
 import mvAbstractDesign from "../img/About/mvAbstractDesign.svg";
-import missionImg from "../img/About/missionimage.png";
-import visionImg from "../img/About/visionimage.png";
+import missionImg from "../img/About/missionimage.webp";
+import visionImg from "../img/About/visionimage.webp";
 
 // PressReleases.vue
-import prCardImg from "../img/About/PressCard/prcard.png";
-import prCardImg2 from "../img/About/PressCard/prcard2.png";
-import prCardImg3 from "../img/About/PressCard/prcard3.png";
-import prCardImg4 from "../img/About/PressCard/prcard4.png";
+import prCardImg from "../img/About/PressCard/prcard.webp";
+import prCardImg2 from "../img/About/PressCard/prcard2.webp";
+import prCardImg3 from "../img/About/PressCard/prcard3.webp";
+import prCardImg4 from "../img/About/PressCard/prcard4.webp";
 
 // Standalone/TitleImageSection.vue 
-import svgBG from '../img/Security/svgBG.png'
+import svgBG from '../img/Security/svgBG.webp'
 import tagsBriefcase from '../img/Careers/icons/briefcase.fill.svg';
 
 // Sign Up & Login vues
-import signUpLoginDesign from '../img/Login/Login_Abstract_Design.png';
+import signUpLoginDesign from '../img/Login/Login_Abstract_Design.webp';
 import greenGoogle from '../img/Login/icons/green_google.svg';
 import greenFacebook from '../img/Login/icons/green_facebook.svg';
 import greenApple from '../img/Login/icons/green_apple.svg';

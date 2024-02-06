@@ -10,7 +10,7 @@
 
 <template>
     <div class="question">
-        <h4>{{ question }}</h4>
+        <h6>{{ question }}</h6>
 
         <div class="questionLine"></div>
         

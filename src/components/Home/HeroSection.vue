@@ -15,12 +15,12 @@
 
 <template>
     <section class="hsContainer">
-        <img :src="IMAGES.Home.HeroSectionImages.arrows" alt="Green arrows" class="arrowsdesign">
+        <img fetchpriority="high" width="418" height="383" :src="IMAGES.Home.HeroSectionImages.arrows" alt="Green arrows" class="arrowsdesign">
 
         <article class="fjContainer">
             <div class="fjHeadings">
                 <div class="no-check-bank">
-                    <img :src="IMAGES.Home.HeroSectionImages.checkIcon" alt="Green Check">
+                    <img fetchpriority="low" width="24" height="20" :src="IMAGES.Home.HeroSectionImages.checkIcon" alt="Green Check">
                     <p>
                         {{ TEXTS.Home.HeroSection.noCheckBank }}
                     </p>
@@ -38,7 +38,7 @@
         </article>
         <article class="teContainer">
             <div class="income">
-                <img :src="IMAGES.Home.HeroSectionImages.plusIcon" alt="Plus icon">
+                <img fetchpriority="low" width="40" height="40" :src="IMAGES.Home.HeroSectionImages.plusIcon" alt="Plus icon">
                 <div class="incomeTexts">
                     <strong>
                         {{ TEXTS.Home.HeroSection.incomeValue }}
@@ -62,6 +62,7 @@
                 <div class="exchanges">
                     <Exchange 
                         :flag="IMAGES.Home.HeroSectionImages.indiaFlag" 
+                        flag-description="India's flag"
                         country-currensy-abbv="INR" 
                         country-currensy="Indian Rupees"
                         :amount="5"
@@ -69,6 +70,7 @@
                     
                     <Exchange 
                         :flag="IMAGES.Home.HeroSectionImages.usFlag" 
+                        flag-description="United States of America's flag"
                         country-currensy-abbv="USD" 
                         country-currensy="United States Dollar"
                         :amount="12"
@@ -81,10 +83,31 @@
             <div class="supportedCurrencyContainer">
                 <p>Supported Currensy</p>
                 <div class="currencies">
-                    <img :src="IMAGES.Home.HeroSectionImages.dollarIcon" alt="Dollar Icon">
-                    <img :src="IMAGES.Home.HeroSectionImages.euroIcon" alt="Euro icon">
-                    <img :src="IMAGES.Home.HeroSectionImages.bitcoinIcon" alt="Bitcoin icon">
-                    <img :src="IMAGES.Home.HeroSectionImages.ethIcon" alt="Ethereum icon">
+                    <img 
+                        fetchpriority="high" 
+                        width="35" 
+                        height="35" 
+                        :src="IMAGES.Home.HeroSectionImages.dollarIcon" alt="Dollar Icon"
+                    >
+                    <img 
+                        fetchpriority="high" 
+                        width="35" 
+                        height="35" 
+                        :src="IMAGES.Home.HeroSectionImages.euroIcon" alt="Euro icon"
+                    >
+                    <img 
+                        fetchpriority="high" 
+                        width="35" 
+                        height="35" 
+                        :src="IMAGES.Home.HeroSectionImages.bitcoinIcon" 
+                        alt="Bitcoin icon"
+                    >
+                    <img 
+                        fetchpriority="high" 
+                        width="35" 
+                        height="35" 
+                        :src="IMAGES.Home.HeroSectionImages.ethIcon" alt="Ethereum icon"
+                    >
                 </div>
             </div>
         </article>

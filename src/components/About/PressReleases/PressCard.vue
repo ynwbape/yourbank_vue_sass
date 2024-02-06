@@ -21,7 +21,13 @@
 
 <template>
     <div class="prCard">
-        <img :src="props.cardImg" :alt="props.cardImgAlt">
+        <img 
+            fetchpriority="high"  
+            width="723"  
+            height="333"  
+            :src="props.cardImg" 
+            :alt="props.cardImgAlt"
+        >
 
         <div class="prCardTexts">
             <div class="prTitlesTags">

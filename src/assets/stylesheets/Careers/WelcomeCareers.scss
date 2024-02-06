@@ -58,10 +58,8 @@
     .wybcYBCImg {
         z-index: 2;
         margin-left: -26rem;
-        width: 96.8rem;
         border-radius: 1.6rem;
         background-blend-mode: overlay, normal, normal;
-        height: 71.6rem;
     }
 }
 
@@ -101,8 +99,8 @@
     }
 }
 
-// Mobile 
-@media screen and (max-width: 480px) {
+// Tablets & Mobiles
+@media screen and (max-width: 768px) {
     .wybcContainer {
         width: 35.8rem;
         padding: 1.4rem;

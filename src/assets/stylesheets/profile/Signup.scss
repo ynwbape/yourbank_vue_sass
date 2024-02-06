@@ -209,8 +209,6 @@
 
                             img {
                                 position: unset;
-                                width: 3rem;
-                                height: 3rem;
                             }
                         }
                     }
@@ -328,8 +326,8 @@
     }
 }
 
-// Mobile
-@media screen and (max-width: 480px) {
+// Tablets & Mobiles
+@media screen and (max-width: 768px) {
     .signupContainer {
         .signup {
             flex-direction: column;

@@ -15,7 +15,13 @@
     <div class="transaction">
         <div class="name">
             <div class="nameIconContainer">
-                <img :src="IMAGES.Home.HeroSectionImages.transacIcon" alt="Transaction Icon">
+                <img 
+                    fetchpriority="high" 
+                    width="21" 
+                    height="21" 
+                    :src="IMAGES.Home.HeroSectionImages.transacIcon" 
+                    alt="Transaction Icon"
+                >
             </div>
             <div class="texts">
                 <p>Transaction</p>

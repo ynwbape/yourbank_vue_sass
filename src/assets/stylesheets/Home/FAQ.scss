@@ -50,6 +50,7 @@
             gap: 3rem;
             align-self: stretch;
             position: relative;
+            
             .gradient {
                 width: 100%;
                 height: 27.5rem;
@@ -58,6 +59,7 @@
                 bottom: -.2rem;
                 background: linear-gradient(180deg, rgba(25, 25, 25, 0.00) 0%, variables.$grey_19 100%);
             }
+
             .row {
                 display: flex;
                 align-items: flex-start;
@@ -117,8 +119,8 @@
     }
 }
 
-// Mobile 
-@media screen and (max-width: 480px) {
+// Tablets & Mobiles
+@media screen and (max-width: 768px) {
     .faqContainer {
         width: 35.7rem;
         gap: 5rem;

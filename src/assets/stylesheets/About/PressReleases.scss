@@ -21,6 +21,7 @@
     }
 }
 
+// Laptop
 @media screen and (max-width: 1440px) {
     .prContainer {
         width: 128rem;
@@ -36,7 +37,8 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+// Tablets & Mobiles
+@media screen and (max-width: 768px) {
     .prContainer {
         width: 35.8rem;
         align-items: center;

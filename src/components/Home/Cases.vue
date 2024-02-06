@@ -27,20 +27,24 @@
                         <CaseItem 
                             :case-item-name="caseItemArray[0].name"
                             :case-img-url="caseItemArray[0].img"
-                        />
+                            case-img-alt="Bag of money on hand icon"
+                            />
                         <CaseItem 
                             :case-item-name="caseItemArray[1].name"
                             :case-img-url="caseItemArray[1].img"
+                            case-img-alt="Dollar sign between hands"
                         />
                     </div>
                     <div class="casesSubItems">
                         <CaseItem 
                             :case-item-name="caseItemArray[2].name"
                             :case-img-url="caseItemArray[2].img"
+                            case-img-alt="Bank icon"
                         />
                         <CaseItem 
                             :case-item-name="caseItemArray[3].name"
                             :case-img-url="caseItemArray[3].img"
+                            case-img-alt="opened book icon"
                         />
                     </div>
                 </div>
@@ -71,20 +75,24 @@
                         <CaseItem 
                             :case-item-name="caseItemArray[4].name"
                             :case-img-url="caseItemArray[4].img"
+                            case-img-alt="Buildings icon"
                         />
                         <CaseItem 
                             :case-item-name="caseItemArray[5].name"
                             :case-img-url="caseItemArray[5].img"
+                            case-img-alt="Money machine icon"
                         />
                     </div>
                     <div class="casesSubItems">
                         <CaseItem 
                             :case-item-name="caseItemArray[6].name"
                             :case-img-url="caseItemArray[6].img"
+                            case-img-alt="Graph board icon"
                         />
                         <CaseItem 
                             :case-item-name="caseItemArray[7].name"
                             :case-img-url="caseItemArray[7].img"
+                            case-img-alt="Dollar coin icon"
                         />
                     </div>
                 </div>

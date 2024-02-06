@@ -5,15 +5,6 @@
     align-items: center;
     gap: .4rem;
     flex-shrink: 0;
-
-    .shape {
-        height: 4rem;
-    }
-
-    .navTitle {
-        height: 1.8rem;
-    }
-
 }
 
 @media screen and (max-width: 1440px) {
@@ -22,10 +13,12 @@
         align-items: center;
         
         .shape {
+            width: 3rem;
             height: 3rem;
         }
 
         .navTitle {
+            width: 8.4rem;
             height: 1.4rem;
         }
     }

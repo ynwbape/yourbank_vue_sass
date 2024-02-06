@@ -55,8 +55,6 @@
     .bemImg {
         z-index: 2;
         margin-left: -26rem;
-        width: 96.8rem;
-        height: 71.6rem;
         border-radius: 1.6rem;
         background-blend-mode: overlay, normal, normal;
     }
@@ -95,8 +93,8 @@
     }
 }
 
-// Mobile
-@media screen and (max-width: 480px) {
+// Tablets & Mobiles
+@media screen and (max-width: 768px) {
     .beContainer {
         flex-direction: column-reverse;
         align-items: flex-end;

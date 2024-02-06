@@ -105,8 +105,8 @@
     }
 }
 
-// Mobile
-@media screen and (max-width: 480px) {
+// Tablets & Mobiles
+@media screen and (max-width: 768px) {
     .tibHeader {
         flex-direction: column;
         justify-content: center;

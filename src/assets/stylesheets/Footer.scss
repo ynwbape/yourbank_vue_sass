@@ -43,19 +43,17 @@ footer {
         gap: 2rem;
         align-self: stretch;
         flex-wrap: wrap;
+        list-style-type: none;
 
-        a {
-            display: flex;
-            align-items: center;
-            gap: .6rem;
-            color: variables.$white_shades_90;
-            font-size: 1.8rem;
-            font-weight: 400;
-            line-height: 150%;
-            
-            img {
-                width: 2.4rem;
-                height: 2.4rem;
+        li {
+            a {
+                display: flex;
+                align-items: center;
+                gap: .6rem;
+                color: variables.$white_shades_90;
+                font-size: 1.8rem;
+                font-weight: 400;
+                line-height: 150%;
             }
         }
     }
@@ -84,10 +82,6 @@ footer {
                 gap: 1rem;
                 border-radius: 10rem;
                 background: variables.$green_60;
-                img {
-                    width: 2.4rem;
-                    height: 2.4rem;       
-                }
             }
         }
 
@@ -111,7 +105,8 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1435px) and (max-width: 1440px) {
+// Large Laptops
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
     footer {
         padding: 6rem 8rem 3rem 8rem;
         gap: 4rem;
@@ -135,11 +130,14 @@ footer {
         }
 
         .contacts {
-            a {
-                font-size: 1.6rem;
-                
-                img {
-                    height: 2rem;
+            li {
+                a {
+                    font-size: 1.6rem;
+                    
+                    img {
+                        width: 2rem;
+                        height: 2rem;
+                    }
                 }
             }
         }
@@ -154,6 +152,7 @@ footer {
                     padding: 1.2rem;
                     
                     img {
+                        width: 2rem;
                         height: 2rem;       
                     }
                 }
@@ -166,7 +165,51 @@ footer {
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+// Small Laptops
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    footer {
+        padding: 5rem 7rem 2rem 7rem;
+        gap: 3rem;
+
+        .footerNav {
+            nav {
+                gap: 2rem;
+
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .contacts {
+            li {
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .copyrights {
+            .socials {
+                a {
+                    padding: 1rem;
+                    
+                    img {
+                        width: 1.8rem;
+                        height: 1.8rem;       
+                    }
+                }
+            }
+
+            .copyright, .policy {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+// Mobiles & Tablets
+@media screen and (min-width: 320px) and (max-width: 768px) {
     footer {
         padding: 5rem 1.6rem 3rem 1.6rem;
         gap: 3rem;
@@ -191,8 +234,10 @@ footer {
         }
 
         .contacts {
-            a {
-                font-size: 1.4rem;
+            li {
+                a {
+                    font-size: 1.4rem;
+                }
             }
         }
 

@@ -2,7 +2,7 @@
 @import 'base.scss';
 
 body {
-    background-image: url('../img/App/AbstractDesign.png');
+    background-image: url('../img/App/AbstractDesign.webp');
     background-repeat: no-repeat;
 }
 
@@ -15,14 +15,14 @@ main {
 }
 
 // Laptop gap between sections
-@media only screen and (min-width: 1435px) and (max-width: 1440px) {
+@media screen and (min-width: 1435px) and (max-width: 1440px) {
     main {
         gap: 12rem;
     }
 }
 
-// Mobile gap between sections
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+// Mobile & Tablets gap between sections
+@media screen and (min-width: 320px) and (max-width: 768px) {
     html, body {
         overflow-x: hidden;
     }
@@ -30,29 +30,5 @@ main {
     main {
         gap: 8rem;
     }
-}
-
-/*******************************************
-********* CONTENT HIDDEN *******************
-*******************************************/ 
-@media all and (max-width: 319px) {
-    body {
-        display: none;
-        background-color: black;
-    }   
-}
-
-@media all and (min-width: 481px) and (max-width: 1430px) {
-    body {
-        display: none;
-        background-color: black;
-    }   
-}
-
-@media all and (min-width: 1442px) and (max-width: 1600px) {
-    body {
-        display: none;
-        background-color: black;
-    }   
 }
 

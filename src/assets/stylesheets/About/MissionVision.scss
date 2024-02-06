@@ -108,6 +108,11 @@
                         left: 2.2rem;
                         top: -1.4rem;
                     }
+    
+                    img {
+                        width: 42.5rem;
+                        height: 44rem;
+                    }
                 }
 
 
@@ -133,8 +138,8 @@
     }
 }
 
-// Mobile 
-@media screen and (max-width: 480px) {
+// Tablets & Mobiles
+@media screen and (max-width: 768px) {
     .mvContainer {
         width: 35.8rem;
         gap: 6rem;
@@ -169,6 +174,7 @@
     
                     img {
                         flex: unset;
+                        width: 31.8rem;
                         height: 32.9rem;
                         z-index: 2;
                         align-self: stretch;

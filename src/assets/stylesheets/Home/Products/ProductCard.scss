@@ -22,10 +22,6 @@
             gap: 1rem;
             border-radius: 5rem;
             background: linear-gradient(180deg, rgba(202, 255, 51, 0.10) -66.22%, rgba(202, 255, 51, 0.00) 85.46%);
-
-            img {
-                height: 3.4rem;
-            }
         }
     }
 
@@ -88,8 +84,8 @@
     }
 }
 
-// Mobile
-@media screen and (max-width: 480px) {
+// Tablets & Mobiles
+@media screen and (max-width: 768px) {
     .productCard {
         gap: 2rem;
         

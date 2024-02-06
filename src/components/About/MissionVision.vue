@@ -20,9 +20,20 @@
         <div class="mvSubContainer">
             <div class="missionSection">
                 <div class="missionImg">
-                    <img class="designBackground" :src="IMAGES.About.aboutImages.missionVision.mvAbstractDesign" alt="Dots Design in background">
+                    <img
+                        fetchpriority="low"
+                        class="designBackground"
+                        :src="IMAGES.About.aboutImages.missionVision.mvAbstractDesign"
+                        alt="Dots Design in background"
+                    >
                     
-                    <img :src="IMAGES.About.aboutImages.missionVision.missionImg" alt="A plant with a ton of coins on the ground">
+                    <img 
+                        fetchpriority="high" 
+                        width="542" 
+                        height="559" 
+                        :src="IMAGES.About.aboutImages.missionVision.missionImg" 
+                        alt="A plant with a ton of coins on the ground"
+                    >
                 </div>
 
                 <div class="missionTexts">
@@ -43,9 +54,20 @@
                 </div>
 
                 <div class="visionImg">
-                    <img class="designBackground" :src="IMAGES.About.aboutImages.missionVision.mvAbstractDesign" alt="Dots Design in background">
+                    <img 
+                        fetchpriority="low"
+                        class="designBackground"
+                        :src="IMAGES.About.aboutImages.missionVision.mvAbstractDesign"
+                        alt="Dots Design in background"
+                    >
                     
-                    <img :src="IMAGES.About.aboutImages.missionVision.visionImg" alt="Eye of a human visualize in front of him">
+                    <img 
+                        fetchpriority="high" 
+                        width="542" 
+                        height="559" 
+                        :src="IMAGES.About.aboutImages.missionVision.visionImg" 
+                        alt="Eye of a human visualize in front of him"
+                    >
                 </div>
             </div>
         </div>

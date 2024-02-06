@@ -16,8 +16,6 @@
     }
 
     .tpImage {
-        width: 96.8rem;
-        height: 71.6rem;
         flex: 1 0 0;
         border-radius: 1.6rem;
         margin-left: -26rem;
@@ -91,8 +89,8 @@
     }
 }
 
-// Mobile
-@media screen and (max-width: 480px) {
+// Tablets & Mobiles
+@media screen and (max-width: 768px) {
     .tpContainer {
         flex-direction: column-reverse;
         justify-content: center;

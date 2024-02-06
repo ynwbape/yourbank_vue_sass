@@ -94,7 +94,3 @@
         <CTA />
     </main>    
 </template>
-
-<style lang="scss">
-    @use '../assets/stylesheets/variables';
-</style>

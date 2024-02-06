@@ -44,10 +44,6 @@
                 border-radius: 5rem;
                 border: .1prem solid variables.$green_60;
                 background: linear-gradient(180deg, rgba(202, 255, 51, 0.10) -66.22%, rgba(202, 255, 51, 0.00) 85.46%);
-
-                img {
-                    height: 3.4rem;
-                }
             }
         }
     }
@@ -79,6 +75,7 @@
                     padding: 1.6rem;
                     
                     img {
+                        width: 2.8rem;
                         height: 2.8rem;
                     }
                 }
@@ -95,8 +92,8 @@
     }
 }
 
-// Mobile
-@media screen and (max-width: 480px) {
+// Tablets & Mobiles
+@media screen and (max-width: 768px) {
     .card {
         padding: 2.4rem;
         gap: 1rem;
@@ -115,6 +112,7 @@
                     padding: 1.4rem;
 
                     img {
+                        width: 2.4rem;
                         height: 2.4rem;
                     }
                 }

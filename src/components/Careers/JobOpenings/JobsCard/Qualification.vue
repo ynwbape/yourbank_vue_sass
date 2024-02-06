@@ -11,7 +11,13 @@
 
 <template>
     <div class="qualification">
-        <img :src="IMAGES.Standalone.Tags.tagsBriefcase" alt="Grey briefcase icon">
+        <img 
+            fetchpriority="high"
+            width="24"
+            height="19"
+            :src="IMAGES.Standalone.Tags.tagsBriefcase"
+            alt="Grey briefcase icon"
+        >
 
         <p>{{ requirement }}</p>
     </div>

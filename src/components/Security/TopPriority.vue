@@ -18,7 +18,11 @@
 
 <template>
     <section class="tpContainer">
-        <img :src="IMAGES.Standalone.TitleImageSection.svgBG" alt="Abstract Design Background of green dots">
+        <img
+            fetchpriority="low" 
+            :src="IMAGES.Standalone.TitleImageSection.svgBG" 
+            alt="Abstract Design Background of green dots"
+        >
         
         <div class="tpTitles">
             <h2>
@@ -32,6 +36,13 @@
         </div>
 
     
-        <img class="tpImage" :src="props.image" :alt="props.imageDescription">
+        <img 
+            fetchpriority="high" 
+            witch="868"
+            height="716"
+            class="tpImage" 
+            :src="props.image" 
+            :alt="props.imageDescription"
+        >
     </section>
 </template>

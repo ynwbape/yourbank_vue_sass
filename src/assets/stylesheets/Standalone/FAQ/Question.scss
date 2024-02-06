@@ -17,7 +17,7 @@
         background-color: variables.$grey_15;
     }
 
-    h4 {
+    h6 {
         font-size: 2rem;
         font-style: normal;
         font-weight: 500;
@@ -41,7 +41,7 @@
         gap: 2.4rem;
         border-radius: 1rem;
 
-        h4 {
+        h6 {
             font-size: 1.8rem;
         }
 
@@ -51,13 +51,13 @@
     }
 }
 
-// Mobile
-@media screen and (max-width: 480px) {
+// Tablets & Mobiles
+@media screen and (max-width: 768px) {
     .question {
         padding: 3rem;
         gap: 2rem;
 
-        h4 {
+        h6 {
             font-size: 1.8rem;
         }
 

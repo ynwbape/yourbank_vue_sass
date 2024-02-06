@@ -14,7 +14,7 @@
     <div class="productCard">
         <div class="pcIconContainer">
             <div class="pcIcon">
-                <img :src="props.imgUrl" :alt="props.imgAlt">
+                <img fetchpriority="high" width="34" height="34" :src="props.imgUrl" :alt="props.imgAlt">
             </div>
         </div>
 

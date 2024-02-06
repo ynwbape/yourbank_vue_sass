@@ -21,8 +21,6 @@
             align-self: stretch;
             
             img {
-                width: 3.5rem;
-                height: 3.5rem;
                 border-radius: 3.5rem;
                 background: variables.$lightgray 50% / cover no-repeat;
             }
@@ -105,8 +103,8 @@
     }
 } 
 
-// Mobile 
-@media screen and (max-width: 480px) {
+// Tablets & Mobiles
+@media screen and (max-width: 768px) {
     .exchangeCurrensy {
         width: 50%;
         border-radius: 1rem;

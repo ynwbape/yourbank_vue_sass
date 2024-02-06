@@ -20,7 +20,12 @@
 
 <template>
     <section class="beContainer">
-        <img class="beImgAbstract" :src="IMAGES.Standalone.TitleImageSection.svgBG" alt="Abstract Design Background of green dots">
+        <img 
+            fetchpriority="low"
+            class="beImgAbstract" 
+            :src="IMAGES.Standalone.TitleImageSection.svgBG" 
+            alt="Abstract Design Background of green dots"
+        >
         
         <div class="beTitles">
             <p class="beBeforeTitle">{{ optSentence }}</p>
@@ -36,6 +41,13 @@
             </p>
         </div>
         
-        <img class="bemImg" :src="props.image" :alt="props.imageDescription">
+        <img 
+            fetchpriority="high" 
+            width="968" 
+            height="716" 
+            class="bemImg" 
+            :src="props.image" 
+            :alt="props.imageDescription"
+        >
     </section>
 </template>

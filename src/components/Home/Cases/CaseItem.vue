@@ -13,7 +13,13 @@
     <div class="casesItem">
         <div class="casesIconContainer">
             <div class="casesIcon">
-                <img :src="props.caseImgUrl" :alt="props.caseImgAlt">
+                <img 
+                    fetchpriority="high"
+                    width="34"
+                    height="34"
+                    :src="props.caseImgUrl" 
+                    :alt="props.caseImgAlt"
+                >
             </div>
         </div>
         

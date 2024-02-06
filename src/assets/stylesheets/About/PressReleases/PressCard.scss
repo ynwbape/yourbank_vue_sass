@@ -14,7 +14,6 @@
     background-color: variables.$grey_11;
 
     img {
-        height: 33.3rem;
         align-self: stretch;
         border-radius: 3rem 3rem 1.2rem 1.2rem;
         background: lightgray 50% / cover no-repeat;
@@ -55,12 +54,14 @@
     }
 }
 
+// Laptop
 @media screen and (max-width: 1440px) {
     .prCard {
         padding: 2.4rem;
         gap: 4rem;
 
         img {
+            width: 58.2rem;
             height: 26.7rem;
         }
 
@@ -87,12 +88,14 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+// Tablets & Mobiles
+@media screen and (max-width: 768px) {
     .prCard {
         padding: 2rem;
         gap: 3rem;  
     
         img {
+            width: 31.8rem;
             height: 20.6rem;
         }
     

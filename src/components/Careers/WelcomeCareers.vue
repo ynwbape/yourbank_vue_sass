@@ -36,6 +36,13 @@
             </p>
         </div>
         
-        <img class="wybcYBCImg" :src="props.image" :alt="props.imageDescription">
+        <img 
+            class="wybcYBCImg" 
+            fetchpriority="high" 
+            width="968" 
+            height="716"
+            :src="props.image" 
+            :alt="props.imageDescription"    
+        >
     </section>
 </template>

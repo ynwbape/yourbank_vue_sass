@@ -19,8 +19,8 @@
                 <p>{{ titleResume }}</p>
             </div>
             <div class="tibTabButtons">
-                <button id="individual" class="active">Individuals</button>
-                <button id="business" class="unfocused">Businesses</button>
+                <button class="active">Individuals</button>
+                <button class="unfocused">Businesses</button>
             </div>
         </div>
 </template>

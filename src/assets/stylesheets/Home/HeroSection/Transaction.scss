@@ -19,10 +19,6 @@
             padding: .9rem;
             border-radius: 4.6rem;
             background-color: variables.$green_60;
-            
-            img {
-                height: 2.1rem;
-            }
         }
 
         .texts {
@@ -71,6 +67,7 @@
                 border-radius: 3.6rem;
                 
                 img {
+                    width: 1.7rem;
                     height: 1.7rem;
                 }
             }
@@ -94,8 +91,8 @@
     }
 }
 
-// Mobile
-@media screen and (max-width: 480px) {
+// Tablets & Mobiles
+@media screen and (max-width: 768px) {
     .transaction {
         padding: .8rem 1.2rem;
         border-radius: .6rem;
@@ -109,6 +106,7 @@
                 border-radius: 2.7rem;
 
                 img {
+                    width: 1.2rem;
                     height: 1.2rem;
                 }
             }

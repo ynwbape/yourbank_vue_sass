@@ -201,10 +201,6 @@
                 border-radius: 4.8rem;
                 border: .087rem solid variables.$grey_15;
                 background-color: variables.$grey_10;
-
-                img {
-                    height: 3.5rem;
-                }
             }
         }
     }
@@ -219,6 +215,7 @@
 
         .arrowsdesign {
             right: 6.9rem;
+            width: 30rem;
             height: 27.5rem;
         }
 
@@ -231,10 +228,6 @@
                 .no-check-bank {
                     gap: .4rem;
                     padding: .8rem 1.6rem .8rem .8rem;
-                    
-                    img {
-                        height: 2rem;
-                    }
         
                     p {
                         font-size: 1.4rem;
@@ -325,6 +318,7 @@
                     border: .087rem solid variables.$grey_15;
 
                     img {
+                        width: 2.7rem;
                         height: 2.7rem;
                     }
                 }
@@ -333,8 +327,8 @@
     }
 }
 
-// Mobile
-@media screen and (max-width: 480px) {
+// Tablets & Mobiles
+@media screen and (max-width: 768px) {
     .hsContainer {
         width: 35.8rem;
         flex-direction: column;
@@ -346,6 +340,7 @@
         .arrowsdesign {
             right: -2.1rem;
             bottom: 17rem;
+            width: 21.8rem;
             height: 20rem;
         }
     
@@ -453,6 +448,7 @@
                     border: .051rem solid variables.$grey_15;
                     
                     img {
+                        width: 2rem;
                         height: 2rem;
                     }
                 }

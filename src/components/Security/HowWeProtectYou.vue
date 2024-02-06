@@ -45,7 +45,7 @@
         />
 
         <div class="hwpyCards">
-            <img class="hwpyCardsImg" :src="props.img" alt="" :style="props.imgClass">
+            <img fetchpriority="low" class="hwpyCardsImg" :src="props.img" alt="Background img" :style="props.imgClass">
 
             <div class="hwpySubContainer">
                 <Card

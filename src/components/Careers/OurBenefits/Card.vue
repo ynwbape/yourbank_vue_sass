@@ -14,7 +14,13 @@
         <div class="obCardTitle">
             <div class="obCardIconContainer">
                 <div class="obCardIcon">
-                    <img :src="props.img" alt="Green Icons">
+                    <img 
+                        fetchpriority="high" 
+                        width="34"
+                        height="34"
+                        :src="props.img" 
+                        alt="Green Icons"
+                    >
                 </div>
             </div>
             <h4>{{ service }}</h4>

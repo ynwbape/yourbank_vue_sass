@@ -25,7 +25,7 @@
         
             <!-- Mobile Responsive -->
             <button>
-                <img class="collapseImg" :src="IMAGES.Navbar.Button.collapse" alt="Button icon">
+                <img fetchpriority="high" class="collapseImg" :src="IMAGES.Navbar.Button.collapse" alt="Button icon">
             </button>
         </nav>
     </header>

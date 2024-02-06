@@ -7,7 +7,7 @@
 
 <template>
     <div class="logo">
-        <img class="shape" :src="IMAGES.Navbar.Logo.shape" alt="Logo's shape">
-        <img class="navTitle" :src="IMAGES.Navbar.Logo.yourbank" alt="Website's name">
+        <img width="40" height="40" fetchpriority="high" class="shape" :src="IMAGES.Navbar.Logo.shape" alt="Logo's shape">
+        <img width="106" height="18" fetchpriority="high" class="navTitle" :src="IMAGES.Navbar.Logo.yourbank" alt="Website's name">
     </div>  
 </template>
