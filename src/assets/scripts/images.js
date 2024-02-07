@@ -86,7 +86,7 @@ import collapse from '../img/Navbar/collapse.svg';
 
 // Footer.vue 
 import mailIcon from '../img/Footer/mailicon.svg'; 
-import phoneIcon from '../img/Footer/phoneicon.Svg';
+import phoneIcon from '../img/Footer/phoneicon.svg';
 import placeIcon from '../img/Footer/placeicon.svg';
 
 // socials
