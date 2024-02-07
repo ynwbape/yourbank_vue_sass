@@ -1,16 +1,14 @@
 <script setup>
     import Testimonial from './Testimonials/Testimonial.vue';
-    import TitleIndividualBusiness from "./titleIndividualBusiness.vue";
+    import TitleIndividualBusiness from "./TitleIndividualBusiness.vue";
     
     import { IMAGES } from '../../assets/scripts/images';
-    
     
     import { TEXTS } from '../../assets/scripts/texts';
     import { testimonials } from '../../assets/scripts/arrays';
 
     // Testimonials StyleSheet
     import '../../assets/stylesheets/Home/Testimonials.scss';
-    
 </script>
 
 <template>
